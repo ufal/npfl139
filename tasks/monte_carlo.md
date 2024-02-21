@@ -1,5 +1,5 @@
 ### Assignment: monte_carlo
-#### Date: Deadline: Mar 05, 21:59 a.m.
+#### Date: Deadline: Mar 05, 22:00
 #### Points: 5 points
 
 Solve the discretized [CartPole-v1 environment](https://gymnasium.farama.org/environments/classic_control/cart_pole/)

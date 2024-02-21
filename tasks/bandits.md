@@ -1,5 +1,5 @@
 ### Assignment: bandits
-#### Date: Deadline: Mar 05, 21:59 a.m.
+#### Date: Deadline: Mar 05, 22:00
 #### Points: 3 points
 #### Tests: bandits_tests
 
