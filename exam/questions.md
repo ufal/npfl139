@@ -9,3 +9,15 @@
 
 - Describe how does a partially observable Markov decision process extend the
   Markov decision process and how is the agent altered. [5]
+
+- Define a value function, such that all expectations are over simple random
+  variables (actions, states, rewards), not trajectories. [5]
+
+- Define an action-value function, such that all expectations are over simple
+  random variables (actions, states, rewards), not trajectories. [5]
+
+- Express a value function using an action-value function, and express an
+  action-value function using a value function. [5]
+
+- Define optimal value function and optimal action-value function. Then define
+  optimal policy in such a way that its existence is guaranteed. [5]
