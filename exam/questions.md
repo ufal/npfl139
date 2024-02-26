@@ -39,7 +39,3 @@
 - Write down the tabular Monte-Carlo on-policy every-visit $\epsilon$-soft algorithm. [10]
 
 - Write down the Sarsa algorithm. [10]
-
-- Write down the Q-learning algorithm. [10]
-
-- Write down the Double Q-learning algorithm. [10]
