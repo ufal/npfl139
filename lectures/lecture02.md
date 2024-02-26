@@ -1,5 +1,8 @@
-### Lecture: 2. Dynamic Programming, Monte Carlo Methods, Temporal Difference Methods
+### Lecture: 2. Value and Policy Iteration, Monte Carlo, Temporal Difference
 #### Date: Feb 26
+#### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl122/2324/slides/?02
+#### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl122/2324/slides.pdf/npfl122-2324-02.pdf, PDF Slides
+#### Questions: #lecture_2_questions
 
 - Value Iteration [Sections 4 and 4.4 of RLB]
   - Proof of convergence only in slides
