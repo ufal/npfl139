@@ -4,6 +4,11 @@
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides.pdf/npfl139-2324-02.pdf, PDF Slides
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2324/npfl139-2324-02.mp4, Lecture
 #### Questions: #lecture_2_questions
+#### Lecture assignment: policy_iteration
+#### Lecture assignment: policy_iteration_exact
+#### Lecture assignment: policy_iteration_mc_estarts
+#### Lecture assignment: policy_iteration_mc_egreedy
+#### Lecture assignment: q_learning
 
 - Value Iteration [Sections 4 and 4.4 of RLB]
   - Proof of convergence only in slides
@@ -14,4 +19,3 @@
   functions [Chapter 8 before Section 8.1, and Section 6.8 of RLB]
 - Temporal-difference methods [Sections 6-6.3 of RLB]
 - Sarsa [Section 6.4 of RLB]
-- Q-learning [Section 6.5 of RLB]
