@@ -14,3 +14,4 @@
   functions [Chapter 8 before Section 8.1, and Section 6.8 of RLB]
 - Temporal-difference methods [Sections 6-6.3 of RLB]
 - Sarsa [Section 6.4 of RLB]
+- Q-learning [Section 6.5 of RLB]
