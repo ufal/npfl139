@@ -41,3 +41,48 @@
 - Write down the Sarsa algorithm. [10]
 
 - Write down the Q-learning algorithm. [10]
+
+#### Questions@:, Lecture 3 Questions
+- Elaborate on how can importance sampling estimate expectations with
+  respect to $\pi$ based on samples of $b$. [5]
+
+- Show how to estimate returns in the off-policy case, both with (1) ordinary
+  importance sampling and (2) weighted importance sampling. [10]
+
+- Write down the Expected Sarsa algorithm and show how to obtain
+  Q-learning from it. [10]
+
+- Write down the Double Q-learning algorithm. [10]
+
+- Show the bootstrapped estimate of $n$-step return. [5]
+
+- Write down the update in on-policy $n$-step Sarsa (assuming you already
+  have $n$ previous steps, actions and rewards). [5]
+
+- Write down the update in off-policy $n$-step Sarsa with importance
+  sampling (assuming you already have $n$ previous steps, actions and rewards). [10]
+
+- Write down the update of $n$-step Tree-backup algorithm (assuming you already
+  have $n$ previous steps, actions and rewards). [10]
+
+- Assuming function approximation, define Mean squared value error. [5]
+
+- Write down the gradient Monte-Carlo on-policy every-visit $\epsilon$-soft algorithm. [10]
+
+- Write down the semi-gradient $\epsilon$-greedy Sarsa algorithm. [10]
+
+- Prove that semi-gradient TD update is not an SGD update of any loss. [10]
+
+- What are the three elements causing off-policy divergence with function
+  approximation? Write down the Baird's counterexample. [10]
+
+- Explain the role of a replay buffer in Deep Q Networks. [5]
+
+- How is the target network used and updated in Deep Q Networks? [5]
+
+- Explain how is reward clipping used in Deep Q Networks. What other
+  clipping is used? [5]
+
+- Formulate the loss used in Deep Q Networks. [5]
+
+- Write down the Deep Q Networks training algorithm. [10]
