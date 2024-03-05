@@ -21,7 +21,7 @@ During evaluation in ReCodEx, three different random seeds will be employed, and
 you need to reach the required return on all of them. Time limit for each test
 is 15 minutes.
 
-The task is additionally a [_competition_](https://ufal.mff.cuni.cz/courses/npfl139/2324-winter#competitions),
+The task is additionally a [_competition_](https://ufal.mff.cuni.cz/courses/npfl139/2324-summer#competitions),
 and at most 5 points will be awarded according to the relative ordering of your
 solutions.
 
