@@ -1,5 +1,5 @@
 ### Assignment: importance_sampling
-#### Date: Deadline: Mar 12, 22:00
+#### Date: Deadline: Mar 19, 22:00
 #### Points: 2 points
 #### Tests: importance_sampling_tests
 

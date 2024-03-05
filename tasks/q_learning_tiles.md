@@ -1,5 +1,5 @@
 ### Assignment: q_learning_tiles
-#### Date: Deadline: Mar 12, 22:00
+#### Date: Deadline: Mar 19, 22:00
 #### Points: 3 points
 
 Improve the `q_learning` task performance on the

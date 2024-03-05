@@ -1,5 +1,5 @@
 ### Assignment: lunar_lander
-#### Date: Deadline: Mar 12, 22:00
+#### Date: Deadline: Mar 19, 22:00
 #### Points: 5 points + 5 bonus
 
 Solve the [LunarLander-v2 environment](https://gymnasium.farama.org/environments/box2d/lunar_lander/)
