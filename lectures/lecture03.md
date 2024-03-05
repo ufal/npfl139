@@ -4,6 +4,10 @@
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides.pdf/npfl139-2324-03.pdf, PDF Slides
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2324/npfl139-2324-03.mp4, Lecture
 #### Questions: #lecture_3_questions
+#### Lecture assignment: importance_sampling
+#### Lecture assignment: td_algorithms
+#### Lecture assignment: q_learning_tiles
+#### Lecture assignment: lunar_lander
 
 - Off-policy Monte Carlo Methods [Sections 5.5-5.7 of RLB]
 - Expected Sarsa [Section 6.6 of RLB]
