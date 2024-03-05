@@ -69,6 +69,7 @@
 
 - Write down the gradient Monte-Carlo on-policy every-visit $\epsilon$-soft algorithm. [10]
 
+#### Questions@:, Lecture 4 Questions
 - Write down the semi-gradient $\epsilon$-greedy Sarsa algorithm. [10]
 
 - Prove that semi-gradient TD update is not an SGD update of any loss. [10]
