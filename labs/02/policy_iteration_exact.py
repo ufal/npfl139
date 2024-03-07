@@ -58,8 +58,9 @@ def main(args: argparse.Namespace) -> tuple[list[float] | np.ndarray, list[int] 
     # TODO: Implement policy iteration algorithm, with `args.steps` steps of
     # policy evaluation/policy improvement. During policy evaluation, compute
     # the value function exactly by solving the system of linear equations.
-    # During the policy improvement, use the `argmax_with_tolerance` to
-    # choose the best action.
+    # Note that you need to use 64-bit floats because lower precision results
+    # in unacceptable error. During the policy improvement, use the
+    # `argmax_with_tolerance` to choose the best action.
 
     # TODO: The final value function should be in `value_function` and final greedy policy in `policy`.
     return value_function, policy

@@ -5,7 +5,8 @@
 
 Starting with [policy_iteration_exact.py](https://github.com/ufal/npfl139/tree/master/labs/02/policy_iteration_exact.py),
 extend the `policy_iteration` assignment to perform policy evaluation
-exactly by solving a system of linear equations.
+exactly by solving a system of linear equations. Note that you need to
+use 64-bit floats because lower precision results in unacceptable error.
 
 #### Tests Start: policy_iteration_exact_tests
 _Note that your results may be slightly different, depending on your CPU type and whether you use a GPU._
