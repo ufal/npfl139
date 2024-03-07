@@ -163,7 +163,7 @@ class DiscreteLunarLanderWrapper(DiscretizationWrapper):
         gym.Env.reset(self._expert.unwrapped, seed=42)
 
     def expert_trajectory(self, seed=None):
-        state, trajectory, done = self._expert.reset(seed=None)[0], [], False
+        state, trajectory, done = self._expert.reset(seed=seed)[0], [], False
         while not done:
             action = gym.envs.box2d.lunar_lander.heuristic(self._expert, state)
             next_state, reward, terminated, truncated, _ = self._expert.step(action)

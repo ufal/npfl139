@@ -11,6 +11,8 @@ but include one additional method:
 - `expert_trajectory(seed=None) → trajectory`: This method generates one expert
   trajectory, where `trajectory` is a list of triples _(state, action, reward)_,
   where the _action_ and _reward_ is `None` when reaching the terminal state.
+  If a `seed` is given, the expert trajectory random generator is reset before
+  generating the trajectory.
 
   You **cannot** change the implementation of this method or use its internals in
   any other way than just calling `expert_trajectory()`. Furthermore,
