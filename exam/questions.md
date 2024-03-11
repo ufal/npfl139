@@ -97,6 +97,7 @@
 
 - How is the action-value function computed in dueling networks? [5]
 
+#### Questions@:, Lecture 5 Questions
 - Describe a fully connected layer in Noisy nets (parametrization, computation,
   effective noise generation). [5]
 
