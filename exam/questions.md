@@ -87,3 +87,24 @@
 - Formulate the loss used in Deep Q Networks. [5]
 
 - Write down the Deep Q Networks training algorithm. [10]
+
+- Explain the difference between DQN and Double DQN. [5]
+
+- Describe prioritized replay (how are transitions sampled from the replay
+  buffer, how up-to-date are the priorities [according to which we sample],
+  how are unseen transitions boosted, how is importance sampling used to account
+  for the change in the sampling distribution). [10]
+
+- How is the action-value function computed in dueling networks? [5]
+
+- Describe a fully connected layer in Noisy nets (parametrization, computation,
+  effective noise generation). [5]
+
+- In Distributional RL, describe how is the distribution of rewards represented
+  and how it is predicted using a neural network. [5]
+
+- Write down the distributional Bellman equation, describe how are the atom
+  probabilities of a reward distribution modeled, and write down the loss used
+  to train a distributional Q network (including the mapping of atoms, which
+  does not need to be mathematically flawless -- it is enough to describe how it
+  should be done). [10]
