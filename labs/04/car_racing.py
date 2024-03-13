@@ -61,7 +61,7 @@ if __name__ == "__main__":
 
     # Create the environment
     env = wrappers.EvaluationEnv(
-        gym.make("CarRacingFS-v2", frame_skip=args.frame_skip, continuos=args.continuous), args.seed, args.render_each,
+        gym.make("CarRacingFS-v2", frame_skip=args.frame_skip, continuous=args.continuous), args.seed, args.render_each,
         evaluate_for=15, report_each=1)
 
     main(env, args)
