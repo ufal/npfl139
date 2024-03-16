@@ -30,3 +30,7 @@ solutions.
 You can start with the [lunar_lander.py](https://github.com/ufal/npfl139/tree/master/labs/03/lunar_lander.py)
 template, which parses several useful parameters, creates the environment
 and illustrates the overall usage.
+
+**In the competition, you should consider the environment states meaning to be
+unknown, so you cannot use the knowledge about how they are created. But you can
+learn any such information from the data.**
