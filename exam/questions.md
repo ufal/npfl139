@@ -109,3 +109,5 @@
   to train a distributional Q network (including the mapping of atoms, which
   does not need to be mathematically flawless -- it is enough to describe how it
   should be done). [10]
+
+- More questions about distributional RL to be added later.
