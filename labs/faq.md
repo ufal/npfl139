@@ -52,10 +52,6 @@
   Apple is working on `mlx` backend for Keras, which might improve the situation
   in the future.
 
-  One could in theory use the TensorFlow backend, but the latest release of
-  `tensorflow-metal==1.1.0` works with TensorFlow 2.14, which does not support
-  Keras 3.
-
 ### TOCEntry: MetaCentrum
 
 - _How to apply for MetaCentrum account?_
