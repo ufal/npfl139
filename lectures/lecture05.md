@@ -3,6 +3,7 @@
 #### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides/?05
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides.pdf/npfl139-2324-05.pdf,PDF Slides
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2324/npfl139-2324-05.mp4, Lecture
+#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2324/npfl139-2324-05.practicals.mp4, Practicals
 #### Questions: #lecture_5_questions
 
 - Noisy Nets [[Meire Fortunato et al.: Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295)]
