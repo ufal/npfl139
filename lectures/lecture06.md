@@ -1,5 +1,8 @@
 ### Lecture: 6. Policy Gradient Methods
 #### Date: Mar 25
+#### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides/?06
+#### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides.pdf/npfl139-2324-06.pdf,PDF Slides
+#### Questions: #lecture_6_questions
 
 - Policy Gradient Methods [Sections 13-13.1 of RLB]
 - Policy Gradient Theorem [Section 13.2 of RLB]
