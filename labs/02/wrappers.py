@@ -244,7 +244,7 @@ class ReplayBuffer:
             return [self._data[index] for index in generator.choice(len(self._data), size=size, replace=False)]
 
 
-def typed_torch_function(device, *types):
+def typed_torch_function(device, *types, via_np=False):
     """Typed Torch function decorator.
 
     The positional input arguments are converted to torch Tensors of the given
@@ -282,7 +282,8 @@ def typed_torch_function(device, *types):
         def __call__(self, *args, **kwargs):
             check_typed_torch_function(self.__wrapped__, args)
             return structural_map(self.__wrapped__(
-                *[torch.as_tensor(arg, dtype=typ, device=device) for arg, typ in zip(args, types)], **kwargs))
+                *[torch.as_tensor(np.asarray(arg) if via_np else arg, dtype=typ, device=device)
+                  for arg, typ in zip(args, types)], **kwargs))
 
         def __get__(self, instance, cls):
             return TypedTorchFunctionWrapper(self.__wrapped__.__get__(instance, cls))
@@ -299,3 +300,51 @@ def torch_init_with_xavier_and_zeros(module):
         torch.nn.init.xavier_uniform_(module.weight)
         if module.bias is not None:
             torch.nn.init.zeros_(module.bias)
+
+
+def raw_typed_tf_function(*types, dynamic_dims=1):
+    """Faster but raw `tf.function` implementation.
+
+    All unnecessary steps are shaven off, only the Graph execution is performed.
+    Only positional arguments are supported, and they are converted first to NumPy
+    arrays and then to TensorFlow tensors. The outputs are converted back to NumPy.
+    Uses TensorFlow internals, so it might not work for you.
+
+    The `dynamic_dims` argument specified the number of "dynamic" (not known statically
+    in the computational graph) dimensions of every input. It can be either
+    - an integer, in which case it is used for all inputs, or
+    - a list, whose elements correspond to the positional arguments of the TF call.
+    """
+    import weakref
+
+    import tensorflow as tf
+    import tensorflow.python.eager as tfe
+    import tensorflow.python.framework.constant_op as constant_op
+
+    class RawTFFunctionWrapper:
+        def __init__(self, func):
+            self.__wrapped__ = func
+            self._concrete_function = None
+            self._instances = weakref.WeakKeyDictionary()
+
+        def __call__(self, *args):
+            args = [np.asarray(arg, dtype=dtype.as_numpy_dtype) for arg, dtype in zip(args, types)]
+            if self._concrete_function is None:
+                self._concrete_function = tf.function(self.__wrapped__).get_concrete_function(
+                    *[tf.TensorSpec((None,) * dynamic + arg.shape[1:], dtype=tf.dtypes.as_dtype(arg.dtype))
+                      for arg, dynamic in zip(
+                          args, dynamic_dims if isinstance(dynamic_dims, list) else [dynamic_dims] * len(args))])
+            ctx = tfe.context.context()
+            inputs = [constant_op.convert_to_eager_tensor(arg, ctx) for arg in args]
+            results = tfe.execute.execute(self._concrete_function.name, len(self._concrete_function.outputs),
+                                         inputs + self._concrete_function.captured_inputs, {}, ctx)
+            results = [np.asarray(result) for result in results]
+            return results[0] if len(self._concrete_function.outputs) == 1 else results
+
+        def __get__(self, instance, cls):
+            wrapper = self._instances.get(instance, None)
+            if wrapper is None:
+                self._instances[instance] = wrapper = RawTFFunctionWrapper(self.__wrapped__.__get__(instance, cls))
+            return wrapper
+
+    return RawTFFunctionWrapper
