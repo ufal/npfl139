@@ -1,8 +1,6 @@
 ### Lecture: 8. PAAC, DDPG, TD3, SAC
 #### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides/?08
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides.pdf/npfl139-2324-08.pdf,PDF Slides
-#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2324/npfl139-2324-08.mp4, Lecture
-#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2324/npfl139-2324-08.practicals.mp4, Practicals
 #### Questions: #lecture_8_questions
 #### Date: Apr 08
 
