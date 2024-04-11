@@ -1,9 +1,12 @@
 ### Lecture: 8. PAAC, DDPG, TD3, SAC
+#### Date: Apr 08
 #### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides/?08
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides.pdf/npfl139-2324-08.pdf,PDF Slides
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2324/npfl139-2324-08.mp4, Lecture
 #### Questions: #lecture_8_questions
-#### Date: Apr 08
+#### Lecture assignment: paac
+#### Lecture assignment: paac_continuous
+#### Lecture assignment: ddpg
 
 - PAAC [[Alfredo V. Clemente et al.: Efficient Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1705.04862)]
 - Gradient methods with continuous actions [Section 13.7 of RLB]
