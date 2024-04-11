@@ -47,7 +47,7 @@ class Network:
         #
         # The `args.entropy_regularization` might be used to include actor
         # entropy regularization -- the assignment can be solved even without
-        # it, but my reference solutions learns more quickly when using it.
+        # it, but my reference solution learns more quickly when using it.
         # In any case, `torch.distributions.Categorical` is the suitable distribution
         # offering the `.entropy()` method.
         raise NotImplementedError()
