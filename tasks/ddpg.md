@@ -1,5 +1,5 @@
 ### Assignment: ddpg
-#### Date: Deadline: Apr 23, 22:0
+#### Date: Deadline: Apr 23, 22:00
 #### Points: 5 points
 
 Solve the continuous [Pendulum-v1](https://gymnasium.farama.org/environments/classic_control/pendulum/)

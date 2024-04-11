@@ -33,7 +33,7 @@ class Network:
         # - actor, which predicts distribution over the actions
         # - critic, which predicts the value function
         #
-        # The given states are tile encoded, so they are integral indices of
+        # The given states are tile encoded, so they are integer indices of
         # tiles intersecting the state. Therefore, you should convert them
         # to dense encoding (one-hot-like, with `args.tiles` ones).
         # (Or you could even use `torch.nn.EmbeddingBag`, but be careful

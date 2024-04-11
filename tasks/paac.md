@@ -1,5 +1,5 @@
 ### Assignment: paac
-#### Date: Deadline: Apr 23, 22:0
+#### Date: Deadline: Apr 23, 22:00
 #### Points: 3 points
 
 Solve the [CartPole-v1 environment](https://gymnasium.farama.org/environments/classic_control/cart_pole/)
