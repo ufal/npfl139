@@ -59,8 +59,7 @@ class Network:
     def train(self, states: torch.Tensor, actions: torch.Tensor, returns: torch.Tensor) -> None:
         # TODO: Run the model on given `states` and compute
         # `sds`, `mus` and predicted values. Then create `action_distribution` using
-        # `tfp.distributions.Normal` class and the computed `mus` and `sds`.
-        # In PyTorch, the corresponding class is `torch.distributions.Normal`.
+        # `torch.distributions.Normal` class and the computed `mus` and `sds`.
         #
         # TODO: Train the actor using the sum of the following two losses:
         # - REINFORCE loss, i.e., the negative log likelihood of the `actions` in the
