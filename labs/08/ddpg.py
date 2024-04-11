@@ -58,9 +58,10 @@ class Network:
         #
         # Furthermore, update the target actor and critic networks by
         # exponential moving average with weight `args.target_tau`. A possible
-        # way to implement it inside a `tf.function` is the following:
-        #   for var, target_var in zip(network.trainable_variables, target_network.trainable_variables):
-        #       target_var.assign(target_var * (1 - target_tau) + var * target_tau)
+        # implementation is the following:
+        #   for param, target_param in zip(source.parameters(), target.parameters()):
+        #       target_param.data.mul_(1 - target_tau)
+        #       target_param.data.add_(target_tau * param.data)
         raise NotImplementedError()
 
     @wrappers.typed_torch_function(device, torch.float32)
