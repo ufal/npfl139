@@ -1,5 +1,5 @@
 ### Assignment: paac_continuous
-#### Date: Deadline: Apr 23, 22:0
+#### Date: Deadline: Apr 23, 22:00
 #### Points: 4 points
 
 Solve the [MountainCarContinuous-v0 environment](https://gymnasium.farama.org/environments/classic_control/mountain_car_continuous/)
