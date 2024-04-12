@@ -106,7 +106,7 @@ def main(env: wrappers.EvaluationEnv, args: argparse.Namespace) -> None:
     def evaluate_episode(start_evaluation: bool = False, logging: bool = True) -> float:
         rewards, state, done = 0, env.reset(start_evaluation=start_evaluation, logging=logging)[0], False
         while not done:
-            # TODO: Predict the action using the greedy policy.
+            # TODO: Predict the action by calling `network.predict_actions`.
             action = ...
             state, reward, terminated, truncated, _ = env.step(action)
             done = terminated or truncated
