@@ -6,7 +6,7 @@ Solve the continuous [Pendulum-v1](https://gymnasium.farama.org/environments/cla
 and [InvertedDoublePendulum-v5](https://gymnasium.farama.org/environments/mujoco/inverted_double_pendulum/)
 environments using deep deterministic policy gradient algorithm.
 
-Your goal is to reach an average return of -200 for `Pendulum-v1` and 900 for `InvertedDoublePendulum-v5`
+Your goal is to reach an average return of -200 for `Pendulum-v1` and 9000 for `InvertedDoublePendulum-v5`
 during 100 evaluation episodes.
 
 Start with the [ddpg.py](https://github.com/ufal/npfl139/tree/master/labs/08/ddpg.py)
