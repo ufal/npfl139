@@ -199,3 +199,53 @@
   corresponding Lagrangian (and whether we are minimizing/maximizing it
   with respect to the policy and $\alpha$), and what does the $\alpha$ update
   looks like. [5]
+
+#### Questions@:, Lecture 9 Questions
+- Define a one-step TD error and express the $n$-step return as a sum of them. [5]
+
+- Define a one-step TD error and express the $n$-step return with off-policy
+  correction using control variates as a sum of TD errors. [5]
+
+- Define the $\lambda$-return. [5]
+
+- Define the $n$-step truncated $\lambda$-return. [5]
+
+- Define a one-step TD error and express the $n$-step truncated $\lambda$-return
+  as a sum of them. [5]
+
+- Define a one-step TD error and express the $n$-step truncated $\lambda$-return with
+  off-policy correction as a sum of them. [5]
+
+- Define the V-trace estimate and write down the policy to whose value function
+  the V-trace estimate converges to. [10]
+
+- Explain why the fixed point of the V-trace operator does not depend on the
+  truncation of all but the last importance sampling ratios. [10]
+
+- Write down the critic loss (or its derivative) and the actor policy loss (or
+  its derivative) of the IMPALA algorithm, including the V-trace formula. [10]
+
+- Sketch the population based training used in the IMPALA algorithm. [5]
+
+- In PopArt normalization, the value function is computed based on a normalized
+  value predictor $n$ as $\sigma n + \mu$. Describe how to maintain $\sigma$ and
+  $\mu$, how to compute normalized advantage based on return $G$, and how is the
+  normalized value predictor modified when the estimates of $\sigma$ and $\mu$
+  change. [10]
+
+- Define the transformed Bellman operator. [5]
+
+- Define the transformed Bellman operator. Then, assuming $h$ is strictly
+  monotonically increasing function and considering a deterministic Markov
+  decision process, show to what does a transformed Bellman operator
+  $\mathcal{T}_h$ converge and prove it. [10]
+
+- Write down the return transformation used for Atari environments (for example
+  by R2D2). [5]
+
+- Describe the replay buffer elements in R2D2. What is the difference between
+  the zero-state and stored-state strategies, and how is burn-in used? [5]
+
+- Write down the Retrace operator and describe the three possibilities of
+  setting the traces $c_t$: importance sampling, Tree-backup($\lambda$) and
+  Retrace($\lambda$). [10]
