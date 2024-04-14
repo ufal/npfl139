@@ -60,6 +60,7 @@ class Network:
         # TODO: Run the model on given `states` and compute
         # `sds`, `mus` and predicted values. Then create `action_distribution` using
         # `torch.distributions.Normal` class and the computed `mus` and `sds`.
+        # In TensorFlow Probability, the corresponding class is `tfp.distributions.Normal`.
         #
         # TODO: Train the actor using the sum of the following two losses:
         # - REINFORCE loss, i.e., the negative log likelihood of the `actions` in the
