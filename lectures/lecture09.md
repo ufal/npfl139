@@ -1,4 +1,4 @@
-### Lecture: 9. Eligibility traces, Impala, R2D2, Agent57
+### Lecture: 9. Eligibility traces, Impala
 #### Date: Apr 15
 #### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides/?09
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides.pdf/npfl139-2324-09.pdf,PDF Slides
