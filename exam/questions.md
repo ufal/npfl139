@@ -233,6 +233,7 @@
   normalized value predictor modified when the estimates of $\sigma$ and $\mu$
   change. [10]
 
+#### Questions@:, Lecture 10 Questions
 - Define the transformed Bellman operator. [5]
 
 - Define the transformed Bellman operator. Then, assuming $h$ is strictly
