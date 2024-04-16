@@ -17,5 +17,5 @@ limit of 10 minutes. If your average return is at least 200, you obtain
 The [walker.py](https://github.com/ufal/npfl139/tree/master/labs/09/walker.py)
 template contains the skeleton for implementing the SAC agent, but you can
 also solve the assignment with DDPG/TD3. The TensorFlow template
-[walker.torch.py](https://github.com/ufal/npfl139/tree/master/labs/09/walker.tf.py)
+[walker.tf.py](https://github.com/ufal/npfl139/tree/master/labs/09/walker.tf.py)
 is also available.
