@@ -4,6 +4,11 @@
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides.pdf/npfl139-2324-09.pdf,PDF Slides
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2324/npfl139-2324-09.mp4, Lecture
 #### Questions: #lecture_9_questions
+#### Lecture assignment: walker
+#### Lecture assignment: walker_hardcore
+#### Lecture assignment: cheetah
+#### Lecture assignment: humanoid
+#### Lecture assignment: humanoid_standup
 
 - Eligibility traces [Sections 12, 12.1, 12.3, 12.8, 12.9 of RLB]
 - TD(λ) [Section 12.2 of RLB]
