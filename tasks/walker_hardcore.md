@@ -13,8 +13,8 @@ return `0` with neither TD3 nor SAC with the original `-100` penalty).**
 In ReCodEx, you are expected to submit an already trained model,
 which is evaluated with three seeds, each for 100 episodes with a time
 limit of 10 minutes. If your average return is at least 100, you obtain
-6 points. The task is also a [_competition_](https://ufal.mff.cuni.cz/courses/npfl139/2324-summer#competitions),
-and at most 8 points will be awarded according to relative ordering of your
+5 points. The task is also a [_competition_](https://ufal.mff.cuni.cz/courses/npfl139/2324-summer#competitions),
+and at most 5 points will be awarded according to relative ordering of your
 solutions.
 
 The [walker_hardcore.py](https://github.com/ufal/npfl139/tree/master/labs/09/walker_hardcore.py)
