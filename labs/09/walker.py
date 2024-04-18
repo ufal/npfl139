@@ -123,7 +123,7 @@ class Network:
     def save_actor(self, path: str):
         torch.save(self._actor.state_dict(), path)
 
-    def load_actor(self, path: str, env: wrappers.EvaluationEnv):
+    def load_actor(self, path: str):
         self._actor.load_state_dict(torch.load(path, map_location=self.device))
 
     # The `wrappers.typed_torch_function` automatically converts input arguments
@@ -189,7 +189,7 @@ def main(env: wrappers.EvaluationEnv, args: argparse.Namespace) -> None:
 
     # Evaluation in ReCodEx
     if args.recodex:
-        network.load_actor(args.model_path, env)
+        network.load_actor(args.model_path)
         while True:
             evaluate_episode(True)
 
