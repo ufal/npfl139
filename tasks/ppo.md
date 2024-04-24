@@ -13,7 +13,7 @@ for some period of time, it gets a large reward and the place is moved randomly.
 The environment runs for 250 steps and it is considered solved if you obtain
 a return of at least 500.
 
-The [ppo.py](https://github.com/ufal/npfl139/tree/master/labs/10/ppo.tf.py)
+The [ppo.tf.py](https://github.com/ufal/npfl139/tree/master/labs/10/ppo.tf.py)
 TensorFlow template contains a skeleton of the PPO algorithm implementation.
 PyTorch template will be added later.
 Regarding the unspecified hyperparameters, I would consider the following ranges:
