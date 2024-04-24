@@ -1,6 +1,6 @@
 ### Assignment: ppo
 #### Date: Deadline: May 7, 22:00
-#### Points: 3 points
+#### Points: 4 points
 
 Implement the PPO algorithm in a single-agent settings. Notably, solve
 the `SingleCollect` environment implemented by the
