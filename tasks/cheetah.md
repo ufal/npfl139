@@ -4,6 +4,9 @@
 
 In this exercise, use the DDPG/TD3/SAC algorithm to solve the
 [HalfCheetah environment](https://gymnasium.farama.org/environments/mujoco/half_cheetah/).
+If you start with DDPG, implementing the TD3 improvements
+should make the hyperparameter search significantly easier.
+However, for me, the SAC algorithm seems to work the best.
 
 The template [cheetah.py](https://github.com/ufal/npfl139/tree/master/labs/09/cheetah.py)
 only creates the environment and shows the evaluation in ReCodEx.
