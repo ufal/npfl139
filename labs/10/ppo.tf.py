@@ -14,6 +14,7 @@ multi_collect_environment.register()
 
 parser = argparse.ArgumentParser()
 # These arguments will be set appropriately by ReCodEx, even if you change them.
+parser.add_argument("--env", default="SingleCollect-v0", type=str, help="Environment.")
 parser.add_argument("--recodex", default=False, action="store_true", help="Running in ReCodEx")
 parser.add_argument("--render_each", default=0, type=int, help="Render some episodes.")
 parser.add_argument("--seed", default=None, type=int, help="Random seed.")
@@ -173,6 +174,6 @@ if __name__ == "__main__":
     args = parser.parse_args([] if "__file__" not in globals() else None)
 
     # Create the environment
-    env = wrappers.EvaluationEnv(gym.make("SingleCollect-v0"), args.seed, args.render_each)
+    env = wrappers.EvaluationEnv(gym.make(args.env), args.seed, args.render_each)
 
     main(env, args)
