@@ -40,8 +40,8 @@ parser.add_argument("--worker_steps", default=..., type=int, help="Steps for eac
 # - we define training in `train_step` method, which the Keras API automatically uses
 # - we still provide custom `predict` method, because it is fastest this way
 # - loading and saving should be performed using `save_weights` and `load_weights`, so that
-#   the `predict` method and the `Network` type is preserved. If you use `.h5` suffix, the
-#   checkpoint will be a single file, which is useful for ReCodEx submission.
+#   the `predict` method and the `Network` type is preserved. The `.weights.h5` suffix
+#   should be used for the weights file path.
 class Network(keras.Model):
     def __init__(self, observation_space: gym.Space, action_space: gym.Space, args: argparse.Namespace) -> None:
         self.args = args
