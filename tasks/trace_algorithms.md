@@ -69,6 +69,16 @@ The mean 1000-episode return after evaluation -144.76 +-92.48
 ```
 The mean 1000-episode return after evaluation -167.63 +-75.87
 ```
+
+12. `python3 trace_algorithms.py --episodes=50 --n=4 --off_policy --vtrace_clip=1 --trace_lambda=0.6`
+```
+The mean 1000-episode return after evaluation -186.28 +-52.05
+```
+
+13. `python3 trace_algorithms.py --episodes=50 --n=8 --off_policy --vtrace_clip=1 --trace_lambda=0.6`
+```
+The mean 1000-episode return after evaluation -185.67 +-53.04
+```
 #### Tests End:
 #### Examples Start: trace_algorithms_examples
 _Note that your results may be slightly different, depending on your CPU type and whether you use a GPU._
@@ -236,5 +246,35 @@ Episode 800, mean 100-episode return 1.69 +-7.26
 Episode 900, mean 100-episode return 1.17 +-8.59
 Episode 1000, mean 100-episode return 2.39 +-7.59
 The mean 1000-episode return after evaluation 7.57 +-2.35
+```
+
+- `python3 trace_algorithms.py --n=4 --off_policy --vtrace_clip=1 --trace_lambda=0.6`
+```
+Episode 100, mean 100-episode return -81.87 +-87.96
+Episode 200, mean 100-episode return -15.94 +-29.31
+Episode 300, mean 100-episode return -5.24 +-20.41
+Episode 400, mean 100-episode return -1.01 +-12.52
+Episode 500, mean 100-episode return 1.09 +-9.55
+Episode 600, mean 100-episode return 0.73 +-9.15
+Episode 700, mean 100-episode return 3.09 +-7.59
+Episode 800, mean 100-episode return 3.13 +-7.60
+Episode 900, mean 100-episode return 1.30 +-8.72
+Episode 1000, mean 100-episode return 3.77 +-7.11
+The mean 1000-episode return after evaluation 6.46 +-17.53
+```
+
+- `python3 trace_algorithms.py --n=8 --off_policy --vtrace_clip=1 --trace_lambda=0.6`
+```
+Episode 100, mean 100-episode return -127.86 +-106.40
+Episode 200, mean 100-episode return -27.64 +-48.34
+Episode 300, mean 100-episode return -12.75 +-35.05
+Episode 400, mean 100-episode return -0.38 +-14.28
+Episode 500, mean 100-episode return 1.35 +-9.10
+Episode 600, mean 100-episode return 0.43 +-10.53
+Episode 700, mean 100-episode return 3.11 +-9.26
+Episode 800, mean 100-episode return 3.58 +-6.81
+Episode 900, mean 100-episode return 1.24 +-8.24
+Episode 1000, mean 100-episode return 1.58 +-7.15
+The mean 1000-episode return after evaluation 7.93 +-2.67
 ```
 #### Examples End:
