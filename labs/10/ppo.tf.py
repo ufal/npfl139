@@ -45,7 +45,7 @@ parser.add_argument("--worker_steps", default=..., type=int, help="Steps for eac
 #   should be used for the weights file path.
 class Network(keras.Model):
     def __init__(self, observation_space: gym.Space, action_space: gym.Space, args: argparse.Namespace) -> None:
-        self.args = args
+        self._args = args
 
         # Create a suitable model for the given observation and action spaces.
         inputs = keras.Input(observation_space.shape)
@@ -78,9 +78,9 @@ class Network(keras.Model):
             policy, value = self(states, training=True)
 
             # TODO: Sum the following three losses
-            # - the PPO loss, where `self.args.clip_epsilon` is used to clip the probability ratio
+            # - the PPO loss, where `self._args.clip_epsilon` is used to clip the probability ratio
             # - the MSE error between the predicted value function and target returns
-            # - the entropy regularization with coefficient `self.args.entropy_regularization`.
+            # - the entropy regularization with coefficient `self._args.entropy_regularization`.
             #   You can compute it for example using `keras.losses.CategoricalCrossentropy()`
             #   by realizing that entropy can be computed using cross-entropy.
             loss = ...
