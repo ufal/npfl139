@@ -162,8 +162,7 @@ def main(env: wrappers.EvaluationEnv, args: argparse.Namespace) -> None:
         # Periodic evaluation
         iteration += 1
         if iteration % args.evaluate_each == 0:
-            for _ in range(args.evaluate_for):
-                evaluate_episode()
+            returns = [evaluate_episode() for _ in range(args.evaluate_for)]
 
     # Final evaluation
     while True:
