@@ -36,8 +36,9 @@ interactive players available,
 [az_quiz_player_interactive_mouse.py](https://github.com/ufal/npfl139/tree/master/labs/11/az_quiz_player_interactive_mouse.py)
 and [az_quiz_player_interactive_keyboard.py](https://github.com/ufal/npfl139/tree/master/labs/11/az_quiz_player_interactive_keyboard.py).
 
-The starting template is available in the [az_quiz_agent.py](https://github.com/ufal/npfl139/tree/master/labs/11/az_quiz_agent.py)
-module.
+The starting TensorFlow template is available in the
+[az_quiz_agent.tf.py](https://github.com/ufal/npfl139/tree/master/labs/11/az_quiz_agent.tf.py)
+module; a PyTorch template will be available shortly.
 
 **To get regular points, you must implement an AlphaZero-style algorithm.
 However, any algorithm can be used in the competition.**
