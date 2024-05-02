@@ -9,7 +9,7 @@ that **all answers are correct**.
 
 The game itself is implemented in the
 [az_quiz.py](https://github.com/ufal/npfl139/tree/master/labs/11/az_quiz.py)
-module, using `randomized=False` constructor argument.
+module (using the default `randomized=False` constructor argument).
 
 The evaluation in ReCodEx should be implemented by returning an object
 implementing a method `play`, which given an AZ-kvíz instance returns the chosen
