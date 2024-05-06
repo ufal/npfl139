@@ -272,3 +272,27 @@
   perform when you reach a leaf during the tree search. [5]
 
 - How are the actions selected in AlphaZero self-play? [5]
+
+#### Questions@:, Lecture 12 Questions
+- Describe the three components of a MuZero model, and describe/draw how they
+  are used to traverse the MCTS tree. [5]
+
+- Describe the MCTS in MuZero – action selection (including the exact
+  action-values used), how are the three components of a MuZero model used
+  during the tree traversal and leaf evaluation, and the updates during
+  the backup phase. [10]
+
+- Assuming we already have a filled replay buffer, describe the MuZero
+  training – the losses and the target values used in them. [10]
+
+- Describe the Gumbel-Max trick; in other words, write down how to perform
+  sampling from a categorical distribution using an $\operatorname{argmax}$,
+  including the procedure for sampling from the $\operatorname{Gumbel}(0, 1)$
+  distribution. [5]
+
+- Consider a discrete categorical variable sampled from logits $\boldsymbol l$.
+  Define the $\operatorname{Gumbel-softmax}(\boldsymbol l, T)$ distribution with
+  logits $\boldsymbol l$ and a temperature $T$ (no need to describe sampling
+  from $\operatorname{Gumbel}(0, 1)$), and describe the main difference between
+  the $\operatorname{Gumbel-softmax}(\boldsymbol l, T)$ and the
+  $\operatorname{softmax}(\boldsymbol l)$ distributions. [5]
