@@ -1,5 +1,5 @@
 ### Assignment: cheetah
-#### Date: Deadline: ~~Apr 30~~ Jun 30, 22:00
+#### Date: Deadline: ~~Apr 30~~ Jun 28, 22:00
 #### Points: 2 points
 
 In this exercise, use the DDPG/TD3/SAC algorithm to solve the

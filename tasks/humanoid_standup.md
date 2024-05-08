@@ -1,5 +1,5 @@
 ### Assignment: humanoid_standup
-#### Date: Deadline: ~~May 14~~ Jun 30, 22:00
+#### Date: Deadline: ~~May 14~~ Jun 28, 22:00
 #### Points: 5 points; not required for passing the exam with grade 1 by solving all assignments
 
 In this exercise, use the DDPG/TD3/SAC algorithm to solve the
