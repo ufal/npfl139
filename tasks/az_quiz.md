@@ -1,5 +1,5 @@
 ### Assignment: az_quiz
-#### Date: Deadline: May 14, 22:00
+#### Date: Deadline: May 21, 22:00
 #### Points: 10 points + 5 bonus
 
 In this competition assignment, use Monte Carlo Tree Search to learn
