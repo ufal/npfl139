@@ -38,7 +38,7 @@ and [az_quiz_player_interactive_keyboard.py](https://github.com/ufal/npfl139/tre
 
 The starting PyTorch template is available in the
 [az_quiz_agent.py](https://github.com/ufal/npfl139/tree/master/labs/11/az_quiz_agent.py)
-module; TensorFlow version [az_quiz_agent.tf.py](https://github.com/ufal/npfl139/tree/master/labs/11/az_quiz_agent.tf.py)
+module; TensorFlow version [az_quiz_agent_tf.py](https://github.com/ufal/npfl139/tree/master/labs/11/az_quiz_agent_tf.py)
 is available too.
 
 **To get regular points, you must implement an AlphaZero-style algorithm.
