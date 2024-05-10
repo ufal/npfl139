@@ -1,6 +1,6 @@
 ### Assignment: pisqorky
 #### Date: Deadline: May 21, 22:00
-#### Points: 5 points + 5 bonus; either this or `az_quiz_randomized` is required for automaticall passing the exam
+#### Points: 5 points + 5 bonus; either this or `az_quiz_randomized` is required for automatically passing the exam
 
 Train an agent on [Piškvorky](https://cs.wikipedia.org/wiki/Pi%C5%A1kvorky),
 usually called [Gomoku](https://en.wikipedia.org/wiki/Gomoku) internationally.
