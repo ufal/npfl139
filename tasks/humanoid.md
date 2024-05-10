@@ -1,6 +1,6 @@
 ### Assignment: humanoid
 #### Date: Deadline: ~~May 14~~ Jun 28, 22:00
-#### Points: 3 points; not required for passing the exam with grade 1 by solving all assignments
+#### Points: 3 points; not required for automatically passing the exam
 
 In this exercise, use the DDPG/TD3/SAC algorithm to solve the
 [Humanoid environment](https://gymnasium.farama.org/environments/mujoco/humanoid/).

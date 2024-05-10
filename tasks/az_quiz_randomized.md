@@ -1,6 +1,6 @@
 ### Assignment: az_quiz_randomized
 #### Date: Deadline: Jun 28, 22:00
-#### Points: 5 points; either this or `pisqorky` is required for passing the exam with grade 1 by solving all assignments
+#### Points: 5 points; either this or `pisqorky` is required for automatically passing the exam
 
 Extend the `az_quiz` assignment to handle the possibility of wrong
 answers. Therefore, when choosing a field (an action), you might not
