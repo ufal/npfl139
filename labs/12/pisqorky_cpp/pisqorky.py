@@ -26,7 +26,7 @@ class BoardGame:
 
     @property
     def winner(self):
-        """Return the winner of the game, or `None` if the game is not over."""
+        """Return the winner of the game (0/1), 2 on draw, `None` if the game is not over."""
 
     def valid(self, action):
         """Return whether the given action is valid."""
@@ -82,7 +82,7 @@ class Pisqorky(BoardGame):
             and self._board[action // self.N, action % self.N] == 0
 
     def valid_actions(self):
-        return np.nonzero(self._board.ravel())[0] if self._winner is None else []
+        return np.nonzero(self._board.ravel() == 0)[0] if self._winner is None else []
 
     def move(self, action):
         if not self.valid(action):
@@ -91,9 +91,11 @@ class Pisqorky(BoardGame):
         self._to_play = 1 - self._to_play
 
         # Check for a winner
+        free_fields = False
         for y in range(self.N):
             for x in range(self.N):
                 if self._board[y, x] == 0:
+                    free_fields = True
                     continue
                 field = self._board[y, x]
                 if ((x >= 4 and y + 4 < self.N and field ==
@@ -110,6 +112,8 @@ class Pisqorky(BoardGame):
                      self._board[y, x + 3] == self._board[y, x + 4])):
                     self._winner = field - 1
                     return
+        if not free_fields:
+            self._winner = 2
 
     def render(self):
         import pygame
