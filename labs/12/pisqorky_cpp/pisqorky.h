@@ -14,7 +14,7 @@ class Pisqorky {
   int8_t to_play;
   int8_t winner;
 
-  Pisqorky(bool randomized=false) : board(), to_play(0), winner(-1) {}
+  Pisqorky() : board(), to_play(0), winner(-1) {}
   Pisqorky(const Pisqorky& other) : board(other.board), to_play(other.to_play), winner(other.winner) {}
 
   bool valid(int action) const {
