@@ -12,8 +12,9 @@ definitely better to refactor it to use the `BoardGame` ancestor and to share
 the common functionality.
 
 The C++ template also provides quite a strong heuristic; in ReCodEx, your agent
-is evaluated against it, and if it reaches at least TO_BE_SET_LATER win
-rate, you get the regular points. The final competition evaluation will be
+is evaluated against it, and if it reaches at least 25% win
+rate in 100 games (50 as a starting player and 50 as a non-starting player),
+you get the regular points. The final competition evaluation will be
 performed after the deadline by a round-robin tournament.
 
 **To get regular points, you must implement an AlphaZero-style algorithm.
