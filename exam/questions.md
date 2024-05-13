@@ -110,7 +110,7 @@
   does not need to be mathematically flawless -- it is enough to describe how it
   should be done). [10]
 
-- More questions about distributional RL to be added later.
+- TODO: More questions about distributional RL to be added later.
 
 #### Questions@:, Lecture 6 Questions
 - Formulate the policy gradient theorem. [5]
@@ -234,7 +234,7 @@
   change. [10]
 
 #### Questions@:, Lecture 10 Questions
-- Questions about PPO will be added later.
+- TODO: Questions about PPO will be added later.
 
 - Define the transformed Bellman operator. [5]
 
@@ -290,9 +290,46 @@
   including the procedure for sampling from the $\operatorname{Gumbel}(0, 1)$
   distribution. [5]
 
+- TODO: Questions about GumbelZero will be added later.
+
+#### Questions@:, Lecture 13 Questions
+- Describe the components of a typical latent-space model in PlaNet
+  (the transition, observation and reward functions, the encoder)
+  and the components of a recurrent state-space model (RSSM). [5]
+
+- Derive the variational lower bound on $\log p(o_{1:T} | a_{1:T})$ used in
+  PlaNet (you can utilize the Jensen's inequality
+  $\log \mathbb{E} [x] \ge \mathbb{E} [\log x]$). [10]
+
+- Consider a model with a discrete categorical latent variable $\boldsymbol z$
+  sampled from $p(\boldsymbol z; \boldsymbol \theta)$, with a loss
+  $L(\boldsymbol z; \boldsymbol \omega)$. Describe how we compute the derivative
+  of the loss $L$ with respect to the parameters $\boldsymbol \theta$ using
+  (a) a straight-through estimator, and (b) a REINFORCE-like gradient estimator
+  with a baseline. [5]
+
 - Consider a discrete categorical variable sampled from logits $\boldsymbol l$.
   Define the $\operatorname{Gumbel-softmax}(\boldsymbol l, T)$ distribution with
   logits $\boldsymbol l$ and a temperature $T$ (no need to describe sampling
   from $\operatorname{Gumbel}(0, 1)$), and describe the main difference between
   the $\operatorname{Gumbel-softmax}(\boldsymbol l, T)$ and the
   $\operatorname{softmax}(\boldsymbol l)$ distributions. [5]
+
+- Consider a model with a discrete categorical latent variable $\boldsymbol z$
+  sampled from $p(\boldsymbol z; \boldsymbol \theta)$, with a loss
+  $L(\boldsymbol z; \boldsymbol \omega)$. Describe how we compute the derivative
+  of the loss $L$ with respect to the parameters $\boldsymbol \theta$ using
+  (a) a Gumbel-softmax estimator, and (b) a straight-through Gumbel-softmax
+  estimator. [5]
+
+- Write down an algorithm implementing a straight-through estimator of
+  a discrete categorical latent variable using automatic differentiation
+  (i.e., in TensorFlow or Pytorch). [5]
+
+- Describe the six components of the DreamerV2 recurrent state-space model
+  (RSSM). [5]
+
+- Explain the KL balancing used in DreamerV2. [5]
+
+- Describe the training of both a critic and an actor in DreamerV2 (including
+  the explicit losses). [10]
