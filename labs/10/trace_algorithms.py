@@ -89,9 +89,10 @@ def main(args: argparse.Namespace) -> np.ndarray:
             # Perform the updates as soon as you can -- whenever you have all the information
             # to update `V[state]`, do it.
             #
-            # When performing off-policy estimation, use `action_prob` at the time of
+            # When performing off-policy estimation, use `action_prob` from the time of
             # taking the `action` as the behaviour policy action probability, and the
-            # `compute_target_policy(V)` with the current `V` as the target policy.
+            # `compute_target_policy(V)` with the current `V` (from the time of performing
+            # the update) as the target policy.
             #
             # Do not forget that when `done` is True, bootstrapping on the
             # `next_state` is not used.

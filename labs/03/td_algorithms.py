@@ -76,9 +76,10 @@ def main(args: argparse.Namespace) -> np.ndarray:
             #   - "tree_backup": tree backup algorithm
             #
             # Perform the updates as soon as you can -- whenever you have all the information
-            # to update `Q[state, action]`, do it. For each `action` use its corresponding
-            # `action_prob` at the time of taking the `action` as the behaviour policy probability,
-            # and the `compute_target_policy(Q)` with the current `Q` as the target policy.
+            # to update `Q[state, action]`, do it. For each `action`, use its corresponding
+            # `action_prob` from the time of taking the `action` as the behaviour policy probability,
+            # and the `compute_target_policy(Q)` with the current `Q` (from the time of performing
+            # the update) as the target policy.
             #
             # Do not forget that when `done` is True, bootstrapping on the
             # `next_state` is not used.
