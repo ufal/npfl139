@@ -129,8 +129,8 @@ def main(env: wrappers.EvaluationEnv, args: argparse.Namespace) -> None:
 
         # TODO: Estimate `advantages` and `returns` (they differ only by the value function estimate)
         # using lambda-return with coefficients `args.trace_lambda` and `args.gamma`.
-        # You need to process episodes of individual workers independently, and note that
-        # each worker might have generated multiple episodes, the last one probably unfinished.
+        # You need to handle both the cases that (a) the last episode is probably unfinished, and
+        # (b) there are multiple episodes in the collected data.
         advantages, returns = ...
 
         # TODO: Train for `args.epochs` using the collected data. In every epoch,
