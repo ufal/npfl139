@@ -1,4 +1,4 @@
-### Lecture: 14. MARL, External Memory, DPO, RLHF
+### Lecture: 14. MARL, External Memory
 #### Date: May 20
 #### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides/?14
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides.pdf/npfl139-2324-14.pdf,PDF Slides
