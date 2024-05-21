@@ -65,7 +65,7 @@ class Network:
         #   You can compute it for example using the `torch.distributions.Categorical` class.
         ...
 
-        # TODO: The critic model is trained in a stadard way, by using the MSE
+        # TODO: The critic model is trained in a standard way, by using the MSE
         # error between the predicted value function and target returns.
         ...
 
