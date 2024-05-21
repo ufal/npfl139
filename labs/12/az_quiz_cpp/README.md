@@ -56,6 +56,9 @@ batch size of 512.
 
 ## API Documentation
 
+You can have a look at [az_quiz_cpp_example.py](az_quiz_cpp_example.py) to see
+how `az_quiz_cpp` can be used from Python.
+
 The provided implementation uses C++-17 and contains:
 - `az_quiz.h`, which is a C++ reimplementation of `az_quiz.py`;
 - `az_quiz_cpp.cpp`, which is the implementaton of the Python `az_quiz_cpp` module.
@@ -64,14 +67,14 @@ The provided implementation uses C++-17 and contains:
     mcts(
         board: np.ndarray,
         to_play: int,
-        network: Callable[[np.ndarray], tuple[np.ndarray, np.ndarray]],
+        evaluate: Callable[[np.ndarray], tuple[np.ndarray, np.ndarray]],
         num_simulations: int,
         epsilon: float,
         alpha: float,
     ) -> np.ndarray
     ```
     Run a MCTS and returns the policy computed from the visit counts of the
-    root children. The `network` is a callable, which given a batch of game
+    root children. The `evaluate` is a callable, which given a batch of game
     representations produces a batch of policies and batch of value functions.
   - ```python
     simulated_games_start(
@@ -86,10 +89,10 @@ The provided implementation uses C++-17 and contains:
     simulation.
   - ```python
     simulated_game(
-        network: Callable[[np.ndarray], tuple[np.ndarray, np.ndarray]],
+        evaluate: Callable[[np.ndarray], tuple[np.ndarray, np.ndarray]],
     ) -> list[tuple[np.ndarray, np.ndarray, float]]
     ```
-    Given a callable `network`, run a parallel MCTS self-play simulations (using
+    Given a callable `evaluate`, run a parallel MCTS self-play simulations (using
     threads created by the `simulated_games_start` call). Once the first game
     finishes, it is returned as a list of triples _(game representation, policy,
     value function)_.
