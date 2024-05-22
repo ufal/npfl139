@@ -50,12 +50,17 @@ def load_player(args: argparse.Namespace, player: str):
 
 
 def evaluate(
-    players: list, games: int, render: bool = False, verbose: bool = False
+    players: list, games: int, first_chosen: bool, render: bool = False, verbose: bool = False
 ) -> float:
+    assert not first_chosen or games % 50 == 0, \
+        "If `first_chosen` is True, the number of games must be divisble by 50"
+
     wins = [0, 0]
     for i in range(games):
         for to_start in range(2):
             game = pisqorky.Pisqorky()
+            if first_chosen:
+                game.move(112 if i % 50 == 49 else (i % 50 // 7 + 4) * 15 + (i % 50 % 7 + 4))
             while game.winner is None:
                 game.move(players[to_start ^ game.to_play].play(game.clone()))
                 if render:
@@ -78,6 +83,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("player_1", type=str, help="First player module")
     parser.add_argument("player_2", type=str, help="Second player module")
+    parser.add_argument("--first_chosen", default=False, action="store_true", help="The first move is chosen")
     parser.add_argument("--games", default=50, type=int, help="Number of alternating games to evaluate")
     parser.add_argument("--multiprocessing", default=False, action="store_true", help="Load players in sep. processes")
     parser.add_argument("--render", default=False, action="store_true", help="Should the games be rendered")
@@ -89,6 +95,7 @@ if __name__ == "__main__":
     evaluate(
         [load_player(args, args.player_1), load_player(args, args.player_2)],
         games=args.games,
+        first_chosen=args.first_chosen,
         render=args.render,
         verbose=True,
     )
