@@ -21,9 +21,11 @@ class EvaluationEnv(gym.Wrapper):
         gym.Env.reset(self.unwrapped, seed=seed)
         self.action_space.seed(seed)
         self.observation_space.seed(seed)
-        for passthrough in ["expert_trajectory"]:
+        for passthrough in ["expert_trajectory", "expert_episode"]:
             if hasattr(env, passthrough):
                 setattr(self, passthrough, getattr(env, passthrough))
+            elif hasattr(env.unwrapped, passthrough):
+                setattr(self, passthrough, getattr(env.unwrapped, passthrough))
 
         self._episode_running = False
         self._episode_returns = []
