@@ -36,5 +36,7 @@ simulated once you pass `evaluating=True` to `env.reset` and your solution gets
 train the agent directly in ReCodEx (the time limit is 15 minutes),
 or submit a pre-trained one.
 
-A template `memory_game.py` will be made available soon, describing a possible
-use of memory augmented networks.
+PyTorch template [memory_game.py](https://github.com/ufal/npfl139/tree/master/labs/14/memory_game.py)
+shows a possible way to use memory augmented networks. TensorFlow template
+[memory_game.tf.py](https://github.com/ufal/npfl139/tree/master/labs/14/memory_game.tf.py)
+is also available.
