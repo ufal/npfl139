@@ -36,18 +36,18 @@
 
 - Write down the policy iteration algorithm. [10]
 
-- Write down the tabular Monte-Carlo on-policy every-visit $\epsilon$-soft algorithm. [10]
+- Write down the tabular Monte-Carlo on-policy every-visit $\epsilon$-soft algorithm. [5]
 
-- Write down the Sarsa algorithm. [10]
+- Write down the Sarsa algorithm. [5]
 
-- Write down the Q-learning algorithm. [10]
+- Write down the Q-learning algorithm. [5]
 
 #### Questions@:, Lecture 3 Questions
 - Elaborate on how can importance sampling estimate expectations with
   respect to $\pi$ based on samples of $b$. [5]
 
-- Show how to estimate returns in the off-policy case, both with (1) ordinary
-  importance sampling and (2) weighted importance sampling. [10]
+- Show how to estimate returns in the off-policy case, both with (a) ordinary
+  importance sampling and (b) weighted importance sampling. [10]
 
 - Write down the Expected Sarsa algorithm and show how to obtain
   Q-learning from it. [10]
@@ -88,12 +88,17 @@
 
 - Write down the Deep Q Networks training algorithm. [10]
 
-- Explain the difference between DQN and Double DQN. [5]
+- Explain the difference between DQN and Double DQN, and between Double DQN
+  and Double Q-learning. [5]
 
 - Describe prioritized replay (how are transitions sampled from the replay
   buffer, how up-to-date are the priorities [according to which we sample],
   how are unseen transitions boosted, how is importance sampling used to account
   for the change in the sampling distribution). [10]
+
+- Describe a data structure that can be used to implement prioritized replay
+  buffer, so that it has given maximum capacity and insertion and sampling runs
+  in time logarithmic with respect to the maximum number of elements. [10]
 
 - How is the action-value function computed in dueling networks? [5]
 
@@ -104,13 +109,34 @@
 - In Distributional RL, describe how is the distribution of rewards represented
   and how it is predicted using a neural network. [5]
 
-- Write down the distributional Bellman equation, describe how are the atom
-  probabilities of a reward distribution modeled, and write down the loss used
+- Considering distibutional Q network (C51), write down the distributional Bellman
+  equation, describe how the predicted distributions are represented (what are
+  the atoms, how do we get their probability), and write down the loss used
   to train a distributional Q network (including the mapping of atoms, which
   does not need to be mathematically flawless -- it is enough to describe how it
   should be done). [10]
 
-- TODO: More questions about distributional RL to be added later.
+- How exactly are predicted distributions represented in quantile regression?
+  What are the advantages of quantile regression compared to C51? [5]
+
+- Assume $F_Z$ is a cummulative density function of $Z$ and that $Z_\theta$
+  is a quantile distribution. Write down the 1-Wasserstein distance betwen
+  the two distributions, and explicitly write down how the closest $Z_\theta$
+  looks like, assuming $F_Z^{-1}$ is continuous. [10]
+
+- Assume we can get samples with a distribution $P$. Write down the three
+  losses to minimize if we want to find out that the (a) mean, (b) median,
+  and (c) quantile $τ$ are. [5]
+
+- Write down the QR-DQN-1 training algorithm including the quantile Huber loss
+  $\rho_\tau^\kappa$ (it is fine to use $\kappa=1$). How does the inputs and
+  outputs of the network look like? [10]
+
+- Describe the network inputs and outputs of DQN, C51, QR-DQN, IQN. [5]
+
+- Describe the network architecture of IQN, including how the quantile $τ$
+  is represented. Then write down the training algorithm, including the quantile
+  Huber loss $\rho_\tau^\kappa$ (it is fine to use $\kappa=1$). [10]
 
 #### Questions@:, Lecture 6 Questions
 - Formulate the policy gradient theorem. [5]
@@ -139,7 +165,8 @@
 
 - Write down the one-step Actor-critic algorithm. [10]
 
-- How and why is entropy regularization used in policy gradient algorithms? [5]
+- How and why is entropy regularization used in policy gradient algorithms?
+  What are the differences to $\epsilon$-smooth policies? [5]
 
 - The Asynchronous advantage actor-critic (A3C) policy may utilize recurrent
   neural networks. How is the training structured to allow backpropagation
@@ -234,7 +261,12 @@
   change. [10]
 
 #### Questions@:, Lecture 10 Questions
-- TODO: Questions about PPO will be added later.
+- What is the value $L_\pi(\tilde\pi)$ used in TRPO to approximate
+  $v_{\tilde\pi}$? What is the value the TRPO algorithm maximizes, and under
+  what constraint? [5]
+
+- Write down the PPO algorithm, including the generalized advantage estimation
+  (the $n$-step truncated lambda return. [10]
 
 - Define the transformed Bellman operator. [5]
 
@@ -274,8 +306,8 @@
 - How are the actions selected in AlphaZero self-play? [5]
 
 #### Questions@:, Lecture 12 Questions
-- Describe the three components of a MuZero model, and describe/draw how they
-  are used to traverse the MCTS tree. [5]
+- Describe the three components of a MuZero model including their exact inputs
+  and outputs, and show how they are used to traverse the MCTS tree. [10]
 
 - Describe the MCTS in MuZero – action selection (including the exact
   action-values used), how are the three components of a MuZero model used
@@ -285,12 +317,25 @@
 - Assuming we already have a filled replay buffer, describe the MuZero
   training – the losses and the target values used in them. [10]
 
-- Describe the Gumbel-Max trick; in other words, write down how to perform
-  sampling from a categorical distribution using an $\operatorname{argmax}$,
-  including the procedure for sampling from the $\operatorname{Gumbel}(0, 1)$
-  distribution. [5]
+- In AlphaZero, define the empirical visit count distribution generated
+  by the AlphaZero action selection. Then define the distribution
+  $\bar\boldsymbol\pi$ which the visit count distribution converges to;
+  write both the objective the $\bar\boldsymbol\pi$ minimizes, and also
+  the resulting solution. [10]
 
-- TODO: Questions about GumbelZero will be added later.
+- Describe the Gumbel-Max trick, i.e., write down how to perform sampling from
+  a categorical distribution using an $\operatorname{argmax}$, including the
+  procedure for sampling from the $\operatorname{Gumbel}(0, 1)$ distribution.
+  [5]
+
+- Describe the Gumbel-Top-k trick, i.e., write down how to sample top $n$
+  actions from a categorical distribution when given its logits and suitable
+  Gumbel noise. [5]
+
+- In GumbelZero, assuming $n$ actions are sampled using the Gumbel-Top-k trick,
+  write down how to select an action $A_{n+1}$ so that choosing this action is
+  a policy improvement (i.e., that it has greater or equal expected reward than
+  the original policy), and prove it. [10]
 
 #### Questions@:, Lecture 13 Questions
 - Describe the components of a typical latent-space model in PlaNet
