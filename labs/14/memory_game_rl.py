@@ -61,7 +61,7 @@ class Network:
 
                 # TODO: Using concatenated encoded input and the read value, use a ReLU hidden
                 # layer of size `args.hidden_layer` followed by a dense layer with
-                # `env.action_space.n` units and `softmax` activation to produce a policy.
+                # `env.action_space.n` units to produce policy logits.
 
                 # TODO: Perform memory write. For faster convergence, append directly
                 # the `encoded_input` to the memory, i.e., add it as a first memory row, and drop
