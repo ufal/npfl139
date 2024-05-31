@@ -86,7 +86,7 @@ The provided implementation uses C++-17 and contains:
     ) -> None
     ```
     Start the given number of threads, each performing one self-play game
-    simulation.
+    simulation. Should be called once at the beginning of the training.
   - ```python
     simulated_game(
         evaluate: Callable[[np.ndarray], tuple[np.ndarray, np.ndarray]],
@@ -99,7 +99,8 @@ The provided implementation uses C++-17 and contains:
   - ```python
     simulated_games_stop() -> None
     ```
-    Stop the threads generating the self-play games.
+    Stop the threads generating the self-play games. Should be called
+    once after the training has finished.
 - `az_quiz_mcts.h`, where you should implement the MCTS;
 - `az_quiz_sim_game.h`, where you should implement the self-play simulation.
 
