@@ -22,7 +22,7 @@ std::condition_variable worker_cv;
 Batch worker_queue;
 size_t worker_queue_limit;
 
-bool worker_shutdown;
+bool worker_shutdown = false;
 class worker_shutdown_exception : public std::exception {};
 
 std::mutex processor_mutex;
@@ -71,7 +71,9 @@ void worker_thread(int num_simulations, int sampling_moves, float epsilon, float
 }
 
 void simulated_games_start(int threads, int num_simulations, int sampling_moves, float epsilon, float alpha) {
-  worker_shutdown = false;
+  if (worker_shutdown)
+    throw std::runtime_error("Cannot call simulated_games_start after simulated_games_stop was called.");
+
   worker_queue_limit = threads;
   for (int thread = 0; thread < threads; thread++)
     std::thread(worker_thread, num_simulations, sampling_moves, epsilon, alpha).detach();
