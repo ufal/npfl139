@@ -39,7 +39,7 @@ class Network:
         class Agent(torch.nn.Module):
             def __init__(self):
                 super().__init__()
-                # TODO: Create suitable layers.
+                # TODO(memory_game): Create suitable layers.
                 raise NotImplementedError()
 
             def forward(self, memory, state):
@@ -49,32 +49,32 @@ class Network:
                 encoded_input = torch.cat([torch.nn.functional.one_hot(torch.relu(state[:, i]), dim).float()
                                            for i, dim in enumerate(env.observation_space.nvec)], dim=-1)
 
-                # TODO: Generate a read key for memory read from the encoded input, by using
+                # TODO(memory_game): Generate a read key for memory read from the encoded input, by using
                 # a ReLU hidden layer of size `args.hidden_layer` followed by a dense layer
                 # with `args.memory_cell_size` units and `tanh` activation (to keep the memory
                 # content in limited range).
 
-                # TODO: Read the memory using the generated read key. Notably, compute cosine
+                # TODO(memory_game): Read the memory using the generated read key. Notably, compute cosine
                 # similarity of the key and every memory row, apply softmax to generate
                 # a weight distribution over the rows, and finally take a weighted average of
                 # the memory rows.
 
-                # TODO: Using concatenated encoded input and the read value, use a ReLU hidden
+                # TODO(memory_game): Using concatenated encoded input and the read value, use a ReLU hidden
                 # layer of size `args.hidden_layer` followed by a dense layer with
                 # `env.action_space.n` units to produce policy logits.
 
-                # TODO: Perform memory write. For faster convergence, append directly
+                # TODO(memory_game): Perform memory write. For faster convergence, append directly
                 # the `encoded_input` to the memory, i.e., add it as a first memory row, and drop
                 # the last memory row to keep memory size constant.
 
-                # TODO: Return the updated memory and the policy
+                # TODO(memory_game): Return the updated memory and the policy
                 raise NotImplementedError()
 
         # Create the agent
         self._agent = Agent()
         self._agent.apply(wrappers.torch_init_with_xavier_and_zeros).to(self.device)
 
-        # TODO: Create an optimizer and a loss function
+        # TODO(memory_game): Create an optimizer and a loss function
         raise NotImplementedError()
 
     def zero_memory(self):
