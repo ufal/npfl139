@@ -14,8 +14,8 @@ actions – the actions $1..N$ flip the corresponding card, and the action 0
 flips the unused card with the lowest index (or the card $N$ if all have
 been used already). The observations consist of a pair of discrete values
 _(card, symbol)_, where the _card_ is the index of the card flipped, and
-the _symbol_ is the symbol on the flipped card. The `env.states` returns
-a pair $(N, N/2)$, representing there are $N$ card indices and $N/2$
+the _symbol_ is the symbol on the flipped card; the `env.observation_space.nvec`
+is a pair $(N, N/2)$, representing there are $N$ card indices and $N/2$
 symbol indices.
 
 Every episode can be ended by at most $3N/2$ actions, and the required
