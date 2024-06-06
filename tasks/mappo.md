@@ -21,8 +21,11 @@ is also available. I use hyperparameter values quite similar to the `ppo`
 assignment, with a notable exception of a smaller `learning_rate=3e-4`, which is
 already specified in the template.
 
-My implementation successfully converges in only circa 50% of the cases,
-and trains in roughly 10-20 minutes.
+My implementation (with two indepenent networks) successfully converges in only
+circa 50% of the cases, and trains in roughly 10-20 minutes. You can also try
+using a single shared network for both agents, but then you need to indicate
+which agent should the network operate on (because positions of both agents are
+part of the state).
 
 During evaluation in ReCodEx, two different random seeds will be employed, and
 you need to reach the average return of 450 on all of them. Time limit for each test
