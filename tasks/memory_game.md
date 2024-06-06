@@ -4,9 +4,9 @@
 
 In this exercise we explore a partially observable environment.
 Consider a one-player variant of a memory game (pexeso), where a player repeatedly
-flip cards. If the player flips two cards with the same symbol in succession,
-the cards are removed and the player recieves a reward of +2. Otherwise the
-player recieves a reward of -1. An episode ends when all cards are removed.
+flips cards. If the player flips two cards with the same symbol in succession,
+the cards are removed and the player receives a reward of +2. Otherwise the
+player receives a reward of -1. An episode ends when all cards are removed.
 Note that it is valid to try to flip an already removed card.
 
 Let there be $N$ cards in the environment, $N$ being even. There are $N+1$
