@@ -126,7 +126,7 @@
 
 - Assume we can get samples with a distribution $P$. Write down the three
   losses to minimize if we want to find out that the (a) mean, (b) median,
-  and (c) quantile $τ$ are. [5]
+  and (c) quantile $\tau$ are. [5]
 
 - Write down the QR-DQN-1 training algorithm including the quantile Huber loss
   $\rho_\tau^\kappa$ (it is fine to use $\kappa=1$). How does the inputs and
@@ -134,7 +134,7 @@
 
 - Describe the network inputs and outputs of DQN, C51, QR-DQN, IQN. [5]
 
-- Describe the network architecture of IQN, including how the quantile $τ$
+- Describe the network architecture of IQN, including how the quantile $\tau$
   is represented. Then write down the training algorithm, including the quantile
   Huber loss $\rho_\tau^\kappa$ (it is fine to use $\kappa=1$). [10]
 
@@ -319,8 +319,8 @@
 
 - In AlphaZero, define the empirical visit count distribution generated
   by the AlphaZero action selection. Then define the distribution
-  $\bar\boldsymbol\pi$ which the visit count distribution converges to;
-  write both the objective the $\bar\boldsymbol\pi$ minimizes, and also
+  $\bar{\boldsymbol\pi}$ which the visit count distribution converges to;
+  write both the objective the $\bar{\boldsymbol\pi}$ minimizes, and also
   the resulting solution. [10]
 
 - Describe the Gumbel-Max trick, i.e., write down how to perform sampling from
