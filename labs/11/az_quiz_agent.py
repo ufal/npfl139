@@ -45,8 +45,8 @@ class Agent:
         # A possible architecture known to work consists of
         # - 5 convolutional layers with 3x3 kernel and 15-20 filters,
         # - a policy head, which first uses 3x3 convolution to reduce the number of channels
-        #   to 2, flattens the representation, and finally uses a dense layer with softmax
-        #   activation to produce the policy,
+        #   to 2, flattens the representation, and finally uses a dense layer to produce
+        #   the policy logits,
         # - a value head, which again uses 3x3 convolution to reduce the number of channels
         #   to 2, flattens, and produces expected return using an output dense layer with
         #   `tanh` activation.
@@ -65,11 +65,13 @@ class Agent:
     @wrappers.typed_torch_function(device, torch.float32, torch.float32, torch.float32, via_np=True)
     def train(self, boards: torch.Tensor, target_policies: torch.Tensor, target_values: torch.Tensor) -> None:
         # TODO: Train the model based on given boards, target policies and target values.
+        # Note that the model returns logits.
         raise NotImplementedError()
 
     @wrappers.typed_torch_function(device, torch.float32, via_np=True)
     def predict(self, boards: torch.Tensor) -> tuple[np.ndarray, np.ndarray]:
-        # TODO: Return the predicted policy and the value function.
+        # TODO: Return the predicted policy and the value function. Because the model
+        # returns logits, you should apply softmax to return policy probabilities.
         raise NotImplementedError()
 
     def board(self, game: AZQuiz) -> np.ndarray:
