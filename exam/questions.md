@@ -225,7 +225,7 @@
   define what constrained optimization problem we are solving, what is the
   corresponding Lagrangian (and whether we are minimizing/maximizing it
   with respect to the policy and $\alpha$), and what does the $\alpha$ update
-  looks like. [5]
+  look like. [5]
 
 #### Questions@:, Lecture 9 Questions
 - Define a one-step TD error and express the $n$-step return as a sum of them. [5]
