@@ -4,7 +4,6 @@
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides.pdf/npfl139-2324-14.pdf,PDF Slides
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2324/npfl139-2324-14.mp4, Lecture
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2324/npfl139-2324-14.practicals.mp4, Practicals
-#### Questions: #lecture_14_questions
 #### Lecture assignment: mappo
 #### Lecture assignment: memory_game
 #### Lecture assignment: memory_game_rl
