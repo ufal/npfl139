@@ -316,7 +316,9 @@
   the backup phase. [10]
 
 - Assuming we already have a filled replay buffer, describe the MuZero
-  training – the losses and the target values used in them. [10]
+  training – the losses and the target values used in them (make sure to
+  mention where all the values come from, whether from the replay buffer
+  or whether they are somehow computed). [10]
 
 - In AlphaZero, define the empirical visit count distribution generated
   by the AlphaZero action selection. Then define the distribution
