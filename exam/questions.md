@@ -293,15 +293,16 @@
 
 - Write down the loss used in AlphaZero algorithm. [5]
 
-- What quantities are kept in a node of a Monte-Carlo tree search? [5]
+- What quantities are kept in a node of a AlphaZero Monte-Carlo tree search? [5]
 
-- How are actions selected in a Monte-Carlo tree search? [10]
+- How are actions selected in a AlphaZero Monte-Carlo tree search? [10]
 
-- What does AlphaZero use to maintain exploration in a Monte-Carlo tree search?
-  [5]
+- What does AlphaZero use to maintain exploration in a Monte-Carlo tree search,
+  i.e., how does AlphaZero make sure that even actions with very low prior are
+  sampled enough? [5]
 
-- Describe the backup phase of Monte-Carlo tree search, i.e., the steps you
-  perform when you reach a leaf during the tree search. [5]
+- Describe the backup phase of AlphaZero Monte-Carlo tree search, i.e., the
+  steps you perform when you reach a leaf during the tree search. [5]
 
 - How are the actions selected in AlphaZero self-play? [5]
 
