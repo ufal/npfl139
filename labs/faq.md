@@ -5,7 +5,7 @@
 - _Installing to central user packages repository_
 
   You can install all required packages to central user packages repository using
-  `python3 -m pip install --user --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu118 torch~=2.2.0 torchaudio~=2.2.0 torchvision~=0.17.0 gymnasium~=1.0.0a1 pygame~=2.5.2 ufal.pybox2d~=2.3.10.3 mujoco==3.1.1 imageio~=2.34.0`.
+  `python3 -m pip install --user --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu118 torch~=2.2.0 torchaudio~=2.2.0 torchvision~=0.17.0 gymnasium==1.0.0a1 pygame~=2.5.2 ufal.pybox2d~=2.3.10.3 mujoco==3.1.1 imageio~=2.34.0`.
 
   The above command installs CUDA 11.8 PyTorch build, but you can change `cu118` to:
   - `cpu` to get CPU-only (smaller) version,
@@ -17,7 +17,7 @@
   Python supports virtual environments, which are directories containing
   independent sets of installed packages. You can create a virtual environment
   by running `python3 -m venv VENV_DIR` followed by
-  `VENV_DIR/bin/pip install --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu118 torch~=2.2.0 torchaudio~=2.2.0 torchvision~=0.17.0 gymnasium~=1.0.0a1 pygame~=2.5.2 ufal.pybox2d~=2.3.10.3 mujoco==3.1.1 imageio~=2.34.0`.
+  `VENV_DIR/bin/pip install --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu118 torch~=2.2.0 torchaudio~=2.2.0 torchvision~=0.17.0 gymnasium==1.0.0a1 pygame~=2.5.2 ufal.pybox2d~=2.3.10.3 mujoco==3.1.1 imageio~=2.34.0`.
   (or `VENV_DIR/Scripts/pip` on Windows).
 
   Again, apart from the CUDA 11.8 build, you can change `cu118` to:
