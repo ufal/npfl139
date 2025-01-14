@@ -3,7 +3,6 @@
 #### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides/?11
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2324/slides.pdf/npfl139-2324-11.pdf,PDF Slides
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2324/npfl139-2324-11.mp4, Lecture
-#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2324/npfl139-2324-11.practicals.mp4, Practicals
 #### Questions: #lecture_11_questions
 #### Lecture assignment: az_quiz
 
