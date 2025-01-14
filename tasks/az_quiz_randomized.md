@@ -12,7 +12,7 @@ a “failed” field is chosen as an action by a player, then either
   (i.e., the players do not alternate in this case).
 
 To instantiate this randomized game variant, pass `randomized=True`
-to the `AZQuiz` class of [az_quiz.py](https://github.com/ufal/npfl139/tree/master/labs/11/az_quiz.py).
+to the `AZQuiz` class of [az_quiz.py](https://github.com/ufal/npfl139/tree/past-2324/labs/11/az_quiz.py).
 
 Your goal is to propose how to modify the Monte Carlo Tree Search to properly
 handle stochastic MDPs. The information about distribution of possible next

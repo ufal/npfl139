@@ -3,7 +3,7 @@
 #### Points: 2 points
 #### Tests: policy_iteration_mc_estarts_tests
 
-Starting with [policy_iteration_mc_estarts.py](https://github.com/ufal/npfl139/tree/master/labs/02/policy_iteration_mc_estarts.py),
+Starting with [policy_iteration_mc_estarts.py](https://github.com/ufal/npfl139/tree/past-2324/labs/02/policy_iteration_mc_estarts.py),
 extend the `policy_iteration` assignment to perform policy evaluation
 by using Monte Carlo estimation with exploring starts. Specifically,
 we update the action-value function $q_\pi(s, a)$ by running a

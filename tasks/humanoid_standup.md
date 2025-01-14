@@ -5,7 +5,7 @@
 In this exercise, use the DDPG/TD3/SAC algorithm to solve the
 [Humanoid Standup environment](https://gymnasium.farama.org/environments/mujoco/humanoid_standup/).
 
-The template [humanoid_standup.py](https://github.com/ufal/npfl139/tree/master/labs/09/humanoid_standup.py)
+The template [humanoid_standup.py](https://github.com/ufal/npfl139/tree/past-2324/labs/09/humanoid_standup.py)
 only creates the environment and shows the evaluation in ReCodEx.
 
 In ReCodEx, you are expected to submit an already trained model, which is

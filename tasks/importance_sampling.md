@@ -9,7 +9,7 @@ state value function $V$ of target policy, which uniformly chooses either action
 1 (down) or action 2 (right), utilizing behaviour policy, which uniformly
 chooses among all four actions.
 
-Start with the [importance_sampling.py](https://github.com/ufal/npfl139/tree/master/labs/03/importance_sampling.py)
+Start with the [importance_sampling.py](https://github.com/ufal/npfl139/tree/past-2324/labs/03/importance_sampling.py)
 template, which creates the environment and generates episodes according to
 behaviour policy.
 

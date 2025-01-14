@@ -21,7 +21,7 @@ symbol indices.
 Every episode can be ended by at most $3N/2$ actions, and the required
 return is therefore greater or equal to zero. Note that there is a limit
 of at most $2N$ actions per episode. The described environment is provided
-by the [memory_game_environment.py](https://github.com/ufal/npfl139/tree/master/labs/14/memory_game_environment.py)
+by the [memory_game_environment.py](https://github.com/ufal/npfl139/tree/past-2324/labs/14/memory_game_environment.py)
 module.
 
 Your goal is to solve the environment, using supervised learning via the provided
@@ -36,7 +36,7 @@ simulated once you pass `evaluating=True` to `env.reset` and your solution gets
 train the agent directly in ReCodEx (the time limit is 15 minutes),
 or submit a pre-trained one.
 
-PyTorch template [memory_game.py](https://github.com/ufal/npfl139/tree/master/labs/14/memory_game.py)
+PyTorch template [memory_game.py](https://github.com/ufal/npfl139/tree/past-2324/labs/14/memory_game.py)
 shows a possible way to use memory augmented networks. TensorFlow template
-[memory_game.tf.py](https://github.com/ufal/npfl139/tree/master/labs/14/memory_game.tf.py)
+[memory_game.tf.py](https://github.com/ufal/npfl139/tree/past-2324/labs/14/memory_game.tf.py)
 is also available.

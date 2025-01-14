@@ -4,10 +4,10 @@
 
 This is a continuation of the `reinforce` assignment.
 
-Using the [reinforce_baseline.py](https://github.com/ufal/npfl139/tree/master/labs/06/reinforce_baseline.py)
+Using the [reinforce_baseline.py](https://github.com/ufal/npfl139/tree/past-2324/labs/06/reinforce_baseline.py)
 template, solve the continuous [CartPole-v1 environment](https://gymnasium.farama.org/environments/classic_control/cart_pole/)
 using the REINFORCE with baseline algorithm. The TensorFlow version of
-the template [reinforce_baseline.tf.py](https://github.com/ufal/npfl139/tree/master/labs/06/reinforce_baseline.tf.py)
+the template [reinforce_baseline.tf.py](https://github.com/ufal/npfl139/tree/past-2324/labs/06/reinforce_baseline.tf.py)
 is also available.
 
 Using a baseline lowers the variance of the value function gradient estimator,

@@ -9,9 +9,9 @@ environments using deep deterministic policy gradient algorithm.
 Your goal is to reach an average return of -200 for `Pendulum-v1` and 9000 for `InvertedDoublePendulum-v5`
 during 100 evaluation episodes.
 
-Start with the [ddpg.py](https://github.com/ufal/npfl139/tree/master/labs/08/ddpg.py)
+Start with the [ddpg.py](https://github.com/ufal/npfl139/tree/past-2324/labs/08/ddpg.py)
 template, which provides a simple network implementation in PyTorch. Feel free
-to use TensorFlow ([ddpg.tf.py](https://github.com/ufal/npfl139/tree/master/labs/08/ddpg.tf.py))
+to use TensorFlow ([ddpg.tf.py](https://github.com/ufal/npfl139/tree/past-2324/labs/08/ddpg.tf.py))
 or JAX instead, if you like.
 
 During evaluation in ReCodEx, two different random seeds will be employed for

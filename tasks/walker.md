@@ -14,8 +14,8 @@ which is evaluated with two seeds, each for 100 episodes with a time
 limit of 10 minutes. If your average return is at least 200, you obtain
 5 points.
 
-The [walker.py](https://github.com/ufal/npfl139/tree/master/labs/09/walker.py)
+The [walker.py](https://github.com/ufal/npfl139/tree/past-2324/labs/09/walker.py)
 template contains the skeleton for implementing the SAC agent, but you can
 also solve the assignment with DDPG/TD3. The TensorFlow template
-[walker.tf.py](https://github.com/ufal/npfl139/tree/master/labs/09/walker.tf.py)
+[walker.tf.py](https://github.com/ufal/npfl139/tree/past-2324/labs/09/walker.tf.py)
 is also available.

@@ -4,7 +4,7 @@
 #### Tests: trace_algorithms_tests
 #### Examples: trace_algorithms_examples
 
-Starting with the [trace_algorithms.py](https://github.com/ufal/npfl139/tree/master/labs/10/trace_algorithms.py)
+Starting with the [trace_algorithms.py](https://github.com/ufal/npfl139/tree/past-2324/labs/10/trace_algorithms.py)
 template, implement the following state value estimations:
 - use $n$-step estimates for a given $n$;
 - if requested, use eligibility traces with a given $λ$;

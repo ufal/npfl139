@@ -6,7 +6,7 @@ Train an agent on [Piškvorky](https://cs.wikipedia.org/wiki/Pi%C5%A1kvorky),
 usually called [Gomoku](https://en.wikipedia.org/wiki/Gomoku) internationally.
 
 Because the game is more complex than `az_quiz`, you probably have to use the
-C++ template [pisqorky_cpp](https://github.com/ufal/npfl139/tree/master/labs/12/pisqorky_cpp).
+C++ template [pisqorky_cpp](https://github.com/ufal/npfl139/tree/past-2324/labs/12/pisqorky_cpp).
 Note that the template shares a lot of code with `az_quiz_cpp`; it would be
 definitely better to refactor it to use the `BoardGame` ancestor and to share
 the common functionality.

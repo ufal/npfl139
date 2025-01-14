@@ -5,7 +5,7 @@
 In this exercise, use the DDPG/TD3/SAC algorithm to solve the
 [Humanoid environment](https://gymnasium.farama.org/environments/mujoco/humanoid/).
 
-The template [humanoid.py](https://github.com/ufal/npfl139/tree/master/labs/09/humanoid.py)
+The template [humanoid.py](https://github.com/ufal/npfl139/tree/past-2324/labs/09/humanoid.py)
 only creates the environment and shows the evaluation in ReCodEx.
 
 In ReCodEx, you are expected to submit an already trained model, which is
