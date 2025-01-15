@@ -5,25 +5,29 @@
 - _Installing to central user packages repository_
 
   You can install all required packages to central user packages repository using
-  `python3 -m pip install --user --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu118 torch~=2.2.0 torchaudio~=2.2.0 torchvision~=0.17.0 gymnasium==1.0.0a1 pygame~=2.5.2 ufal.pybox2d~=2.3.10.3 mujoco==3.1.1 imageio~=2.34.0`.
+  `python3 -m pip install --user --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu118 npfl139`.
 
-  The above command installs CUDA 11.8 PyTorch build, but you can change `cu118` to:
+  On Linux and Windows, the above command installs CUDA 11.8 PyTorch build, but you can change `cu118` to:
   - `cpu` to get CPU-only (smaller) version,
-  - `cu121` to get CUDA 12.1 build,
-  - `rocm5.7` to get AMD ROCm 5.7 build.
+  - `cu124` to get CUDA 12.4 build,
+  - `rocm6.2` to get AMD ROCm 6.2 build (Linux only).
+
+  On macOS, the `--extra-index-url` has no effect and the Metal support is
+  installed in any case.
 
 - _Installing to a virtual environment_
 
   Python supports virtual environments, which are directories containing
   independent sets of installed packages. You can create a virtual environment
   by running `python3 -m venv VENV_DIR` followed by
-  `VENV_DIR/bin/pip install --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu118 torch~=2.2.0 torchaudio~=2.2.0 torchvision~=0.17.0 gymnasium==1.0.0a1 pygame~=2.5.2 ufal.pybox2d~=2.3.10.3 mujoco==3.1.1 imageio~=2.34.0`.
+  `VENV_DIR/bin/pip install --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu118 npfl139`.
   (or `VENV_DIR/Scripts/pip` on Windows).
 
-  Again, apart from the CUDA 11.8 build, you can change `cu118` to:
+  Again, apart from the CUDA 11.8 build, you can change `cu118` on Linux and
+  Windows to:
   - `cpu` to get CPU-only (smaller) version,
-  - `cu121` to get CUDA 12.1 build,
-  - `rocm5.7` to get AMD ROCm 5.7 build.
+  - `cu124` to get CUDA 12.4 build,
+  - `rocm6.2` to get AMD ROCm 6.2 build (Linux only).
 
 - _**Windows** installation_
 
@@ -45,12 +49,6 @@
 
   If you encounter problems loading CUDA or cuDNN libraries, make sure your
   `LD_LIBRARY_PATH` does not contain paths to older CUDA/cuDNN libraries.
-
-- _**GPU** support on macOS_
-
-  The support for Apple Silicon GPUs in PyTorch+Keras is currently not great.
-  Apple is working on `mlx` backend for Keras, which might improve the situation
-  in the future.
 
 ### TOCEntry: MetaCentrum
 
@@ -99,7 +97,7 @@
     module add python/python-3.10.4-intel-19.0.4-sc7snnf
     python3 -m venv CHOSEN_VENV_DIR
     CHOSEN_VENV_DIR/bin/pip install --no-cache-dir --upgrade pip setuptools
-    CHOSEN_VENV_DIR/bin/pip install --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu118 torch~=2.2.0 torchaudio~=2.2.0 torchvision~=0.17.0 gymnasium~=1.0.0a1 pygame~=2.5.2 ufal.pybox2d~=2.3.10.3 mujoco==3.1.1 imageio~=2.34.0
+    CHOSEN_VENV_DIR/bin/pip install --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu118 npfl139
     ```
 
 - _How to run a GPU computation on MetaCentrum?_
@@ -132,7 +130,7 @@
   ```
   and then install the required packages in it using
   ```
-  VENV_DIR/bin/pip install --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu118 torch~=2.2.0 torchaudio~=2.2.0 torchvision~=0.17.0 gymnasium~=1.0.0a1 pygame~=2.5.2 ufal.pybox2d~=2.3.10.3 mujoco==3.1.1 imageio~=2.34.0
+  VENV_DIR/bin/pip install --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu118 npfl139
   ```
 
 - _How to run a GPU computation on AIC?_
@@ -215,7 +213,6 @@
   ```
   while in your branch. Of course, it might be necessary to resolve conflicts
   if both you and I modified the same place in the templates.
-
 
 ### TOCEntry: ReCodEx
 

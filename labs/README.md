@@ -1,10 +1,8 @@
 The tasks are evaluated automatically using the
 [ReCodEx Code Examiner](https://recodex.mff.cuni.cz/).
 
-The evaluation is performed using Python 3.11, Gymnasium 1.0.0a1 and PyTorch 2.2.0.
+The evaluation is performed using Python 3.11, Gymnasium 1.0.0 and PyTorch 2.6.0.
 You should [install the exact version of these packages yourselves](#faq_install).
-Additionally, ReCodEx also provides TensorFlow 2.16.1, TensorFlow Probability
-0.24.0, Keras 3, and JAX 0.4.25.
 
 ### Teamwork
 

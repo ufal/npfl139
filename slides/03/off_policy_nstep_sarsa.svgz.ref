@@ -1,1 +1,0 @@
-Modified from Algorithm 7.3 of "Reinforcement Learning: An Introduction, Second Edition" by changing ρ_{τ+1:τ+n-1} to ρ_{τ+1:τ+n}.
