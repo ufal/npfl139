@@ -1,3 +1,5 @@
+/dist/
+/npfl139.egg-info/
 __pycache__/
 logs/
 *.npz
