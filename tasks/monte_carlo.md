@@ -4,7 +4,7 @@
 
 Solve the discretized [CartPole-v1 environment](https://gymnasium.farama.org/environments/classic_control/cart_pole/)
 from the [Gymnasium library](https://gymnasium.farama.org/) using the Monte Carlo
-reinforcement learning algorithm. The `gymnasium` environments have the followng
+reinforcement learning algorithm. The `gymnasium` environments have the following
 methods and properties:
 - `observation_space`: the description of environment observations
 - `action_space`: the description of environment actions
@@ -15,7 +15,7 @@ methods and properties:
   boolean flags indicating a terminal state and episode truncation, and
   additional environment-specific information
 
-We additionaly extend the `gymnasium` environment by:
+We additionally extend the `gymnasium` environment by:
 - `episode`: number of the current episode (zero-based)
 - `reset(start_evaluation=False) → new_state, info`: if `start_evaluation` is
   `True`, an evaluation is started
