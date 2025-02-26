@@ -13,3 +13,4 @@ from .env_wrappers import DiscreteCartPoleWrapper
 # Utils
 from .initializers_override import global_keras_initializers
 from .startup import startup
+from .version import __version__, require_version
