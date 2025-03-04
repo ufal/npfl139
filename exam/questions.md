@@ -41,3 +41,30 @@
 - Write down the Sarsa algorithm. [5]
 
 - Write down the Q-learning algorithm. [5]
+
+#### Questions@:, Lecture 3 Questions
+- Elaborate on how can importance sampling estimate expectations with
+  respect to $\pi$ based on samples of $b$. [5]
+
+- Show how to estimate returns in the off-policy case, both with (a) ordinary
+  importance sampling and (b) weighted importance sampling. [10]
+
+- Write down the Expected Sarsa algorithm and show how to obtain
+  Q-learning from it. [10]
+
+- Write down the Double Q-learning algorithm. [10]
+
+- Show the bootstrapped estimate of $n$-step return. [5]
+
+- Write down the update in on-policy $n$-step Sarsa (assuming you already
+  have $n$ previous steps, actions and rewards). [5]
+
+- Write down the update in off-policy $n$-step Sarsa with importance
+  sampling (assuming you already have $n$ previous steps, actions and rewards). [10]
+
+- Write down the update of $n$-step Tree-backup algorithm (assuming you already
+  have $n$ previous steps, actions and rewards). [10]
+
+- Assuming function approximation, define Mean squared value error. [5]
+
+- Write down the gradient Monte-Carlo on-policy every-visit $\epsilon$-soft algorithm. [10]
