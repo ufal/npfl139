@@ -72,6 +72,34 @@ class DiscreteMountainCarWrapper(DiscretizationWrapper):
         ], tiles)
 
 
+class DiscreteLunarLanderWrapper(DiscretizationWrapper):
+    def __init__(self, env):
+        super().__init__(env, [
+            np.linspace(-.4, .4, num=5 + 1)[1:-1],      # position x
+            np.linspace(-.075, 1.35, num=6 + 1)[1:-1],  # position y
+            np.linspace(-.5, .5, num=5 + 1)[1:-1],      # velocity x
+            np.linspace(-.8, .8, num=7 + 1)[1:-1],      # velocity y
+            np.linspace(-.2, .2, num=3 + 1)[1:-1],      # rotation
+            np.linspace(-.2, .2, num=5 + 1)[1:-1],      # ang velocity
+            [.5],                                       # left contact
+            [.5],                                       # right contact
+        ])
+
+        self._expert = gym.make("LunarLander-v3")
+        gym.Env.reset(self._expert.unwrapped, seed=42)
+
+    def expert_trajectory(self, seed=None):
+        state, trajectory, done = self._expert.reset(seed=seed)[0], [], False
+        while not done:
+            action = gym.envs.box2d.lunar_lander.heuristic(self._expert, state)
+            next_state, reward, terminated, truncated, _ = self._expert.step(action)
+            trajectory.append((self.observation(state), action, reward))
+            done = terminated or truncated
+            state = next_state
+        trajectory.append((self.observation(state), None, None))
+        return trajectory
+
+
 gym.envs.register(
     id="MountainCar1000-v0",
     entry_point="gymnasium.envs.classic_control.mountain_car:MountainCarEnv",
