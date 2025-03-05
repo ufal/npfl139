@@ -67,8 +67,8 @@ def main(args: argparse.Namespace) -> tuple[list[float] | np.ndarray, list[int] 
 
 
 if __name__ == "__main__":
-    args = parser.parse_args([] if "__file__" not in globals() else None)
-    value_function, policy = main(args)
+    main_args = parser.parse_args([] if "__file__" not in globals() else None)
+    value_function, policy = main(main_args)
 
     # Print results
     for r in range(3):
