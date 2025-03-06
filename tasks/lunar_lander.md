@@ -2,7 +2,7 @@
 #### Date: Deadline: Mar 19, 22:00
 #### Points: 5 points + 5 bonus
 
-Solve the [LunarLander-v2 environment](https://gymnasium.farama.org/environments/box2d/lunar_lander/)
+Solve the [LunarLander-v3 environment](https://gymnasium.farama.org/environments/box2d/lunar_lander/)
 from the [Gymnasium library](https://gymnasium.farama.org/) Note that this task
 does not require PyTorch.
 
