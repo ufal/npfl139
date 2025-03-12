@@ -2,6 +2,7 @@
 #### Date: Mar 12
 #### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides/?04
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides.pdf/npfl139-2425-04.pdf,PDF Slides
+#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-04.mp4, Lecture
 #### Questions: #lecture_4_questions
 
 - Semi-Gradient TD methods [Sections 9.3, 10-10.2 of RLB]
