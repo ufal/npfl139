@@ -17,5 +17,6 @@ from .env_wrappers import DiscreteMountainCarWrapper
 
 # Utils
 from .initializers_override import global_keras_initializers
+from .replay_buffer import ReplayBuffer
 from .startup import startup
 from .version import __version__, require_version
