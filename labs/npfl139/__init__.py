@@ -19,4 +19,5 @@ from .env_wrappers import DiscreteMountainCarWrapper
 from .initializers_override import global_keras_initializers
 from .replay_buffer import ReplayBuffer
 from .startup import startup
+from .typed_torch_function import typed_torch_function
 from .version import __version__, require_version
