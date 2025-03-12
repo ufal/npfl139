@@ -17,7 +17,7 @@ dependencies = [
   "torchaudio ~= 2.6.0",
   "torchvision ~= 0.21.0",
   # The gymnasium package
-  "gymnasium ~= 1.0.0",
+  "gymnasium ~= 1.1.1",
   # Pygame used for GUI in gymnasium
   "pygame ~= 2.6.1",
   # Custom build of pybox2d used in some gymnasium environments
