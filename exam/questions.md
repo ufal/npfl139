@@ -68,3 +68,36 @@
 - Assuming function approximation, define Mean squared value error. [5]
 
 - Write down the gradient Monte-Carlo on-policy every-visit $\epsilon$-soft algorithm. [10]
+
+#### Questions@:, Lecture 4 Questions
+- Write down the semi-gradient $\epsilon$-greedy Sarsa algorithm. [10]
+
+- Prove that semi-gradient TD update is not an SGD update of any loss. [10]
+
+- What are the three elements causing off-policy divergence with function
+  approximation? Write down the Baird's counterexample. [10]
+
+- Explain the role of a replay buffer in Deep Q Networks. [5]
+
+- How is the target network used and updated in Deep Q Networks? [5]
+
+- Explain how is reward clipping used in Deep Q Networks. What other
+  clipping is used? [5]
+
+- Formulate the loss used in Deep Q Networks. [5]
+
+- Write down the Deep Q Networks training algorithm. [10]
+
+- Explain the difference between DQN and Double DQN, and between Double DQN
+  and Double Q-learning. [5]
+
+- Describe prioritized replay (how are transitions sampled from the replay
+  buffer, how up-to-date are the priorities [according to which we sample],
+  how are unseen transitions boosted, how is importance sampling used to account
+  for the change in the sampling distribution). [10]
+
+- Describe a data structure that can be used to implement prioritized replay
+  buffer, so that it has given maximum capacity and insertion and sampling runs
+  in time logarithmic with respect to the maximum number of elements. [10]
+
+- How is the action-value function computed in dueling networks? [5]
