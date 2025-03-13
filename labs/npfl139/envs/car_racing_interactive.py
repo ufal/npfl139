@@ -26,7 +26,7 @@ if __name__ == "__main__":
                 if event.key == pygame.K_RIGHT:
                     a[0] = +0.6
                 if event.key == pygame.K_UP:
-                    a[1] = +0.2
+                    a[1] = +0.5
                 if event.key == pygame.K_DOWN:
                     a[2] = +0.8
                 if event.key == pygame.K_RETURN:
