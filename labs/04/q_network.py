@@ -32,7 +32,6 @@ class Network:
 
     def __init__(self, env: npfl139.EvaluationEnv, args: argparse.Namespace) -> None:
         # TODO: Create a suitable model and store it as `self._model`.
-        self._model = ...
         self._model = torch.nn.Sequential(
             ...
         ).to(self.device)
