@@ -18,8 +18,8 @@ parser.add_argument("--threads", default=1, type=int, help="Maximum number of th
 # For these and any other arguments you add, ReCodEx will keep your default value.
 parser.add_argument("--batch_size", default=..., type=int, help="Batch size.")
 parser.add_argument("--epsilon", default=..., type=float, help="Exploration factor.")
-parser.add_argument("--epsilon_final", default=..., type=float, help="Final exploration factor.")
-parser.add_argument("--epsilon_final_at", default=..., type=int, help="Training episodes.")
+parser.add_argument("--epsilon_final", default=None, type=float, help="Final exploration factor.")
+parser.add_argument("--epsilon_final_at", default=None, type=int, help="Training episodes.")
 parser.add_argument("--gamma", default=..., type=float, help="Discounting factor.")
 parser.add_argument("--hidden_layer_size", default=..., type=int, help="Size of hidden layer.")
 parser.add_argument("--learning_rate", default=..., type=float, help="Learning rate.")
