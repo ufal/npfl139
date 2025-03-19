@@ -38,6 +38,11 @@ class EvaluationEnv(gym.Wrapper):
         return len(self._episode_returns)
 
     def reset(self, *, start_evaluation=False, logging=True, seed=None, options=None):
+        if options is not None and "start_evaluation" in options.keys():
+            start_evaluation = options["start_evaluation"]
+        if options is not None and "logging" in options.keys():
+            logging = options["logging"]
+
         if seed is not None:
             raise RuntimeError("The EvaluationEnv cannot be reseeded")
         if self._evaluating_from is not None and self._episode_running:
