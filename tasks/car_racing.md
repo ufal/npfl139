@@ -43,4 +43,4 @@ The template contains instructions how to create it. The vectorized environment
 expects a vector of actions and returns a vector of observations, rewards,
 terminations, truncations, and infos. When one of the environments finishes,
 it is **automatically reset** either in the next or in the same step, see
-https://farama.org/Vector-Autoreset-Mode for detailed description.
+https://farama.org/Vector-Autoreset-Mode for a detailed description.

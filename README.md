@@ -1,6 +1,6 @@
 # Deep Reinforcement Learning – ÚFAL Course NPFL139
 
-This repository contains materials to the
+This repository contains materials for the
 [Deep Reinforcement Learning (ÚFAL course NPFL139)](http://ufal.mff.cuni.cz/courses/npfl139).
 
 All created content is available under
