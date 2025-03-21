@@ -19,7 +19,7 @@ Your goal is to implement the following solution variants:
 - `alpha`$≠0$: perform $ε$-greedy search, updating the estimates using
   a fixed learning rate `alpha`.
 
-Note that the initial estimates should be set to a given value and `epsilon` can
+Note that the initial estimates should be set to a given value, and `epsilon` can
 be zero, in which case purely greedy actions are used.
 
 #### Tests Start: bandits_tests

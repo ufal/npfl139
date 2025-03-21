@@ -15,7 +15,7 @@
 - Value Iteration [Sections 4 and 4.4 of RLB]
   - Proof of convergence only in slides
 - Policy Iteration [Sections 4.1-4.3 of RLB]
-- Generalized Policy Iteration [Section 4.6 or RLB]
+- Generalized Policy Iteration [Section 4.6 of RLB]
 - Monte Carlo Methods [Sections 5-5.4 of RLB]
 - Model-free and model-based methods, using state-value or action-value
   functions [Chapter 8 before Section 8.1, and Section 6.8 of RLB]

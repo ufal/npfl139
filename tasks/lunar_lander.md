@@ -15,7 +15,7 @@ but include one additional method:
   generating the trajectory.
 
   You **cannot** change the implementation of this method or use its internals in
-  any other way than just calling `expert_trajectory()`. Furthermore,
+  any way other than just calling `expert_trajectory()`. Furthermore,
   you can use this method only during training, **not** during evaluation.
 
 To pass the task, you need to reach an average return of 0 during 1000 evaluation episodes.
