@@ -5,6 +5,71 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 import gymnasium as gym
 import numpy as np
+import matplotlib.pyplot as plt
+
+
+class LivePlotWrapper(gym.Wrapper):
+    def __init__(self, env, plot_each, render_time=0.1):
+        super().__init__(env)
+        assert plot_each > 0
+        self._plot_each = plot_each
+        self._render_time = render_time
+        self._return = 0
+        self._returns = np.zeros(plot_each)
+        self._ret_index = 0
+
+        self._episode_means = []
+        self._episode_minus_stds = []
+        self._episode_plus_stds = []
+        self._mean_ep_indices = []
+        self._figure, self._axis = plt.subplots()
+
+    def _update_plot(self):
+        self._axis.cla()
+        self._axis.fill_between(
+            self._mean_ep_indices,
+            self._episode_minus_stds,
+            self._episode_plus_stds,
+            alpha=0.2
+        )
+        self._axis.plot(self._mean_ep_indices, self._episode_means)
+        self._axis.set_xlabel("Episode")
+        self._axis.set_ylabel("Return")
+        self._axis.grid(True)
+        plt.pause(self._render_time)
+
+    def _add_return(self):
+        self._returns[self._ret_index] = self._return
+        self._ret_index += 1
+        self._return = 0
+
+        if self._ret_index == self._plot_each:
+            mean = self._returns.mean()
+            std = self._returns.std()
+
+            self._mean_ep_indices.append(len(self._episode_means))
+            self._episode_means.append(mean)
+            self._episode_minus_stds.append(mean - std)
+            self._episode_plus_stds.append(mean + std)
+
+            self._ret_index = 0
+            self._update_plot()
+
+    def reset(self, *args, **kwargs):
+        self._return = 0
+        return self.env.reset(*args, **kwargs)
+
+    def step(self, action):
+        transition = self.env.step(action)
+        _, reward, terminated, truncated, _ = transition
+        self._return += float(reward)
+        if terminated or truncated:
+            self._add_return()
+        return transition
+
+    def save_figure(self, fname, *args, **kwargs):
+        """See `plt.savefig` for arguments description."""
+        self._figure.savefig(fname, *args, **kwargs)
 
 
 class DiscretizationWrapper(gym.ObservationWrapper):

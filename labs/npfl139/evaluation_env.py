@@ -8,11 +8,10 @@ import sys
 
 import gymnasium as gym
 import numpy as np
-import matplotlib.pyplot as plt
 
 
 class EvaluationEnv(gym.Wrapper):
-    def __init__(self, env, seed=None, render_each=0, evaluate_for=100, report_each=10, live_plot=False):
+    def __init__(self, env, seed=None, render_each=0, evaluate_for=100, report_each=10):
         super().__init__(env)
         self._render_each = render_each
         self._evaluate_for = evaluate_for
@@ -33,27 +32,6 @@ class EvaluationEnv(gym.Wrapper):
         self._evaluating_from = None
         self._original_render_mode = env.render_mode
         self._pygame = __import__("pygame") if self._render_each else None
-
-        self._live_plot = live_plot
-        if live_plot:
-            self._episode_means = []
-            self._episode_minus_stds = []
-            self._episode_plus_stds = []
-            self._episode_indices = []
-            self._episode_axis = plt.subplot()
-
-    def _replot(self):
-        assert self._live_plot, "_replot method can be used only with live_plot=True"
-        self._episode_axis.cla()
-        self._episode_axis.fill_between(
-            self._episode_indices, self._episode_minus_stds, self._episode_plus_stds, alpha=0.2
-        )
-        self._episode_axis.plot(self._episode_indices, self._episode_means)
-        self._episode_axis.set_xlabel("Episode")
-        self._episode_axis.set_ylabel("Return")
-        self._episode_axis.grid(True)
-        plt.pause(0.1)
-
 
     @property
     def episode(self):
@@ -89,21 +67,11 @@ class EvaluationEnv(gym.Wrapper):
             self._episode_returns.append(self._episode_return)
 
             if self._report_each and self.episode % self._report_each == 0:
-                mean = np.mean(self._episode_returns[-self._evaluate_for:])
-                std = np.std(self._episode_returns[-self._evaluate_for:])
                 print("Episode {}, mean {}-episode return {:.2f} +-{:.2f}{}".format(
-                    self.episode, self._evaluate_for, mean,
-                    std, "" if not self._report_verbose else
+                    self.episode, self._evaluate_for, np.mean(self._episode_returns[-self._evaluate_for:]),
+                    np.std(self._episode_returns[-self._evaluate_for:]), "" if not self._report_verbose else
                     ", returns " + " ".join(map("{:g}".format, self._episode_returns[-self._report_each:]))),
                     file=sys.stderr, flush=True)
-                
-                if self._live_plot:
-                    self._episode_means.append(mean)
-                    self._episode_minus_stds.append(mean - std)
-                    self._episode_plus_stds.append(mean + std)
-                    self._episode_indices.append(self.episode)
-                    self._replot()
-
             if self._evaluating_from is not None and self.episode >= self._evaluating_from + self._evaluate_for:
                 print("The mean {}-episode return after evaluation {:.2f} +-{:.2f}".format(
                     self._evaluate_for, np.mean(self._episode_returns[-self._evaluate_for:]),
