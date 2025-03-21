@@ -14,6 +14,7 @@ from . import envs
 from .env_wrappers import DiscreteCartPoleWrapper
 from .env_wrappers import DiscreteLunarLanderWrapper
 from .env_wrappers import DiscreteMountainCarWrapper
+from .env_wrappers import LivePlotWrapper
 
 # Utils
 from .initializers_override import global_keras_initializers

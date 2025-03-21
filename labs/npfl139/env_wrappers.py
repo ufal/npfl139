@@ -5,15 +5,16 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 import gymnasium as gym
 import numpy as np
-import matplotlib.pyplot as plt
 
 
 class LivePlotWrapper(gym.Wrapper):
-    def __init__(self, env, plot_each, render_time=0.1):
+    def __init__(self, env, plot_each):
+        import matplotlib.pyplot as plt
+
         super().__init__(env)
+
         assert plot_each > 0
         self._plot_each = plot_each
-        self._render_time = render_time
         self._return = 0
         self._returns = np.zeros(plot_each)
         self._ret_index = 0
@@ -22,7 +23,9 @@ class LivePlotWrapper(gym.Wrapper):
         self._episode_minus_stds = []
         self._episode_plus_stds = []
         self._mean_ep_indices = []
+
         self._figure, self._axis = plt.subplots()
+        self._figure.show()
 
     def _update_plot(self):
         self._axis.cla()
@@ -36,7 +39,8 @@ class LivePlotWrapper(gym.Wrapper):
         self._axis.set_xlabel("Episode")
         self._axis.set_ylabel("Return")
         self._axis.grid(True)
-        plt.pause(self._render_time)
+        self._figure.canvas.draw()
+        self._figure.canvas.flush_events()
 
     def _add_return(self):
         self._returns[self._ret_index] = self._return
