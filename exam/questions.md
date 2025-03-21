@@ -7,8 +7,8 @@
 
 - Define a Markov Decision Process, including the definition of a return. [5]
 
-- Describe how a partially observable Markov decision process extend the
-  Markov decision process and how is the agent altered. [5]
+- Describe how a partially observable Markov decision process extends a
+  Markov decision process and how the agent is altered. [5]
 
 - Define a value function, such that all expectations are over simple random
   variables (actions, states, rewards), not trajectories. [5]
