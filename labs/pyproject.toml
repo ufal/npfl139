@@ -25,6 +25,7 @@ dependencies = [
   # Mujoco
   "mujoco ~= 3.2.7",
   "imageio ~= 2.37.0",
+  # Matplotlib for plotting
   "matplotlib ~= 3.10.1",
 ]
 classifiers = [
