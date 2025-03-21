@@ -10,6 +10,10 @@ template, implement all of the following $n$-step TD methods variants:
 - either on-policy (with $ε$-greedy behaviour policy) or off-policy
   (with the same behaviour policy, but greedy target policy).
 
+Note that while the test and example outputs just show mean 100-episode returns,
+ReCodEx compares the action-value function you return from `main` to the
+reference one.
+
 #### Tests Start: td_algorithms_tests
 _Note that your results may be slightly different, depending on your CPU type and whether you use a GPU._
 

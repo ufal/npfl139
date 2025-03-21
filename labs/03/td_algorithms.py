@@ -91,6 +91,7 @@ def main(args: argparse.Namespace) -> np.ndarray:
             # pairs and during these updates, use the `compute_target_policy(Q)`
             # with the up-to-date value of `Q`.
 
+    # Return the final action-value function for ReCodEx to validate.
     return Q
 
 
