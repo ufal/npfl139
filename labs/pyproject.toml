@@ -27,6 +27,8 @@ dependencies = [
   "imageio ~= 2.37.0",
   # Matplotlib for plotting
   "matplotlib ~= 3.10.1",
+  # OpenCV for image manipulation (e.g., ResizeObservation)
+  "opencv-python ~= 4.11.0.86",
 ]
 classifiers = [
     "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
