@@ -928,6 +928,7 @@ class CarRacingFS(gym.Env, EzPickle):
         for _ in range(self.frame_skip):
             if action is not None:
                 if self.continuous:
+                    action = np.asarray(action, dtype=np.float64)
                     self.car.steer(-action[0])
                     self.car.gas(action[1])
                     self.car.brake(action[2])
