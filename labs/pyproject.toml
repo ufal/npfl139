@@ -25,6 +25,8 @@ dependencies = [
   # Mujoco
   "mujoco ~= 3.2.7",
   "imageio ~= 2.37.0",
+  # Atari environments
+  "ale_py ~= 0.10.2",
   # Matplotlib for plotting
   "matplotlib ~= 3.10.1",
   # OpenCV for image manipulation (e.g., ResizeObservation)
