@@ -5,6 +5,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 import numpy as np
 
+
 # We use a custom implementation instead of `collections.deque`, which has
 # linear complexity of indexing (it is a two-way linked list). The following
 # implementation has similar runtime performance as a numpy array of objects,
