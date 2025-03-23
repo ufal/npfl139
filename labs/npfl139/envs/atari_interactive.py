@@ -6,10 +6,9 @@
 if __name__ == "__main__":
     import argparse
 
-    import ale_py
+    import ale_py  # noqa: F401
     import gymnasium as gym
     import gymnasium.utils.play
-    import pygame
 
     parser = argparse.ArgumentParser()
     parser.add_argument("atari_game", type=str, help="The name of the Atari game to play.")
