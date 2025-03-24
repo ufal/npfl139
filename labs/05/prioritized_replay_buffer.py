@@ -107,8 +107,8 @@ class PrioritizedReplayBuffer(Generic[NamedTuple]):
         samples = (generator.uniform(size=size) + np.arange(size)) / size
 
         # TODO: Generate the sampled items so that the i-th sampled item fulfills:
-        # - the sum of probabilities of items preceding the sampled item in the buffer is <= sample[i],
-        # - the sum of probabilities of the above items plus the sampled item is > sample[i].
+        # - the sum of probabilities of items preceding the sampled item in the buffer is <= samples[i],
+        # - the sum of probabilities of the above items plus the sampled item is > samples[i].
         indices: np.ndarray = ...
 
         # TODO: Compute the probabilities of the selected indices.
