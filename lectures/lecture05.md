@@ -5,6 +5,7 @@
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-05.mp4, Lecture
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-05.practicals.mp4, Practicals
 #### Questions: #lecture_5_questions
+#### Lecture assignment: prioritized_replay_buffer
 #### Lecture assignment: dist_c51
 
 - Noisy Nets [[Meire Fortunato et al.: Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295)]
