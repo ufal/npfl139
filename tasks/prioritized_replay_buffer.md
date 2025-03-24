@@ -5,7 +5,7 @@
 
 In this assignment, your goal is to implement an efficient prioritized replay
 buffer. Start with the
-[prioritized_replay_buffer.py](https://github.com/ufal/npfl139/tree/master/labs/05/prioritized_replay_buffer,py)
+[prioritized_replay_buffer.py](https://github.com/ufal/npfl139/tree/master/labs/05/prioritized_replay_buffer.py)
 template, which contains the skeleton of the implementation and a detailed
 description of the functionality that you must implement.
 
