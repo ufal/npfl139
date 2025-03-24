@@ -96,7 +96,7 @@ class PrioritizedReplayBuffer(Generic[NamedTuple]):
     def sample(self, size: int, generator=np.random) -> tuple[NamedTuple, np.ndarray, np.ndarray]:
         """Sample a batch of items from the replay buffer.
 
-        The commulative probabilities of the items to sample are computed using
+        The cumulative probabilities of the items to sample are computed using
         `(generator.uniform(size=size) + np.arange(size)) / size`. This way,
         there is a single sample in every 1/size interval, decreasing the change
         of sampling the same item multiple times.
@@ -107,7 +107,7 @@ class PrioritizedReplayBuffer(Generic[NamedTuple]):
         samples = (generator.uniform(size=size) + np.arange(size)) / size
 
         # TODO: Generate the sampled items so that the i-th sampled item fulfills:
-        # - the sum of probabilities of items preceeding the sampled item in the buffer is <= sample[i],
+        # - the sum of probabilities of items preceding the sampled item in the buffer is <= sample[i],
         # - the sum of probabilities of the above items plus the sampled item is > sample[i].
         indices: np.ndarray = ...
 
