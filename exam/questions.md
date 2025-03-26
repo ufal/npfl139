@@ -106,15 +106,22 @@
 - Describe a fully connected layer in Noisy nets (parametrization, computation,
   effective noise generation). [5]
 
-- In Distributional RL, describe how is the distribution of rewards represented
+- Write down the distributional Bellman backup operator, define Wasserstein distance,
+  and state in which metric is the distributed Bellman backup operator
+  a $\gamma$-contraction. [5]
+
+- Considering C51, describe how is the distribution of rewards represented
   and how it is predicted using a neural network. [5]
 
-- Considering distibutional Q network (C51), write down the distributional Bellman
-  equation, describe how the predicted distributions are represented (what are
-  the atoms, how do we get their probability), and write down the loss used
-  to train a distributional Q network (including the mapping of atoms, which
-  does not need to be mathematically flawless, it is enough to describe how it
-  should be done). [10]
+- Considering distibutional Q network (C51), describe how the predicted
+  distributions are represented (what are the atoms, how do we get their
+  probability), and write down the loss used to train a distributional Q network
+  and an algorithm to compute it (including the mapping of atoms, which does not
+  need to be mathematically flawless, but enough to describe how it should be
+  done). [10]
+
+- Write down the final loss function in Rainbow, describe what atoms are,
+  and explain how is an atom logit computed for a given state and action. [5]
 
 - How exactly are predicted distributions represented in quantile regression?
   What are the advantages of quantile regression compared to C51? [5]
@@ -124,11 +131,20 @@
   the two distributions, and explicitly write down how the closest $Z_\theta$
   looks like, assuming $F_Z^{-1}$ is continuous. [10]
 
-- Assume we can get samples with a distribution $P$. Write down the three
-  losses to minimize if we want to find out that the (a) mean, (b) median,
-  and (c) quantile $\tau$ are. [5]
-
 #### Questions@:, Lecture 6 Questions
+- Assume we can get samples with a distribution $P$. Write down the
+  loss to minimize if we want to estimate the mean of the distribution and
+  prove it. [5]
+
+- Assume we can get samples with a distribution $P$. Write down the
+  loss to minimize if we want to estimate the median of the distribution and
+  prove it. [5]
+
+- Assume we can get samples with a distribution $P$. Write down the
+  loss to minimize if we want to estimate a quantile $τ$ and prove it. [5]
+
+- Explain how we can solve the problem of quantile regression not being smooth
+  around zero, including the formula of the result. [5]
 
 - Write down the QR-DQN-1 training algorithm including the quantile Huber loss
   $\rho_\tau^\kappa$ (it is fine to use $\kappa=1$). How does the inputs and
@@ -140,6 +156,7 @@
   is represented. Then write down the training algorithm, including the quantile
   Huber loss $\rho_\tau^\kappa$ (it is fine to use $\kappa=1$). [10]
 
+#### Questions@:, Lecture 7 Questions
 - Formulate the policy gradient theorem. [5]
 
 - Prove the part of the policy gradient theorem showing the value
