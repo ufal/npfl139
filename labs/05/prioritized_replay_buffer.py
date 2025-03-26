@@ -29,7 +29,8 @@ class PrioritizedReplayBuffer(Generic[NamedTuple]):
         self._offset: int = 0  # Used when the buffer is full and overwriting in a circular manner.
         self._data: NamedTuple | None = None
 
-        # TODO: Create data structures for priorities.
+        # TODO: Create data structures for priorities. To avoid precision loss, represent
+        # the priorities using 64-bit floats.
         ...
 
     def __len__(self) -> int:
