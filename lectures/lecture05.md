@@ -11,5 +11,3 @@
 - Noisy Nets [[Meire Fortunato et al.: Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295)]
 - Distributional Reinforcement Learning [[Marc G. Bellemare et al.: A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887)]
 - Rainbow [[Matteo Hessel et al.: Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298)]
-- QR-DQN [[Will Dabney et al.: Distributional Reinforcement Learning with Quantile Regression](https://arxiv.org/abs/1710.10044)]
-- IQN [[Will Dabney et al.: Implicit Quantile Networks for Distributional Reinforcement Learning](https://arxiv.org/abs/1806.06923)]
