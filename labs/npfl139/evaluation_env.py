@@ -18,6 +18,9 @@ class EvaluationEnv(gym.Wrapper):
         self._report_each = report_each
         self._report_verbose = os.getenv("VERBOSE", "1") not in ["", "0"]
 
+        if all(hasattr(env.unwrapped, member) for member in ["ale", "seed_game", "load_game"]):  # Seed ALE.
+            self.unwrapped.seed_game(seed)
+            self.unwrapped.load_game()
         gym.Env.reset(self.unwrapped, seed=seed)
         self.action_space.seed(seed)
         self.observation_space.seed(seed)
