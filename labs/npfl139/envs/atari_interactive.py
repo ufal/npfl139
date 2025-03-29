@@ -12,6 +12,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("atari_game", type=str, help="The name of the Atari game to play.")
+    parser.add_argument("--frame_skip", default=1, type=int, help="The frameskip amount.")
     parser.add_argument("--zoom", default=4, type=int, help="The default zoom level.")
     args = parser.parse_args()
 
@@ -26,5 +27,6 @@ if __name__ == "__main__":
                 self.rewards = 0
 
     gym.utils.play.play(
-        gym.make(f"ALE/{args.atari_game}-v5", render_mode="rgb_array", full_action_space=True),
-        callback=ReturnReporter(), fps=15, zoom=args.zoom)
+        gym.make("ALE/{}-v5".format(args.atari_game), render_mode="rgb_array",
+                 frameskip=args.frame_skip, full_action_space=True),
+        callback=ReturnReporter(), fps=60 / args.frame_skip, zoom=args.zoom)
