@@ -15,5 +15,5 @@ Piazza, and we will decide the required score and add it to the list.
 
 The template [atari_gamer.py](https://github.com/ufal/npfl139/tree/master/labs/06/atari_gamer.py)
 shows how to create the Atari environment. While you can use any algorithm from
-the lecture to solve the environment, any one of the distributed RL DQN-like
-algorithms is a reasonable choice.
+the lecture to solve the environment, any one of the distributed-RL DQN-like
+approaches is a reasonable choice (as is the PPO algorithm).
