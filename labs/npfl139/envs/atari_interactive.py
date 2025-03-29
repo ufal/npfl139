@@ -13,7 +13,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("atari_game", type=str, help="The name of the Atari game to play.")
     parser.add_argument("--frame_skip", default=1, type=int, help="The frameskip amount.")
-    parser.add_argument("--zoom", default=4, type=int, help="The default zoom level.")
+    parser.add_argument("--zoom", default=4, type=int, help="The zoom level.")
     args = parser.parse_args()
 
     class ReturnReporter():
