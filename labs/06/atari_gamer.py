@@ -42,7 +42,7 @@ def main(env: npfl139.EvaluationEnv, args: argparse.Namespace) -> None:
                 state, reward, terminated, truncated, _ = env.step(action)
                 done = terminated or truncated
 
-    # TODO: Train an agent using some distributed-RL algorithm.
+    # TODO: Train an agent using for example some distributed-RL algorithm.
     #
     # If you want to create N multiprocessing parallel environments, use
     #   vector_env = gym.make_vec(
