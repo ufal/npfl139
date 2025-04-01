@@ -1,6 +1,6 @@
 ### Lecture: 7. Policy Gradient Methods
 #### Date: Apr 02
-#### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides/?06
+#### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides/?07
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides.pdf/npfl139-2425-07.pdf,PDF Slides
 #### Questions: #lecture_7_questions
 
