@@ -190,3 +190,6 @@
   neural networks. How is the training structured to allow backpropagation
   through them (would vanilla DQN, vanilla REINFORCE, vanilla actor-critic work
   with recurrent neural networks)? [5]
+
+- Explain the difference between a regular Actor-critic and Parallel Advantage
+  Actor Critic algorithms. [5]
