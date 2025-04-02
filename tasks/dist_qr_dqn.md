@@ -1,6 +1,6 @@
 ### Assignment: dist_qr_dqn
 #### Date: Deadline: Apr 16, 22:00
-#### Points: 2 points
+#### Points: 3 points
 
 Extend the `q_network` assignment by solving the continuous
 [CartPole-v1 environment](https://gymnasium.farama.org/environments/classic_control/cart_pole/)
