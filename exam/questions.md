@@ -177,10 +177,6 @@
   and show that the usual REINFORCE performs one gradient step to minimize the
   same utility function. [10]
 
-- Write down the state-action formulation of the operator version of REINFORCE,
-  and show that the usual REINFORCE performs one gradient step to minimize the
-  same utility function. [10]
-
 - Write down the one-step Actor-critic algorithm. [10]
 
 - How and why is entropy regularization used in policy gradient algorithms?
