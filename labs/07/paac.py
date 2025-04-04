@@ -10,7 +10,7 @@ npfl139.require_version("2425.7")
 
 parser = argparse.ArgumentParser()
 # These arguments will be set appropriately by ReCodEx, even if you change them.
-parser.add_argument("--env", default="CartPole-v1", type=str, help="Environment.")
+parser.add_argument("--env", default="LunarLander-v3", type=str, help="Environment.")
 parser.add_argument("--recodex", default=False, action="store_true", help="Running in ReCodEx")
 parser.add_argument("--render_each", default=0, type=int, help="Render some episodes.")
 parser.add_argument("--seed", default=None, type=int, help="Random seed.")
