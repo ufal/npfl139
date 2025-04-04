@@ -23,6 +23,7 @@ parser.add_argument("--evaluate_for", default=10, type=int, help="Evaluate the g
 parser.add_argument("--gamma", default=..., type=float, help="Discounting factor.")
 parser.add_argument("--hidden_layer_size", default=..., type=int, help="Size of hidden layer.")
 parser.add_argument("--learning_rate", default=..., type=float, help="Learning rate.")
+parser.add_argument("--model_path", default="paac_actor.pt", type=str, help="Path to the actor model.")
 
 
 class Agent:
@@ -63,6 +64,13 @@ class Agent:
         # TODO: Return estimates of the value function.
         raise NotImplementedError()
 
+    # Serialization methods.
+    def save_actor(self, path: str) -> None:
+        torch.save(self._actor.state_dict(), path)
+
+    def load_actor(self, path: str) -> None:
+        self._actor.load_state_dict(torch.load(path, map_location=self.device))
+
 
 def main(env: npfl139.EvaluationEnv, args: argparse.Namespace) -> None:
     # Set the random seed and the number of threads.
@@ -82,6 +90,12 @@ def main(env: npfl139.EvaluationEnv, args: argparse.Namespace) -> None:
             done = terminated or truncated
             rewards += reward
         return rewards
+
+    # ReCodEx evaluation.
+    if args.recodex:
+        agent.load_actor(args.model_path)
+        while True:
+            evaluate_episode(start_evaluation=True)
 
     # Create the vectorized environment, using the SAME_STEP autoreset mode.
     vector_env = gym.make_vec(args.env, args.envs, gym.VectorizeMode.ASYNC,
@@ -109,6 +123,9 @@ def main(env: npfl139.EvaluationEnv, args: argparse.Namespace) -> None:
 
         # Periodic evaluation
         returns = [evaluate_episode() for _ in range(args.evaluate_for)]
+
+    # Save the agent
+    agent.save_actor(args.model_path)
 
     # Final evaluation
     while True:
