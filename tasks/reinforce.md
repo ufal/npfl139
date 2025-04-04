@@ -1,6 +1,6 @@
 ### Assignment: reinforce
 #### Date: Deadline: Apr 16, 22:00
-#### Points: 4 points
+#### Points: 3 points
 
 Solve the continuous [CartPole-v1 environment](https://gymnasium.farama.org/environments/classic_control/cart_pole/)
 from the [Gymnasium library](https://gymnasium.farama.org/) using the REINFORCE
