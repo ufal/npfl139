@@ -189,3 +189,54 @@
 
 - Explain the difference between a regular Actor-critic and Parallel Advantage
   Actor Critic algorithms. [5]
+
+#### Questions@:, Lecture 8 Questions
+- Considering continuous actions modeled by a normal distribution with
+  diagonal covariance, describe how is the policy distribution computed
+  (network architecture, output activation functions) and how does the loss of
+  a simple REINFORCE algorithm look like. [5]
+
+- Formulate the deterministic policy gradient theorem for
+  $\nabla_{\boldsymbol\theta} v_\pi(s)$. [5]
+
+- Formulate the deterministic policy gradient theorem for
+  $\nabla_{\boldsymbol\theta} J(\boldsymbol\theta)$. [5]
+
+- Prove the part of the deterministic policy gradient theorem showing the value
+  of $\nabla_{\boldsymbol\theta} v_\pi(s)$. [10]
+
+- Write down the critic loss (or its derivative) and the actor policy loss (or
+  its derivative) of the Deep Deterministic Policy Gradients (DDPG) algorithm. Make
+  sure to distinguish the target networks from the ones being trained. [10]
+
+- How is the return estimated in the Twin Delayed Deep Deterministic Policy
+  Gradient (TD3) algorithm? [5]
+
+- Write down the critic loss (or its derivative) and the actor policy loss (or
+  its derivative) of the Twin Delayed Deep Deterministic Policy Gradient (TD3)
+  algorithm. Make sure to distinguish the target networks from the ones being
+  trained. [10]
+
+- Write down how is the reward augmented in Soft actor critic, and the
+  definitions of the soft action-value function and the soft (state-)value function.
+  Then, define the modified Bellman backup operator $\mathcal{T}_\pi$ (be sure
+  to indicate whether you are using the augmented or non-augmented reward),
+  whose repeated application converges to the soft actor-value function $q_\pi$,
+  and prove it. [10]
+
+- Considering soft policy improvement of a policy $\pi$, write down the update
+  formula for the improved policy $\pi'$, and prove that the soft action-value
+  function of the improved policy is greater or equal to the soft action-value
+  function of the original policy. [10]
+
+- Write down how are the critics and target critics updated in the Soft actor
+  critic algorithm. [5]
+
+- Write down how is the actor updated in the Soft actor critic algorithm,
+  including the policy reparametrization trick. [5]
+
+- Regarding the entropy penalty coefficient $\alpha$ in the Soft actor critic,
+  define what constrained optimization problem we are solving, what is the
+  corresponding Lagrangian (and whether we are minimizing/maximizing it
+  with respect to the policy and $\alpha$), and what does the $\alpha$ update
+  look like. [5]
