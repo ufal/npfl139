@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 import argparse
 import collections
+from typing import Generic, TypeVar
 
 import numpy as np
-from typing import Generic, TypeVar
 
 parser = argparse.ArgumentParser()
 # These arguments will be set appropriately by ReCodEx, even if you change them.
