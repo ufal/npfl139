@@ -2,6 +2,7 @@
 #### Date: Apr 09
 #### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides/?08
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides.pdf/npfl139-2425-08.pdf,PDF Slides
+#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-08.mp4, Lecture
 #### Questions: #lecture_8_questions
 
 - Gradient methods with continuous actions [Section 13.7 of RLB]
