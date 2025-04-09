@@ -17,6 +17,7 @@ from .env_wrappers import DiscreteMountainCarWrapper
 
 # Utils
 from .initializers_override import global_keras_initializers
+from .monolithic_replay_buffer import MonolithicReplayBuffer
 from .replay_buffer import ReplayBuffer
 from .startup_impl import startup
 from .typed_torch_function import typed_torch_function
