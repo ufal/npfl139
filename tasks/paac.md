@@ -1,6 +1,6 @@
 ### Assignment: paac
 #### Date: Deadline: Apr 23, 22:00
-#### Points: 3 points
+#### Points: 4 points
 
 Solve the [LunarLander-v3 environment](https://gymnasium.farama.org/environments/box2d/lunar_lander/)
 with continuous observations using parallel actor-critic algorithm, employing
