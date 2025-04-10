@@ -4,6 +4,9 @@
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides.pdf/npfl139-2425-08.pdf,PDF Slides
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-08.mp4, Lecture
 #### Questions: #lecture_8_questions
+#### Lecture assignment: paac_continuous
+#### Lecture assignment: ddpg
+#### Lecture assignment: walker
 
 - Gradient methods with continuous actions [Section 13.7 of RLB]
 - Deterministic policy gradient theorem (DPG) [[David Silver et al.: Deterministic Policy Gradient Algorithms](http://proceedings.mlr.press/v32/silver14.pdf)]
