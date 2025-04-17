@@ -67,7 +67,7 @@ def main(args: argparse.Namespace) -> np.ndarray:
             # a TD update with the following parameters:
             # - `args.n`: use `args.n`-step method
             # - `args.off_policy`:
-            #    - if False, the epsilon-greedy behaviour policy is also the target policy
+            #    - if False, the epsilon-greedy behavior policy is also the target policy
             #    - if True, the target policy is the greedy policy
             #      - for SARSA (with any `args.n`) and expected SARSA (with `args.n` > 1),
             #        importance sampling must be used
@@ -78,7 +78,7 @@ def main(args: argparse.Namespace) -> np.ndarray:
             #
             # Perform the updates as soon as you can -- whenever you have all the information
             # to update `Q[state, action]`, do it. For each `action`, use its corresponding
-            # `action_prob` from the time of taking the `action` as the behaviour policy probability,
+            # `action_prob` from the time of taking the `action` as the behavior policy probability,
             # and the `compute_target_policy(Q)` with the current `Q` (from the time of performing
             # the update) as the target policy.
             #
