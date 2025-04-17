@@ -6,12 +6,12 @@
 Using the [FrozenLake-v1 environment](https://gymnasium.farama.org/environments/toy_text/frozen_lake/),
 implement Monte Carlo weighted importance sampling to estimate
 state value function $V$ of target policy, which uniformly chooses either action
-1 (down) or action 2 (right), utilizing behaviour policy, which uniformly
+1 (down) or action 2 (right), utilizing behavior policy, which uniformly
 chooses among all four actions.
 
 Start with the [importance_sampling.py](https://github.com/ufal/npfl139/tree/master/labs/03/importance_sampling.py)
 template, which creates the environment and generates episodes according to
-behaviour policy.
+behavior policy.
 
 #### Tests Start: importance_sampling_tests
 _Note that your results may be slightly different, depending on your CPU type and whether you use a GPU._
