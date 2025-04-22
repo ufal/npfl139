@@ -81,7 +81,7 @@ def main(args: argparse.Namespace) -> np.ndarray:
             # - if `args.trace_lambda` is not None, use eligibility traces
             #   (the `args.n`-step truncated `args.trace_lambda`-return)
             # - `args.off_policy`:
-            #   - if False, the `args.epsilon`-greedy behaviour policy is also the target policy
+            #   - if False, the `args.epsilon`-greedy behavior policy is also the target policy
             #   - if True, the target policy is an (`args.epsilon`/3)-greedy policy; use
             #     off-policy correction using importance sampling with control variates
             #     - if `args.vtrace_clip` is not None, clip the individual importance sample
@@ -91,7 +91,7 @@ def main(args: argparse.Namespace) -> np.ndarray:
             # to update `V[state]`, do it.
             #
             # When performing off-policy estimation, use `action_prob` from the time of
-            # taking the `action` as the behaviour policy action probability, and the
+            # taking the `action` as the behavior policy action probability, and the
             # `compute_target_policy(V)` with the current `V` (from the time of performing
             # the update) as the target policy.
             #

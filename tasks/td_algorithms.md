@@ -7,8 +7,8 @@
 Starting with the [td_algorithms.py](https://github.com/ufal/npfl139/tree/master/labs/03/td_algorithms.py)
 template, implement all of the following $n$-step TD methods variants:
 - SARSA, expected SARSA and Tree backup;
-- either on-policy (with $ε$-greedy behaviour policy) or off-policy
-  (with the same behaviour policy, but greedy target policy).
+- either on-policy (with $ε$-greedy behavior policy) or off-policy
+  (with the same behavior policy, but greedy target policy).
 
 Note that while the test and example outputs just show mean 100-episode returns,
 ReCodEx compares the action-value function you return from `main` to the

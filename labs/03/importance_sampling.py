@@ -21,7 +21,7 @@ def main(args: argparse.Namespace) -> np.ndarray:
     # Set the random seed.
     np.random.seed(args.seed)
 
-    # Behaviour policy is uniformly random.
+    # Behavior policy is uniformly random.
     # Target policy uniformly chooses either action 1 or 2.
     V = np.zeros(env.observation_space.n)
     C = np.zeros(env.observation_space.n)
