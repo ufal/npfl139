@@ -273,3 +273,28 @@
   $\mu$, how to compute normalized advantage based on return $G$, and how is the
   normalized value predictor modified when the estimates of $\sigma$ and $\mu$
   change. [10]
+
+#### Questions@:, Lecture 10 Questions
+- What is the value $L_\pi(\tilde\pi)$ used in TRPO to approximate
+  $v_{\tilde\pi}$? What is the value the TRPO algorithm maximizes, and under
+  what constraint? [5]
+
+- Write down the PPO algorithm, including the generalized advantage estimation
+  (the $n$-step truncated lambda return. [10]
+
+- Define the transformed Bellman operator. [5]
+
+- Define the transformed Bellman operator. Then, assuming $h$ is strictly
+  monotonically increasing function and considering a deterministic Markov
+  decision process, show to what does a transformed Bellman operator
+  $\mathcal{T}_h$ converge and prove it. [10]
+
+- Write down the return transformation used for Atari environments (for example
+  by R2D2). [5]
+
+- Describe the replay buffer elements in R2D2. What is the difference between
+  the zero-state and stored-state strategies, and how is burn-in used? [5]
+
+- Write down the Retrace operator and describe the three possibilities of
+  setting the traces $c_t$: importance sampling, Tree-backup($\lambda$) and
+  Retrace($\lambda$). [10]
