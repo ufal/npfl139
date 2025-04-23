@@ -18,7 +18,7 @@ parser.add_argument("--threads", default=1, type=int, help="Maximum number of th
 # For these and any other arguments you add, ReCodEx will keep your default value.
 parser.add_argument("--entropy_regularization", default=..., type=float, help="Entropy regularization weight.")
 parser.add_argument("--envs", default=..., type=int, help="Number of parallel environments.")
-parser.add_argument("--evaluate_each", default=100, type=int, help="Evaluate each number of batches.")
+parser.add_argument("--evaluate_each", default=1000, type=int, help="Evaluate each number of batches.")
 parser.add_argument("--evaluate_for", default=10, type=int, help="Evaluate the given number of episodes.")
 parser.add_argument("--gamma", default=..., type=float, help="Discounting factor.")
 parser.add_argument("--hidden_layer_size", default=..., type=int, help="Size of hidden layer.")
