@@ -15,7 +15,7 @@ environment runs for 250 steps and it is considered solved if you obtain
 a return of at least 500.
 
 The [ppo.py](https://github.com/ufal/npfl139/tree/master/labs/10/ppo.py)
-PyTorch template contains a skeleton of the PPO algorithm implementation.
+template contains a skeleton of the PPO algorithm implementation.
 My implementation trains in approximately three minutes of CPU time.
 
 During evaluation in ReCodEx, two different random seeds will be employed, and
