@@ -3,6 +3,8 @@
 #### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides/?10
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides.pdf/npfl139-2425-10.pdf,PDF Slides
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-10.mp4, Lecture
+#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-10.r2d2.agent57.mp4, R2D2+Agent57
+#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-10.practicals.mp4, Practicals
 #### Questions: #lecture_10_questions
 #### Lecture assignment: ppo
 
