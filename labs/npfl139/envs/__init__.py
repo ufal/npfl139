@@ -5,3 +5,5 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 from . import car_racing
 from . import cart_pole_pixels
+from . import multi_collect
+from . import single_collect
