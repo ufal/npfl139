@@ -2,8 +2,7 @@
 #### Date: Deadline: May 7, 22:00
 #### Points: 5 points
 
-Implement the PPO algorithm in a single-agent settings. Notably, solve
-the `SingleCollect` environment implemented by the
+Use the PPO algorithm to solve the `SingleCollect` environment implemented by the
 [single_collect.py](https://github.com/ufal/npfl139/tree/master/labs/npfl139/envs/single_collect.py)
 module. To familiarize with it, you can [watch a trained agent](https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/videos/single_collect.mp4)
 and you can play it interactively using `python3 -m npfl139.envs.single_collect_interactive`,
