@@ -8,7 +8,7 @@ _hardcore_ version of the [BipedalWalker-v3 environment](https://gymnasium.faram
 **Note that the penalty of `-100` on crash can discourage or even stop training,
 so overriding the reward at the end of episode to `0` (or decreasing it
 substantially) makes the training considerably easier (I have not surpassed
-return `0` with neither TD3 nor SAC with the original `-100` penalty).**
+an average return `100` with neither TD3 nor SAC with the original `-100` penalty).**
 
 In ReCodEx, you are expected to submit an already trained model,
 which is evaluated with three seeds, each for 100 episodes with a time
