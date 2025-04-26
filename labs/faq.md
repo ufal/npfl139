@@ -46,6 +46,11 @@
     Python available, or for example `py -3.11 -m venv VENV_DIR`, which uses
     Python version 3.11.
 
+  - If **MuJoCo environments fail** during construction, make sure the path of
+    the Python site packages contains no non-ASCII characters. If it does, you
+    can create a new virtual environment in a suitable directory to circumvent
+    the problem.
+
   - If you encounter a problem creating the logs in the `args.logdir` directory,
     a possible cause is that the path is longer than 260 characters, which is
     the default maximum length of a complete path on Windows. However, you can
