@@ -298,3 +298,24 @@
 - Write down the Retrace operator and describe the three possibilities of
   setting the traces $c_t$: importance sampling, Tree-backup($\lambda$) and
   Retrace($\lambda$). [10]
+
+#### Questions@:, Lecture 11 Questions
+- Considering multi-arm bandits, write down the UCB algorithm. [5]
+
+- Describe the inputs and outputs of a neural network used in AlphaZero, and
+  describe the inputs and outputs of a Monte-Carlo tree search. [5]
+
+- Write down the loss used in AlphaZero algorithm. [5]
+
+- What quantities are kept in a node of a AlphaZero Monte-Carlo tree search? [5]
+
+- How are actions selected in a AlphaZero Monte-Carlo tree search? [10]
+
+- What does AlphaZero use to maintain exploration in a Monte-Carlo tree search,
+  i.e., how does AlphaZero make sure that even actions with very low prior are
+  sampled enough? [5]
+
+- Describe the backup phase of AlphaZero Monte-Carlo tree search, i.e., the
+  steps you perform when you reach a leaf during the tree search. [5]
+
+- How are the actions selected in AlphaZero self-play? [5]
