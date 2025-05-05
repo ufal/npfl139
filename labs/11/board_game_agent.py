@@ -120,7 +120,8 @@ class MCTNode:
         #   by the network.
         value = ...
 
-        self.visit_count, self.total_value = 1, value
+        self.total_value = value
+        self.visit_count = 1
 
     def add_exploration_noise(self, epsilon: float, alpha: float) -> None:
         # TODO: Update the children priors by exploration noise
