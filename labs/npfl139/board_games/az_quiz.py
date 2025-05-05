@@ -175,6 +175,9 @@ class AZQuiz(BoardGame):
             if event.type == pygame.WINDOWEXPOSED:
                 self._screen.blit(self._screen_surface, (0, 0))
                 pygame.display.flip()
+            if event.type == pygame.QUIT:
+                print("Window closed, stopping application.")
+                exit()
 
         return chosen
 
