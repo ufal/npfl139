@@ -319,3 +319,37 @@
   steps you perform when you reach a leaf during the tree search. [5]
 
 - How are the actions selected in AlphaZero self-play? [5]
+
+#### Questions@:, Lecture 12 Questions
+- Describe the three components of a MuZero model including their exact inputs
+  and outputs, and show how they are used to traverse the MCTS tree. [10]
+
+- Describe the MCTS in MuZero – action selection (including the exact
+  action-values used), how are the three components of a MuZero model used
+  during the tree traversal and leaf evaluation, and the updates during
+  the backup phase. [10]
+
+- Assuming we already have a filled replay buffer, describe the MuZero
+  training – the losses and the target values used in them (make sure to
+  mention where all the values come from, whether from the replay buffer
+  or how are they computed). [10]
+
+- In AlphaZero, define the empirical visit count distribution generated
+  by the AlphaZero action selection. Then define the distribution
+  $\bar{\boldsymbol\pi}$ which the visit count distribution converges to;
+  write both the objective the $\bar{\boldsymbol\pi}$ minimizes, and also
+  the resulting solution. [10]
+
+- Describe the Gumbel-Max trick, i.e., write down how to perform sampling from
+  a categorical distribution using an $\operatorname{argmax}$, including the
+  procedure for sampling from the $\operatorname{Gumbel}(0, 1)$ distribution.
+  [5]
+
+- Describe the Gumbel-Top-k trick, i.e., write down how to sample top $n$
+  actions from a categorical distribution when given its logits and suitable
+  Gumbel noise. [5]
+
+- In GumbelZero, assuming $n$ actions are sampled using the Gumbel-Top-k trick,
+  write down how to select an action $A_{n+1}$ so that choosing this action is
+  a policy improvement (i.e., that it has greater or equal expected reward than
+  the original policy), and prove it. [10]
