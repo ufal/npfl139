@@ -18,7 +18,7 @@ class AZQuiz(BoardGame):
         self._board = np.tri(self.N, dtype=np.int8) - 1
         self._randomized = randomized
         self._to_play = 0
-        self._winner = None
+        self._outcome = None
         self._screen = None
         self._last_action, self._winning_stones = None, None
 
@@ -27,11 +27,11 @@ class AZQuiz(BoardGame):
         if swap_players:
             clone._board = self._SWAP_PLAYERS[self._board + 1]
             clone._to_play = 1 - self._to_play
-            clone._winner = 1 - self._winner if self._winner is not None else None
+            clone._outcome = self._outcome.reverse() if self._outcome is not None else None
         else:
             clone._board[:, :] = self._board
             clone._to_play = self._to_play
-            clone._winner = self._winner
+            clone._outcome = self._outcome
         clone._last_action, clone._winning_stones = self._last_action, self._winning_stones
         return clone
 
@@ -48,16 +48,14 @@ class AZQuiz(BoardGame):
         return self._to_play
 
     def outcome(self, player: int) -> BoardGame.Outcome | None:
-        if self._winner is None:
-            return None
-        return self.Outcome.WIN if self._winner == player else self.Outcome.LOSS
+        return self._outcome if self._outcome is None or player == self._to_play else self._outcome.reverse()
 
     def valid(self, action: int) -> bool:
-        return self._winner is None and action >= 0 and action < self.ACTIONS \
+        return self._outcome is None and action >= 0 and action < self.ACTIONS \
             and self._board[self._ACTION_Y[action], self._ACTION_X[action]] < 2
 
     def valid_actions(self) -> list[int]:
-        return np.nonzero(self._board[self._ACTION_Y, self._ACTION_X] < 2)[0] if self._winner is None else []
+        return np.nonzero(self._board[self._ACTION_Y, self._ACTION_X] < 2)[0] if self._outcome is None else []
 
     def move(self, action: int):
         self._last_action = action
@@ -99,7 +97,7 @@ class AZQuiz(BoardGame):
             if field >= 2:
                 self._traverse(j, 0, field, edges, visited)
                 if edges.all():
-                    self._winner = field - 2
+                    self._outcome = self.Outcome.WIN if field - 2 == self._to_play else self.Outcome.LOSS
                     self._winning_stones = visited == 1
                 visited += visited > 0
 
