@@ -7,7 +7,7 @@ from .board_game import BoardGame
 from .board_game_player import BoardGamePlayer
 from .board_game_evaluator import evaluate
 
-from .az_quiz import AZQuiz
+from .az_quiz import AZQuiz, AZQuizRandomized
 from .az_quiz_player_fork_heuristic import AZQuizPlayerForkHeuristic
 from .az_quiz_player_keyboard import AZQuizPlayerKeyboard
 from .az_quiz_player_mouse import AZQuizPlayerMouse
