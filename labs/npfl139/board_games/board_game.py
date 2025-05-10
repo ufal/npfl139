@@ -13,6 +13,10 @@ class BoardGame:
         DRAW = 2
         WIN = 3
 
+        def reverse(self):
+            """Reverse the outcome."""
+            return BoardGame.Outcome(4 - self.value)
+
     ACTIONS: int  # Number of possible actions
     N: int  # Size of the board
     C: int  # Number of channels in the board representation
