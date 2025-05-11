@@ -2,7 +2,7 @@
 import numpy as np
 
 import npfl139
-npfl139.require_version("2425.11")
+npfl139.require_version("2425.12")
 from npfl139.board_games import AZQuiz
 import board_game_cpp
 
