@@ -58,9 +58,8 @@ module. As players, you can use either the provided players
 you can pass the name of any module implementing a `Player: BoardGamePlayer`
 class. For illustration, you can use `python3 -m npfl139.board_games.evaluate
 --render mouse fork_heuristic` to interactively play against the fork heuristic, or
-`python3 -m npfl139.board_games.evaluate az_quiz_agent.py:"--model_path=PATH
---num_simulations=0" simple_heuristic` to evaluate `az_quiz_agent.py` with
-the specified arguments against the simple heuristic.
+`python3 -m npfl139.board_games.evaluate az_quiz_agent.py:--model_path=PATH:--num_simulations=0 simple_heuristic`
+to evaluate `az_quiz_agent.py` with the specified arguments against the simple heuristic.
 
 The template for this assignment is available in the
 [az_quiz_agent.py](https://github.com/ufal/npfl139/tree/master/labs/11/az_quiz_agent.py)
