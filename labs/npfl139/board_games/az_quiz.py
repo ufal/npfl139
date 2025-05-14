@@ -10,9 +10,12 @@ from .board_game_player import BoardGamePlayer
 
 
 class AZQuiz(BoardGame):
-    ACTIONS = 28
-    N = 7
-    C = 4
+    ACTIONS: int = 28
+    """Number of actions in the game."""
+    N: int = 7
+    """The number of rows and columns in the game board."""
+    C: int = 4
+    """The number of features in the board representation."""
 
     def __init__(self, randomized=False):
         self._board = np.tri(self.N, dtype=np.int8) - 1
