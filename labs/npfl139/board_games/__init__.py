@@ -13,3 +13,7 @@ from .az_quiz_player_keyboard import AZQuizPlayerKeyboard
 from .az_quiz_player_mouse import AZQuizPlayerMouse
 from .az_quiz_player_random import AZQuizPlayerRandom
 from .az_quiz_player_simple_heuristic import AZQuizPlayerSimpleHeuristic
+
+from .pisqorky import Pisqorky
+from .pisqorky_player_mouse import PisqorkyPlayerMouse
+from .pisqorky_player_random import PisqorkyPlayerRandom
