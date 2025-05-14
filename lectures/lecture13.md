@@ -2,6 +2,7 @@
 #### Date: May 14
 #### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides/?13
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides.pdf/npfl139-2425-13.pdf,PDF Slides
+#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-13.mp4, Lecture
 #### Questions: #lecture_13_questions
 
 - PlaNet [[D. Hafner et al.: Learning Latent Dynamics for Planning from Pixels](https://arxiv.org/abs/1811.04551)]
