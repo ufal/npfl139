@@ -121,7 +121,8 @@ class Pisqorky(BoardGame):
             for x in range(self.N):
                 if (y, x) == self._last_action or (y, x) in self._winning_stones:
                     pygame.draw.rect(self._screen_surface, lblue if self._board[y, x] == 1 else lred,
-                                     (x * A + 1 + (x == 0), y * A + 1 + (y == 0), A - 2 - (x + 1 == self.N), A - 2 - (y + 1 == self.N)))
+                                     (x * A + 1 + (x == 0), y * A + 1 + (y == 0),
+                                      A - 2 - (x == 0) - (x + 1 == self.N), A - 2 - (y == 0) - (y + 1 == self.N)))
                 if self._board[y, x] == 1:
                     pygame.draw.circle(self._screen_surface, blue, (x * A + A // 2, y * A + A // 2), A // 2 - 3, 5)
                 if self._board[y, x] == 2:
