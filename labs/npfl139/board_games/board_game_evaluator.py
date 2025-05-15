@@ -21,6 +21,13 @@ def evaluate(
                 "If `first_chosen` is True, the number of games must be divisble by the number of actions"
             def first_move_selector(game_index: int) -> int:  # noqa: E301
                 return game_index % game_class.ACTIONS
+
+        elif game_class.__name__ == "Pisqorky":
+            assert games % 50 == 0, \
+                "If `first_chosen` is True, the number of games must be divisible by 50"
+            def first_move_selector(index: int) -> int:  # noqa: E301
+                return 112 if index % 50 == 49 else (index % 50 // 7 + 4) * 15 + (index % 50 % 7 + 4)
+
         else:
             raise ValueError(f"The game {game_class.__name__} does not support first move selection")
 
