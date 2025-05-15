@@ -19,8 +19,7 @@ def evaluate(
         if game_class.__name__.startswith("AZQuiz"):
             assert games % game_class.ACTIONS == 0, \
                 "If `first_chosen` is True, the number of games must be divisble by the number of actions"
-
-            def first_move_selector(game_index: int) -> int:
+            def first_move_selector(game_index: int) -> int:  # noqa: E301
                 return game_index % game_class.ACTIONS
         else:
             raise ValueError(f"The game {game_class.__name__} does not support first move selection")
