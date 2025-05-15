@@ -16,7 +16,8 @@
 #include <pybind11/pybind11.h>
 
 #include "az_quiz.h"
-#include "board_game.h"
+#include "pisqorky.h"
+
 #include "mcts.h"
 #include "sim_game.h"
 

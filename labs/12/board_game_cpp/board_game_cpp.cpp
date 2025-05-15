@@ -17,6 +17,8 @@ class BoardGameCpp {
         game_handler = new BoardGameHandler<AZQuiz>();
       } else if (game_name == "az_quiz_randomized") {
         game_handler = new BoardGameHandler<AZQuizRandomized>();
+      } else if (game_name == "pisqorky") {
+        game_handler = new BoardGameHandler<Pisqorky>();
       } else {
         throw std::invalid_argument("Unknown game name");
       }
@@ -53,7 +55,7 @@ class BoardGameCpp {
       }, game_handler);
     }
   private:
-    static inline std::variant<BoardGameHandler<AZQuiz>*, BoardGameHandler<AZQuizRandomized>*> game_handler;
+    static inline std::variant<BoardGameHandler<AZQuiz>*, BoardGameHandler<AZQuizRandomized>*, BoardGameHandler<Pisqorky>*> game_handler;
     static inline bool game_selected = false;
 
     static void check_game_selected() {
