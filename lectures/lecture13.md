@@ -4,6 +4,8 @@
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides.pdf/npfl139-2425-13.pdf,PDF Slides
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-13.mp4, Lecture
 #### Questions: #lecture_13_questions
+#### Lecture assignment: memory_game
+#### Lecture assignment: memory_game_rl
 
 - PlaNet [[D. Hafner et al.: Learning Latent Dynamics for Planning from Pixels](https://arxiv.org/abs/1811.04551)]
 - Straight-Through estimator  [[Yoshua Bengio, Nicholas Léonard, Aaron Courville: Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation](https://arxiv.org/abs/1308.3432)]
