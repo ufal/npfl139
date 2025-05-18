@@ -178,7 +178,6 @@ if __name__ == "__main__":
 
     # Create the environment
     main_env = npfl139.EvaluationEnv(
-        gym.make("MemoryGame-v0", cards=main_args.cards), main_args.seed, main_args.render_each,
-        evaluate_for=main_args.evaluate_for, report_each=main_args.evaluate_for)
+        gym.make("MemoryGame-v0", cards=main_args.cards), main_args.seed, main_args.render_each)
 
     main(main_env, main_args)
