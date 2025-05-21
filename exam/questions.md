@@ -395,3 +395,7 @@
 
 - Describe the training of both a critic and an actor in DreamerV2 (including
   the explicit losses). [10]
+
+#### Questions@:, Lecture 14 Questions
+
+The questions for lecture 14 will be added later.
