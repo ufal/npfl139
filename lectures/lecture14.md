@@ -4,6 +4,7 @@
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides.pdf/npfl139-2425-14.pdf,PDF Slides
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-14.mp4, Lecture
 #### Questions: #lecture_14_questions
+#### Lecture assignment: mappo
 
 - Multi-Agent Reinforcement Learning [Nice overview gives the diploma thesis [Cooperative Multi-Agent Reinforcement Learning](https://dspace.cuni.cz/handle/20.500.11956/127431)]
 - RLHF [[Reinforcement Learning from Human Preferences](https://arxiv.org/abs/1706.03741)]
