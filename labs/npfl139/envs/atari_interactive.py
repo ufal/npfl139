@@ -26,7 +26,11 @@ if __name__ == "__main__":
                 print("Episode reward:", self.rewards)
                 self.rewards = 0
 
+    env = gym.make(
+        "ALE/{}-v5".format(args.atari_game), render_mode="rgb_array",
+        frameskip=args.frame_skip, full_action_space=True,
+    )
     gym.utils.play.play(
-        gym.make("ALE/{}-v5".format(args.atari_game), render_mode="rgb_array",
-                 frameskip=args.frame_skip, full_action_space=True),
-        callback=ReturnReporter(), fps=60 / args.frame_skip, zoom=args.zoom)
+        env, keys_to_action={key: int(value) for key, value in env.get_wrapper_attr("get_keys_to_action")().items()},
+        callback=ReturnReporter(), fps=60 / args.frame_skip, zoom=args.zoom,
+    )

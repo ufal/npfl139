@@ -77,9 +77,9 @@ def main(args: argparse.Namespace) -> np.ndarray:
 
             # TODO: Perform the update to the state value function `V`, using
             # a TD update with the following parameters:
-            # - `args.n`: use `args.n`-step estimated return
-            # - if `args.trace_lambda` is not None, use eligibility traces
-            #   (the `args.n`-step truncated `args.trace_lambda`-return)
+            # - `args.n`: use `args.n`-step return
+            # - if `args.trace_lambda` is not None, use the `args.n`-step truncated
+            #   lambda return with lambda of `args.trace_lambda`
             # - `args.off_policy`:
             #   - if False, the `args.epsilon`-greedy behavior policy is also the target policy
             #   - if True, the target policy is an (`args.epsilon`/3)-greedy policy; use

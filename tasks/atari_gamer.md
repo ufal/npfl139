@@ -18,6 +18,6 @@ command, so for example `python3 -m npfl139.envs.atari_interactive Pong`.
 
 The template [atari_gamer.py](https://github.com/ufal/npfl139/tree/master/labs/06/atari_gamer.py)
 shows how to create the Atari environment. While you can use any algorithm from
-the lecture to solve the environment, any one of the distributed-RL DQN-like
-approaches is a reasonable choice (as is the PPO algorithm). The time limit in
-ReCodEx is 15 minutes.
+the lecture to solve the environment, some distributional DQN approach
+(C51/QR-DQN/IQN) is a reasonable choice (as is the PPO algorithm). The
+time limit in ReCodEx is 15 minutes.

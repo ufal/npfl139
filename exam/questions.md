@@ -319,3 +319,83 @@
   steps you perform when you reach a leaf during the tree search. [5]
 
 - How are the actions selected in AlphaZero self-play? [5]
+
+#### Questions@:, Lecture 12 Questions
+- Describe the three components of a MuZero model including their exact inputs
+  and outputs, and show how they are used to traverse the MCTS tree. [10]
+
+- Describe the MCTS in MuZero – action selection (including the exact
+  action-values used), how are the three components of a MuZero model used
+  during the tree traversal and leaf evaluation, and the updates during
+  the backup phase. [10]
+
+- Assuming we already have a filled replay buffer, describe the MuZero
+  training – the losses and the target values used in them (make sure to
+  mention where all the values come from, whether from the replay buffer
+  or how are they computed). [10]
+
+- In AlphaZero, define the empirical visit count distribution generated
+  by the AlphaZero action selection. Then define the distribution
+  $\bar{\boldsymbol\pi}$ which the visit count distribution converges to;
+  write both the objective the $\bar{\boldsymbol\pi}$ minimizes, and also
+  the resulting solution. [10]
+
+- Describe the Gumbel-Max trick, i.e., write down how to perform sampling from
+  a categorical distribution using an $\operatorname{argmax}$, including the
+  procedure for sampling from the $\operatorname{Gumbel}(0, 1)$ distribution.
+  [5]
+
+- Describe the Gumbel-Top-k trick, i.e., write down how to sample top $n$
+  actions from a categorical distribution when given its logits and suitable
+  Gumbel noise. [5]
+
+- In GumbelZero, assuming $n$ actions are sampled using the Gumbel-Top-k trick,
+  write down how to select an action $A_{n+1}$ so that choosing this action is
+  a policy improvement (i.e., that it has greater or equal expected reward than
+  the original policy), and prove it. [10]
+
+#### Questions@:, Lecture 13 Questions
+- Describe the components of a typical latent-space model in PlaNet
+  (the transition, observation and reward functions, the encoder)
+  and the components of a recurrent state-space model (RSSM). [5]
+
+- Derive the variational lower bound on $\log p(o_{1:T} | a_{1:T})$ used in
+  PlaNet (you can utilize the Jensen's inequality
+  $\log \mathbb{E} [x] \ge \mathbb{E} [\log x]$). [10]
+
+- Consider a model with a discrete categorical latent variable $\boldsymbol z$
+  sampled from $p(\boldsymbol z; \boldsymbol \theta)$, with a loss
+  $L(\boldsymbol z; \boldsymbol \omega)$. Describe how we compute the derivative
+  of the loss $L$ with respect to the parameters $\boldsymbol \theta$ using
+  (a) a straight-through estimator, and (b) a REINFORCE-like gradient estimator
+  with a baseline. [5]
+
+- Consider a discrete categorical variable sampled from logits $\boldsymbol l$.
+  Define the $\operatorname{Gumbel-softmax}(\boldsymbol l, T)$ distribution with
+  logits $\boldsymbol l$ and a temperature $T$ (no need to describe sampling
+  from $\operatorname{Gumbel}(0, 1)$), and describe the main difference between
+  the $\operatorname{Gumbel-softmax}(\boldsymbol l, T)$ and the
+  $\operatorname{softmax}(\boldsymbol l)$ distributions. [5]
+
+- Consider a model with a discrete categorical latent variable $\boldsymbol z$
+  sampled from $p(\boldsymbol z; \boldsymbol \theta)$, with a loss
+  $L(\boldsymbol z; \boldsymbol \omega)$. Describe how we compute the derivative
+  of the loss $L$ with respect to the parameters $\boldsymbol \theta$ using
+  (a) a Gumbel-softmax estimator, and (b) a straight-through Gumbel-softmax
+  estimator. [5]
+
+- Write down an algorithm implementing a straight-through estimator of
+  a discrete categorical latent variable using automatic differentiation
+  (i.e., in TensorFlow or Pytorch). [5]
+
+- Describe the six components of the DreamerV2 recurrent state-space model
+  (RSSM). [5]
+
+- Explain the KL balancing used in DreamerV2. [5]
+
+- Describe the training of both a critic and an actor in DreamerV2 (including
+  the explicit losses). [10]
+
+#### Questions@:, Lecture 14 Questions
+
+The questions for lecture 14 will be added later.

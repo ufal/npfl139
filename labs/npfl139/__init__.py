@@ -16,6 +16,9 @@ from .env_wrappers import DiscreteLunarLanderWrapper
 from .env_wrappers import DiscreteMountainCarWrapper
 from .env_wrappers import LivePlotWrapper
 
+# Board games
+from . import board_games
+
 # Utils
 from .initializers_override import global_keras_initializers
 from .monolithic_replay_buffer import MonolithicReplayBuffer
