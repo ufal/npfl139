@@ -12,7 +12,7 @@ def mcts(
     board: npt.NDArray[np.int8],
     to_play: int,
     evaluate: Callable[
-        [npt.NDArray], tuple[npt.NDArray[np.floating], npt.NDArray[np.floating]]
+        [npt.NDArray[np.int8]], tuple[npt.NDArray[np.floating], npt.NDArray[np.floating]]
     ],
     num_simulations: int,
     epsilon: float,
@@ -33,7 +33,7 @@ def simulated_games_start(
 
 def simulated_game(
     evaluate: Callable[
-        [npt.NDArray], tuple[npt.NDArray[np.floating], npt.NDArray[np.floating]]
+        [npt.NDArray[np.int8]], tuple[npt.NDArray[np.floating], npt.NDArray[np.floating]]
     ],
 ) -> list[tuple[npt.NDArray[np.int8], npt.NDArray[np.floating], float]]:
     """Get one simulated game"""
