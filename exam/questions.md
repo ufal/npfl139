@@ -397,5 +397,29 @@
   the explicit losses). [10]
 
 #### Questions@:, Lecture 14 Questions
+- Define the Partially observable stochastic game. [5]
 
-The questions for lecture 14 will be added later.
+- Define the Partially observable stochastic game, Agent-environment cycle game,
+  and prove that every POSG can be represented as AECG and vice versa. [10]
+
+- In a Partially observable stochastic game, define the expected return for
+  a given agent (including the probability of a trajectory), define the
+  best response, and define the Nash equilibrium. [10]
+
+- In Reinforcement learning from human feedback, define what models are trained
+  and write down the three parallel processes performed during training. [5]
+
+- In Reinforcement learning from human feedback, define a trajectory segment,
+  write down how we estimate the probability that one trajectory segment
+  is rated to be better than another trajectory segment according to the
+  Bradley-Terry model, and then define the loss we minimize to fit the estimated
+  reward in RLHF. [10]
+
+- When summarizing from human feedback, define the loss we minimize to fit the
+  reward model, and then describe how we train the human feedback policies
+  (make sure to describe all quantities of the loss in detail). What are the
+  roles of the used KL term? [10]
+
+- In InstructGPT, write down the difference in collecting the rating compared
+  to plain RLHF, define the loss used to train the reward model, and finally
+  describe the reward used to train the PPO and PPO-ptx models. [5]
