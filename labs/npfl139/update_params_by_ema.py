@@ -20,4 +20,4 @@ def update_params_by_ema(target: torch.nn.Module, source: torch.nn.Module, tau: 
     with torch.no_grad():
         for target_param, source_param in zip(target.parameters(), source.parameters()):
             target_param.mul_(1 - tau)
-            target_param.add_(tau * source_param)
+            target_param.add_(source_param, alpha=tau)
