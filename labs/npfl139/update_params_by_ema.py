@@ -17,7 +17,7 @@ def update_params_by_ema(target: torch.nn.Module, source: torch.nn.Module, tau: 
       source: The source model whose parameters will be used for the update.
       tau: The decay factor for the exponential moving average, e.g., 0.001.
     """
-    with torch.no_grad():
+    with torch.inference_mode():
         for target_param, source_param in zip(target.parameters(), source.parameters()):
             target_param.mul_(1 - tau)
             target_param.add_(source_param, alpha=tau)
