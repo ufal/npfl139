@@ -30,13 +30,13 @@ C++ headers and sources, plus the `setup.py` module. When `setup.py` module
 is submitted to ReCodEx, the above compilation command is automatically
 run before importing your module; any compilation error should be reported.
 
-## Performance
+## AZQuiz Performance
 
 The notable property of the C++ implementation is that it can run self-play
 simulation in several threads in parallel, batching evaluation requests from
 all the threads. This allows large speedup both in CPU-only and GPU setups,
 as indicated by the below table measurning approximate running times of
-generating 1000 self-play games and performing 1000 training updates with
+generating 1000 AZQuiz self-play games and performing 1000 training updates with
 batch size of 512.
 
 | Implementation | Device | Workers (parallel MCTSes) | Time |
