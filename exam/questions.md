@@ -19,8 +19,8 @@
 - Express a value function using an action-value function, and express an
   action-value function using a value function. [5]
 
-- Define optimal value function and optimal action-value function. Then define
-  optimal policy in such a way that its existence is guaranteed. [5]
+- Define optimal value function, optimal action-value function, and the
+  optimal policy. [5]
 
 #### Questions@:, Lecture 2 Questions
 - Write down the Bellman optimality equation. [5]
