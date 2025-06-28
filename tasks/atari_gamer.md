@@ -5,10 +5,10 @@
 In this long-term assignment, your goal is to solve one of the
 [Atari games](https://ale.farama.org/environments/). Currently, you can choose
 one of the following games:
-- [Breakout](https://ale.farama.org/environments/breakout/), where you must surpass the
-  average return of 200 in 10 episodes;
-- [Pong](https://ale.farama.org/environments/pong/), where you must surpass the
-  average return of 16 in 10 episodes;
+- [Pong](https://ale.farama.org/environments/pong/) (one of the easiest games),
+  where you must surpass the average return of 16 in 10 episodes
+- [Breakout](https://ale.farama.org/environments/breakout/) (a more difficult
+  one game), where you must surpass the average return of 200 in 10 episodes.
 
 If you would like to train an agent for a different Atari game, write us on
 Piazza, and we will decide the required score and add it to the list. Note that
