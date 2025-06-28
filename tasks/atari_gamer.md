@@ -17,7 +17,11 @@ you can play any Atari game interactively with WASD and SPACE using the
 command, so for example `python3 -m npfl139.envs.atari_interactive Pong`.
 
 The template [atari_gamer.py](https://github.com/ufal/npfl139/tree/master/labs/06/atari_gamer.py)
-shows how to create the Atari environment. While you can use any algorithm from
-the lecture to solve the environment, some distributional DQN approach
-(C51/QR-DQN/IQN) is a reasonable choice (as is the PPO algorithm). The
-time limit in ReCodEx is 15 minutes.
+shows how to create the Atari environment. The `args.frame_skip` option allows
+specifying the required frame skipping (this option is also used in ReCodEx to
+construct the evaluation environmen), and additional wrappers can be applied to
+the environment at the beginning of the `main` method.
+
+While you can use any algorithm from the lecture to solve the environment, some
+distributional DQN approach (C51/QR-DQN/IQN) is a reasonable choice (as is the
+PPO algorithm). The time limit in ReCodEx is 15 minutes.
