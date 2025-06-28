@@ -16,8 +16,8 @@ to the `npfl139.board_games.AZQuiz`, or use `az_quiz_randomized` as a board
 games (e.g., as the argument to `npfl139.board_games.evaluate` or to
 `npfl139.board_games.BoardGame.from_name`).
 
-Your goal is to propose how to modify the Monte Carlo Tree Search to properly
-handle stochastic MDPs. The information about distribution of possible next
+Your goal is to propose how to modify the Monte Carlo Tree Search to **properly
+handle** stochastic MDPs. The information about distribution of possible next
 states is provided by the `AZQuiz.all_moves` method, which returns a list of
 `(probability, az_quiz_instance)` next states (in our environment, there are
 always two possible next states).
