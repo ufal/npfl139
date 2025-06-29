@@ -43,7 +43,7 @@ class Agent:
         self._actor = ...
 
         # TODO(ppo): Create a critic (value predictor) consisting of a single hidden layer with
-        # `args.hidden_layer_size` units and ReLU activation, and and output layer with a single output.
+        # `args.hidden_layer_size` units and ReLU activation, and an output layer with a single output.
         self._critic = ...
 
     # The `npfl139.typed_torch_function` automatically converts input arguments
