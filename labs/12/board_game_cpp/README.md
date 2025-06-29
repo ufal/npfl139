@@ -4,7 +4,7 @@ This directory contains a skeleton of C++ implementation of BoardGame
 MCTS and self-play game simulation. The implementation is fully generic
 regarding the board game type.
 
-## Prerequisities
+## Prerequisites
 
 You need to
 ```
