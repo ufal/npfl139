@@ -75,8 +75,8 @@ class Agent:
     def board_features(self, game: AZQuiz) -> np.ndarray:
         # TODO: Generate the boards from the current game.
         #
-        # The `game.board` returns a board representation, but you also need to
-        # somehow indicate who is the current player. You can either
+        # The `game.board_features` returns a board representation, but you also
+        # need to somehow indicate who is the current player. You can either
         # - change the game so that the current player is always the same one
         #   (i.e., always 0 or always 1; `swap_players` option of `AZQuiz.clone`
         #   method might come handy);
@@ -209,7 +209,7 @@ def sim_game(agent: Agent, args: argparse.Namespace) -> list[ReplayBufferEntry]:
         game.move(action)
 
     # TODO: Return all encountered game states, each consisting of
-    # - the board (probably via `agent.board`),
+    # - the board (probably via `agent.board_features`),
     # - the policy obtained by MCTS,
     # - the outcome based on the outcome of the whole game.
     raise NotImplementedError()
