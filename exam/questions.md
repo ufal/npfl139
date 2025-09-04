@@ -148,9 +148,10 @@
 
 - Write down the QR-DQN-1 training algorithm including the quantile Huber loss
   $\rho_\tau^\kappa$ (it is fine to use $\kappa=1$). How does the inputs and
-  outputs of the network look like? [10]
+  outputs of the network look like (including their shapes)? [10]
 
-- Describe the network inputs and outputs of DQN, C51, QR-DQN, IQN. [5]
+- Describe the network inputs and outputs (including their shapes) of DQN, C51,
+  QR-DQN, IQN. [5]
 
 - Describe the network architecture of IQN, including how the quantile $\tau$
   is represented. Then write down the training algorithm, including the quantile
