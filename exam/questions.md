@@ -223,7 +223,7 @@
   Then, define the modified Bellman backup operator $\mathcal{T}_\pi$ (be sure
   to indicate whether you are using the augmented or non-augmented reward),
   whose repeated application converges to the soft actor-value function $q_\pi$,
-  and prove it. [10]
+  and explain why. [10]
 
 - Considering soft policy improvement of a policy $\pi$, write down the update
   formula for the improved policy $\pi'$, and prove that the soft action-value
