@@ -77,7 +77,8 @@
 - What are the three elements causing off-policy divergence with function
   approximation? Write down the Baird's counterexample. [10]
 
-- Explain the role of a replay buffer in Deep Q Networks. [5]
+- Explain the role of a replay buffer in Deep Q Networks and describe how
+  a single element of a replay buffer looks like. [5]
 
 - How is the target network used and updated in Deep Q Networks? [5]
 
