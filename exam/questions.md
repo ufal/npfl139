@@ -57,13 +57,13 @@
 - Show the bootstrapped estimate of $n$-step return. [5]
 
 - Write down the update in on-policy $n$-step Sarsa (assuming you already
-  have $n$ previous steps, actions and rewards). [5]
+  have $n$ previous steps, actions, and rewards). [5]
 
 - Write down the update in off-policy $n$-step Sarsa with importance
-  sampling (assuming you already have $n$ previous steps, actions and rewards). [10]
+  sampling (assuming you already have $n$ previous steps, actions, and rewards). [10]
 
 - Write down the update of $n$-step Tree-backup algorithm (assuming you already
-  have $n$ previous steps, actions and rewards). [10]
+  have $n$ previous steps, actions, and rewards). [10]
 
 - Assuming function approximation, define Mean squared value error. [5]
 
@@ -297,7 +297,7 @@
   the zero-state and stored-state strategies, and how is burn-in used? [5]
 
 - Write down the Retrace operator and describe the three possibilities of
-  setting the traces $c_t$: importance sampling, Tree-backup($\lambda$) and
+  setting the traces $c_t$: importance sampling, Tree-backup($\lambda$), and
   Retrace($\lambda$). [10]
 
 #### Questions@:, Lecture 11 Questions
@@ -357,7 +357,7 @@
 
 #### Questions@:, Lecture 13 Questions
 - Describe the components of a typical latent-space model in PlaNet
-  (the transition, observation and reward functions, the encoder)
+  (the transition, observation, and reward functions; and the encoder)
   and the components of a recurrent state-space model (RSSM). [5]
 
 - Derive the variational lower bound on $\log p(o_{1:T} | a_{1:T})$ used in
