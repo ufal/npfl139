@@ -7,7 +7,7 @@ Extend the `q_network` assignment by solving the continuous
 from the [Gymnasium library](https://gymnasium.farama.org/) using distributed
 reinforcement learning algorithm C51.
 
-Start with the [dist_c51.py](https://github.com/ufal/npfl139/tree/master/labs/05/dist_c51.py)
+Start with the [dist_c51.py](https://github.com/ufal/npfl139/tree/past-2425/labs/05/dist_c51.py)
 template. In the template, you must implement the `Network.compute_loss`
 method, which constitutes the core of the C51 algorithm. In ReCodEx, the first
 two tests verify your implementation by comparing the results to the reference

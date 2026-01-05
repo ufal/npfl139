@@ -16,7 +16,7 @@ you can play any Atari game interactively with WASD and SPACE using the
 `python3 -m npfl139.envs.atari_interactive GAME_NAME [--zoom=4] [--frame_skip=1]`
 command, so for example `python3 -m npfl139.envs.atari_interactive Pong`.
 
-The template [atari_gamer.py](https://github.com/ufal/npfl139/tree/master/labs/06/atari_gamer.py)
+The template [atari_gamer.py](https://github.com/ufal/npfl139/tree/past-2425/labs/06/atari_gamer.py)
 shows how to create the Atari environment. The `args.game` is the chosen game
 and `args.frame_skip` option specified the required frame skipping (these
 options are used also in ReCodEx to construct the evaluation environment), and

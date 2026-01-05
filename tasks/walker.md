@@ -14,6 +14,6 @@ which is evaluated with two seeds, each for 100 episodes with a time
 limit of 10 minutes. If your average return is at least 200, you obtain
 5 points.
 
-The [walker.py](https://github.com/ufal/npfl139/tree/master/labs/08/walker.py)
+The [walker.py](https://github.com/ufal/npfl139/tree/past-2425/labs/08/walker.py)
 template contains the skeleton for implementing the SAC agent, but you can
 also solve the assignment with DDPG/TD3.

@@ -8,7 +8,7 @@ If you start with DDPG, implementing the TD3 improvements
 should make the hyperparameter search significantly easier.
 However, for me, the SAC algorithm seems to work the best.
 
-The template [cheetah.py](https://github.com/ufal/npfl139/tree/master/labs/09/cheetah.py)
+The template [cheetah.py](https://github.com/ufal/npfl139/tree/past-2425/labs/09/cheetah.py)
 only creates the environment and shows the evaluation in ReCodEx.
 
 In ReCodEx, you are expected to submit an already trained model, which is

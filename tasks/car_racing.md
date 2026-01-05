@@ -6,7 +6,7 @@ The goal of this competition is to use Deep Q Networks (and any of Rainbow impro
 on a more real-world [CarRacing-v3 environment](https://gymnasium.farama.org/environments/box2d/car_racing/)
 from the [Gymnasium library](https://gymnasium.farama.org/).
 
-In the provided [CarRacingFS-v3](https://github.com/ufal/npfl139/tree/master/labs/npfl139/envs/car_racing.py)
+In the provided [CarRacingFS-v3](https://github.com/ufal/npfl139/tree/past-2425/labs/npfl139/envs/car_racing.py)
 environment, the states are RGB `np.uint8` images of size
 $96×96×3$, but you can downsample them even more. The actions
 are also continuous and consist of an array with the following three elements:
@@ -32,7 +32,7 @@ limit of 15 minutes. If your average return is at least 500, you obtain
 and at most 5 points will be awarded according to relative ordering of your
 solutions.
 
-The [car_racing.py](https://github.com/ufal/npfl139/tree/master/labs/04/car_racing.py)
+The [car_racing.py](https://github.com/ufal/npfl139/tree/past-2425/labs/04/car_racing.py)
 template parses several useful parameters and creates the environment.
 If you want to experience the environment yourselves, you can drive the car
 using arrows by running the command `python3 -m npfl139.envs.car_racing_interactive`.

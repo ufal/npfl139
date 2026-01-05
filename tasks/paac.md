@@ -8,7 +8,7 @@ the vectorized environment described in the `car_racing` assignment.
 
 Your goal is to reach an average return of 250 during 100 evaluation episodes.
 
-Start with the [paac.py](https://github.com/ufal/npfl139/tree/master/labs/07/paac.py)
+Start with the [paac.py](https://github.com/ufal/npfl139/tree/past-2425/labs/07/paac.py)
 template, which provides a simple network implementation in PyTorch, support for
 saving a trained agent, and ReCodEx evaluation of a submitted agent. The used
 environment is configurable, so you can experiment also with other environments;

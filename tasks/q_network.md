@@ -6,7 +6,7 @@ Solve the continuous [CartPole-v1 environment](https://gymnasium.farama.org/envi
 from the [Gymnasium library](https://gymnasium.farama.org/) using Q-learning
 with neural network as a function approximation.
 
-You can start with the [q_network.py](https://github.com/ufal/npfl139/tree/master/labs/04/q_network.py)
+You can start with the [q_network.py](https://github.com/ufal/npfl139/tree/past-2425/labs/04/q_network.py)
 template, which provides a simple network implementation in PyTorch.
 
 The continuous environment is very similar to a discrete one, except

@@ -13,7 +13,7 @@ as `env.observation_space`, offering:
 
 Your goal is to reach an average return of 90 during 100 evaluation episodes.
 
-Start with the [paac_continuous.py](https://github.com/ufal/npfl139/tree/master/labs/08/paac_continuous.py)
+Start with the [paac_continuous.py](https://github.com/ufal/npfl139/tree/past-2425/labs/08/paac_continuous.py)
 template, which provides a simple network implementation in PyTorch.
 
 During evaluation in ReCodEx, two different random seeds will be employed, and

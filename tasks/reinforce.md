@@ -8,7 +8,7 @@ algorithm.
 
 Your goal is to reach an average return of 490 during 100 evaluation episodes.
 
-Start with the [reinforce.py](https://github.com/ufal/npfl139/tree/master/labs/07/reinforce.py)
+Start with the [reinforce.py](https://github.com/ufal/npfl139/tree/past-2425/labs/07/reinforce.py)
 template, which provides a simple network implementation in PyTorch.
 
 During evaluation in ReCodEx, two different random seeds will be employed, and

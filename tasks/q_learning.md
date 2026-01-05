@@ -12,7 +12,7 @@ Once you finish training (which you indicate by passing `start_evaluation=True`
 to `reset`), your goal is to reach an average return of -150 during 100
 evaluation episodes.
 
-You can start with the [q_learning.py](https://github.com/ufal/npfl139/tree/master/labs/02/q_learning.py)
+You can start with the [q_learning.py](https://github.com/ufal/npfl139/tree/past-2425/labs/02/q_learning.py)
 template, which parses several useful parameters, creates the environment
 and illustrates the overall usage. Note that setting hyperparameters of
 Q-learning is a bit tricky – I usually start with a larger value of $ε$ (like 0.2

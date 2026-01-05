@@ -62,8 +62,8 @@ class. For illustration, you can use `python3 -m npfl139.board_games.evaluate
 to evaluate `az_quiz_agent.py` with the specified arguments against the simple heuristic.
 
 The template for this assignment is available in the
-[az_quiz_agent.py](https://github.com/ufal/npfl139/tree/master/labs/11/az_quiz_agent.py)
-module, or in a variant [board_game_agent.py](https://github.com/ufal/npfl139/tree/master/labs/11/board_game_agent.py).
+[az_quiz_agent.py](https://github.com/ufal/npfl139/tree/past-2425/labs/11/az_quiz_agent.py)
+module, or in a variant [board_game_agent.py](https://github.com/ufal/npfl139/tree/past-2425/labs/11/board_game_agent.py).
 The latter is nearly identical, but it is slightly more general, not
 mentioning `AZQuiz` directly in the code; instead, the game (and the player to
 evaluate against) is specified only in an argument.

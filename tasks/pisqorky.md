@@ -8,7 +8,7 @@ implemented in the [pisqorky](https://github.com/ufal/npfl139/blob/master/labs/n
 module.
 
 Because the game is more complex than `az_quiz`, you probably have to use the
-C++ template [board_game_cpp](https://github.com/ufal/npfl139/tree/master/labs/12/board_game_cpp).
+C++ template [board_game_cpp](https://github.com/ufal/npfl139/tree/past-2425/labs/12/board_game_cpp).
 That template now supports both `AZQuiz` and `Pisqorky`.
 
 The game provides quite a strong heuristic called simply `heuristic`;

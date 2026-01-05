@@ -7,7 +7,7 @@ Extend the `q_network` assignment by solving the continuous
 from the [Gymnasium library](https://gymnasium.farama.org/) using the quantile
 regression QR-DQN-$κ$ algorithm.
 
-Start with the [dist_qr_dqn.py](https://github.com/ufal/npfl139/tree/master/labs/06/dist_qr_dqn.py)
+Start with the [dist_qr_dqn.py](https://github.com/ufal/npfl139/tree/past-2425/labs/06/dist_qr_dqn.py)
 template. As in the `dist_c51` assignment, you must implement
 the `Network.compute_loss` method, which constitutes the core of the QR-DQN
 algorithm. In ReCodEx, the first two tests verify your implementation by

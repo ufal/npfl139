@@ -7,7 +7,7 @@ Consider the following gridworld:
 
 ![Gridworld example](//ufal.mff.cuni.cz/~straka/courses/npfl139/2425/tasks/figures/policy_iteration.svgz)
 
-Start with [policy_iteration.py](https://github.com/ufal/npfl139/tree/master/labs/02/policy_iteration.py),
+Start with [policy_iteration.py](https://github.com/ufal/npfl139/tree/past-2425/labs/02/policy_iteration.py),
 which implements the gridworld mechanics, by providing the following methods:
 - `GridWorld.states`: return the number of states (`11`)
 - `GridWorld.actions`: return the number of actions (`4`)

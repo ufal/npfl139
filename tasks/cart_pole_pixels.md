@@ -15,7 +15,7 @@ a [_competition_](https://ufal.mff.cuni.cz/courses/npfl139/2425-summer#competiti
 and at most 4 points will be awarded according to relative ordering of your
 solutions.
 
-The [cart_pole_pixels.py](https://github.com/ufal/npfl139/tree/master/labs/07/cart_pole_pixels.py)
+The [cart_pole_pixels.py](https://github.com/ufal/npfl139/tree/past-2425/labs/07/cart_pole_pixels.py)
 template parses several parameters and creates the environment.
 You are again supposed to train the model beforehand and submit
 only the trained neural network.

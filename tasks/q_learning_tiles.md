@@ -18,7 +18,7 @@ the following changes:
   is a number of weights used by first $i$ elements of `state`. Notably,
   `env.observation_space.nvec[-1]` is the total number of the weights.
 
-You can start with the [q_learning_tiles.py](https://github.com/ufal/npfl139/tree/master/labs/03/q_learning_tiles.py)
+You can start with the [q_learning_tiles.py](https://github.com/ufal/npfl139/tree/past-2425/labs/03/q_learning_tiles.py)
 template, which parses several useful parameters and creates the environment.
 Implementing Q-learning is enough to pass the assignment, even if both N-step
 Sarsa and Tree Backup converge a little faster. The default number of tiles in
