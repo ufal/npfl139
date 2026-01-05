@@ -4,7 +4,6 @@
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides.pdf/npfl139-2425-13.pdf,PDF Slides
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-13.mp4, Lecture
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-13.merlin.mp4, Merlin
-#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-13.practicals.mp4, Practicals
 #### Questions: #lecture_13_questions
 #### Lecture assignment: memory_game
 #### Lecture assignment: memory_game_rl

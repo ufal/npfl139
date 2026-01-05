@@ -4,7 +4,6 @@
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides.pdf/npfl139-2425-09.pdf,PDF Slides
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-09.mp4, Lecture
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-09.popart.mp4, PopArt
-#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-09.practicals.mp4, Practicals
 #### Questions: #lecture_9_questions
 #### Lecture assignment: walker_hardcore
 #### Lecture assignment: trace_algorithms

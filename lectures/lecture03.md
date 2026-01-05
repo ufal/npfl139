@@ -4,7 +4,6 @@
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides.pdf/npfl139-2425-03.pdf, PDF Slides
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-03.mp4, Lecture
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-03.treebackup.mp4, TreeBackup
-#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-03.practicals.mp4, Practicals
 #### Questions: #lecture_3_questions
 #### Lecture assignment: importance_sampling
 #### Lecture assignment: td_algorithms

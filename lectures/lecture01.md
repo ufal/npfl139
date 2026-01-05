@@ -3,7 +3,6 @@
 #### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides/?01
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2425/slides.pdf/npfl139-2425-01.pdf, PDF Slides
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-01.mp4, Lecture
-#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2425/npfl139-2425-01.practicals.mp4, Practicals
 #### Questions: #lecture_1_questions
 #### Lecture assignment: bandits
 #### Lecture assignment: monte_carlo
