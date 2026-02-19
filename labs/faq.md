@@ -1,0 +1,158 @@
+### TOC: FAQ
+
+### TOCEntry: Install
+
+- _What Python version to use_
+
+  The recommended Python version is **3.11**. This version is used by ReCodEx to
+  evaluate your solutions. Supported Python versions are 3.11-3.13 (some
+  dependencies do not yet provide wheels for Python 3.14).
+
+  You can find out the version of your Python installation using `python3 --version`.
+
+- _Installing to central user packages repository_
+
+  You can install all required packages to central user packages repository using
+  `python3 -m pip install --user --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu128 npfl139`.
+
+  On Linux and Windows, the above command installs CUDA 12.8 PyTorch build, but you can change `cu128` to:
+  - `cpu` to get CPU-only (smaller) version,
+  - `cu124` to get CUDA 12.4 build,
+  - `rocm7.1` to get AMD ROCm 7.1 build (Linux only).
+
+  On macOS, the `--extra-index-url` has no effect and the Metal support is
+  installed in any case.
+
+  **To update the `npfl139` package later, use `python3 -m pip install --user --upgrade npfl139`.**
+- _Installing to a virtual environment_
+
+  Python supports virtual environments, which are directories containing
+  independent sets of installed packages. You can create a virtual environment
+  by running `python3 -m venv VENV_DIR` followed by
+  `VENV_DIR/bin/pip install --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu128 npfl139`.
+  (or `VENV_DIR/Scripts/pip` on Windows).
+
+  Again, apart from the CUDA 12.8 build, you can change `cu128` on Linux and
+  Windows to:
+  - `cpu` to get CPU-only (smaller) version,
+  - `cu124` to get CUDA 12.4 build,
+  - `rocm7.1` to get AMD ROCm 7.1 build (Linux only).
+
+  **To update the `npfl139` package later, use `VENV_DIR/bin/pip install --upgrade npfl139`.**
+
+- _**Windows** installation_
+
+  - On Windows, it can happen that `python3` is not in PATH, while `py` command
+    is – in that case you can use `py -m venv VENV_DIR`, which uses the newest
+    Python available, or for example `py -3.11 -m venv VENV_DIR`, which uses
+    Python version 3.11.
+
+  - If **MuJoCo environments fail** during construction, make sure the path of
+    the Python site packages contains no non-ASCII characters. If it does, you
+    can create a new virtual environment in a suitable directory to circumvent
+    the problem.
+
+  - If you encounter a problem creating the logs in the `args.logdir` directory,
+    a possible cause is that the path is longer than 260 characters, which is
+    the default maximum length of a complete path on Windows. However, you can
+    increase this limit on Windows 10, version 1607 or later, by following
+    the [instructions](https://docs.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation).
+
+- _**MacOS** installation_
+
+  - If you encounter issues with SSL certificates (_certificate verify failed:
+    self-signed certificate in certificate chain_), you probably need to run the
+    `Install Certificates.command`, which should be executed after installation;
+    see https://docs.python.org/3/using/mac.html#installation-steps.
+
+- _**GPU** support on Linux and Windows_
+
+  PyTorch supports NVIDIA GPU or AMD GPU out of the box, you just need to select
+  appropriate `--extra-index-url` when installing the packages.
+
+  If you encounter problems loading CUDA or cuDNN libraries, make sure your
+  `LD_LIBRARY_PATH` does not contain paths to older CUDA/cuDNN libraries.
+
+### TOCEntry: Git
+
+- _Is it possible to keep the solutions in a Git repository?_
+
+  Definitely. Keeping the solutions in a branch of your repository,
+  where you merge them with the course repository, is probably a good idea.
+  However, please keep the cloned repository with your solutions **private**.
+
+- _On GitHub, do not create a **public** fork containing **your solutions**._
+
+  If you keep your solutions in a GitHub repository, please do not create
+  a clone of the repository by using the Fork button; this way, the cloned
+  repository would be **public**.
+  - If you created a public fork and want to make it private, you need to start
+    by pressing **Leave fork network** in the repository settings; only then you
+    can change the visibility to **private**.
+
+  Of course, if you want to create a pull request, GitHub requires a public
+  fork and you need to create it, just do not store your solutions in it (so you
+  might end up with two repositories, a public fork for pull requests and
+  a private repo for your own solutions).
+
+- _How to clone the course repository?_
+
+  To clone the course repository, run
+  ```
+  git clone https://github.com/ufal/npfl139
+  ```
+  This creates the repository in the `npfl139` subdirectory; if you want a different
+  name, add it as an additional parameter.
+
+  To update the repository, run `git pull` inside the repository directory.
+
+- _How to merge the course repository updates into a private repository with additional changes?_
+
+  It is possible to have a private repository that combines your solutions and
+  the updates from the course repository. To do that, start by cloning your
+  empty private repository, and then run the following commands in it:
+  ```
+  git remote add course_repo https://github.com/ufal/npfl139
+  git fetch course_repo
+  git checkout --no-track course_repo/master
+  ```
+  This creates a new remote `course_repo` and a clone of the `master` branch
+  from it; however, `git pull` and `git push` in this branch will operate
+  on the repository your cloned originally.
+
+  To update your branch with the changes from the course repository, run
+  ```
+  git fetch course_repo
+  git merge course_repo/master
+  ```
+  while in your branch (the command `git pull --no-rebase course_repo master`
+  has the same effect). Of course, it might be necessary to resolve conflicts
+  if both you and the course repository modified the same lines in the same files.
+
+### TOCEntry: ReCodEx
+
+- _What files can be submitted to ReCodEx?_
+
+  You can submit multiple files of any type to ReCodEx. There is a limit of
+  **20** files per submission, with a total size of **20MB**.
+
+- _What file does ReCodEx execute and what arguments does it use?_
+
+  Exactly one file with `py` suffix must contain a line starting with `def main(`.
+  Such a file is imported by ReCodEx and the `main` method is executed
+  (during the import, `__name__ == "__recodex__"`).
+
+  The file must also export an argument parser called `parser`. ReCodEx uses its
+  arguments and default values, but it overwrites some of the arguments
+  depending on the test being executed; the template always indicates which
+  arguments are set by ReCodEx and which are left intact.
+
+- _What are the time and memory limits?_
+
+  The memory limit during evaluation is **1.5GB**. The time limit varies, but it should
+  be at least 10 seconds and at least twice the running time of my solution.
+
+- _Do agents need to be trained directly in ReCodEx?_
+
+  No, you can pre-train your agent locally (unless specified otherwise in the task
+  description).
