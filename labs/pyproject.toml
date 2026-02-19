@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "npfl139"
+version = "2526.1.0"
+authors = [
+  { name="Milan Straka", email="straka@ufal.mff.cuni.cz" },
+]
+description = "Modules used by the Deep Reinforcement Learning Course NPFL139"
+readme = "npfl139/README.md"
+requires-python = ">=3.11"
+dependencies = [
+  # Main PyTorch
+  "torch ~= 2.10.0",
+  "torchaudio ~= 2.10.0",
+  "torchvision ~= 0.25.0",
+  # The gymnasium package
+  "gymnasium ~= 1.2.3",
+  # Pygame used for GUI in gymnasium
+  "pygame-ce ~= 2.5.6",
+  # Custom build of pybox2d used in some gymnasium environments
+  "ufal.pybox2d ~= 2.3.10.5",
+#   # Mujoco
+#   "mujoco ~= 3.5.0",
+#   "imageio ~= 2.37.2",
+#   "packaging ~= 26.0",
+#   # Atari environments
+#   "ale_py ~= 0.11.2",
+#   # Pybind11 for C++ board games
+#   "pybind11 ~= 3.0.2",
+#   # OpenCV for image manipulation (e.g., ResizeObservation)
+#   "opencv-python ~= 4.13.0.92",
+  # Matplotlib for plotting
+  "matplotlib ~= 3.10.8",
+]
+classifiers = [
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+    "Programming Language :: Python :: 3",
+]
+license = { text="MPL-2.0" }
+
+[project.urls]
+Homepage = "https://ufal.mff.cuni.cz/courses/npfl139"
+Repository = "https://github.com/ufal/npfl139"
+
+[tool.setuptools]
+license-files = [ "npfl139/LICENSE" ]
