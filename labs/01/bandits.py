@@ -69,4 +69,4 @@ if __name__ == "__main__":
         returns.append(main(main_env, main_args))
 
     # Print the mean and std
-    print("{:.2f} {:.2f}".format(np.mean(returns), np.std(returns)))
+    print(f"{np.mean(returns):.2f} {np.std(returns):.2f}")
