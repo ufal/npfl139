@@ -35,7 +35,7 @@
   Again, apart from the CUDA 12.8 build, you can change `cu128` on Linux and
   Windows to:
   - `cpu` to get CPU-only (smaller) version,
-  - `cu124` to get CUDA 12.4 build,
+  - `cu126` to get CUDA 12.6 build,
   - `rocm7.1` to get AMD ROCm 7.1 build (Linux only).
 
   **To update the `npfl139` package later, use `VENV_DIR/bin/pip install --upgrade npfl139`.**
