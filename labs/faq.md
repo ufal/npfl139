@@ -17,7 +17,7 @@
 
   On Linux and Windows, the above command installs CUDA 12.8 PyTorch build, but you can change `cu128` to:
   - `cpu` to get CPU-only (smaller) version,
-  - `cu124` to get CUDA 12.4 build,
+  - `cu126` to get CUDA 12.6 build,
   - `rocm7.1` to get AMD ROCm 7.1 build (Linux only).
 
   On macOS, the `--extra-index-url` has no effect and the Metal support is
