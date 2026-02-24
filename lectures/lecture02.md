@@ -2,6 +2,7 @@
 #### Date: Feb 24
 #### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2526/slides/?02
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2526/slides.pdf/npfl139-2526-02.pdf, PDF Slides
+#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2526/npfl139-2526-02.mp4, Lecture
 #### Questions: #lecture_2_questions
 
 - Value Iteration [Sections 4 and 4.4 of RLB]
