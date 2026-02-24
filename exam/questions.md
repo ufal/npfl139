@@ -22,3 +22,22 @@
 - Define optimal value function, optimal action-value function, and the
   optimal policy. [5]
 
+#### Questions@:, Lecture 2 Questions
+- Write down the Bellman optimality equation. [5]
+
+- Define the Bellman backup operator. [5]
+
+- Write down the value iteration algorithm. [5]
+
+- Define the supremum norm $||\cdot||_\infty$ and prove that Bellman backup
+  operator is a contraction with respect to this norm. [10]
+
+- Formulate and prove the policy improvement theorem. [10]
+
+- Write down the policy iteration algorithm. [10]
+
+- Write down the tabular Monte-Carlo on-policy every-visit $\epsilon$-soft algorithm. [5]
+
+- Write down the Sarsa algorithm. [5]
+
+- Write down the Q-learning algorithm. [5]
