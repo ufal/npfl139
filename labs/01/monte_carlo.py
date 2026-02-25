@@ -5,6 +5,7 @@ import gymnasium as gym
 import numpy as np
 
 import npfl139
+npfl139.require_version("2526.1")
 
 parser = argparse.ArgumentParser()
 # These arguments will be set appropriately by ReCodEx, even if you change them.
