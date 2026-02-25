@@ -40,6 +40,17 @@
 
   **To update the `npfl139` package later, use `VENV_DIR/bin/pip install --upgrade npfl139`.**
 
+- _Installing to a virtual environment with `uv`_
+
+  If you would like to use `uv pip` to install the required packages to
+  a virtual environment, run the above command with `VENV_DIR/bin/pip` replaced
+  by `uv pip`.
+
+  If you prefer to use `uv add` instead, first manually add `torch~=2.10.0`, `torchaudio~=2.10.0`,
+  and `torchvision~=0.25.0` with a specified `tool.uv.index` according to
+  https://docs.astral.sh/uv/guides/integration/pytorch/#using-a-pytorch-index.
+  Once you have PyTorch installed, you can then run `uv add npfl13r98`.
+
 - _**Windows** installation_
 
   - On Windows, it can happen that `python3` is not in PATH, while `py` command
