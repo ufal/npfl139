@@ -24,6 +24,7 @@
   installed in any case.
 
   **To update the `npfl139` package later, use `python3 -m pip install --user --upgrade npfl139`.**
+
 - _Installing to a virtual environment_
 
   Python supports virtual environments, which are directories containing
