@@ -12,6 +12,7 @@ from . import envs
 
 # Environment wrappers
 from .env_wrappers import DiscreteCartPoleWrapper
+from .env_wrappers import DiscreteMountainCarWrapper
 
 # Utils
 from .initializers_override import global_keras_initializers

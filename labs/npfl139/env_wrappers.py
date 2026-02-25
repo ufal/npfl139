@@ -61,3 +61,13 @@ class DiscreteCartPoleWrapper(DiscretizationWrapper):
             np.linspace(-0.2, 0.2, num=bins + 1)[1:-1],  # pole angle
             np.linspace(-2, 2, num=bins + 1)[1:-1],      # pole angle velocity
         ])
+
+
+class DiscreteMountainCarWrapper(DiscretizationWrapper):
+    def __init__(self, env, bins=None, tiles=None):
+        if bins is None:
+            bins = 24 if tiles is None or tiles <= 1 else 12 if tiles <= 3 else 8
+        super().__init__(env, [
+            np.linspace(-1.2, 0.6, num=bins + 1)[1:-1],    # car position
+            np.linspace(-0.07, 0.07, num=bins + 1)[1:-1],  # car velocity
+        ], tiles)
