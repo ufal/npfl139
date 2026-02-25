@@ -134,7 +134,7 @@
   ```
   This creates a new remote `course_repo` and a clone of the `master` branch
   from it; however, `git pull` and `git push` in this branch will operate
-  on the repository your cloned originally.
+  on the repository you cloned originally.
 
   To update your branch with the changes from the course repository, run
   ```
