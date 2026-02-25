@@ -7,6 +7,9 @@
 # EvaluationEnv
 from .evaluation_env import EvaluationEnv
 
+# Custom environments
+from . import envs
+
 # Environment wrappers
 from .env_wrappers import DiscreteCartPoleWrapper
 
