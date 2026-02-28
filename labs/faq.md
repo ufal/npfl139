@@ -48,7 +48,8 @@
   a virtual environment, run the above command with `VENV_DIR/bin/pip` replaced
   by `uv pip`.
 
-  If you prefer to use `uv add` instead, first manually add `torch~=2.10.0`, `torchaudio~=2.10.0`,
+  If you prefer to use `uv add` instead and want to use a non-default build
+  (CUDA 12.8 on Linux and Windows), first manually add `torch~=2.10.0`, `torchaudio~=2.10.0`,
   and `torchvision~=0.25.0` with a specified `tool.uv.index` according to
   https://docs.astral.sh/uv/guides/integration/pytorch/#using-a-pytorch-index.
   Once you have PyTorch installed, you can then run `uv add npfl13r98`.
