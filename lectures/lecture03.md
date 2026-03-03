@@ -1,4 +1,4 @@
-### Lecture: 3. Off-Policy Methods, N-step, Function Approximation
+### Lecture: 3. Off-Policy Methods, N-step Methods
 #### Date: Mar 3
 #### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2526/slides/?03
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2526/slides.pdf/npfl139-2526-03.pdf, PDF Slides
@@ -10,6 +10,3 @@
 - N-step Sarsa [Section 7.2 of RLB]
 - Off-policy n-step Sarsa [Section 7.3 of RLB]
 - Tree backup algorithm [Section 7.5 of RLB]
-- Function approximation [Sections 9-9.3 of RLB]
-- Tile coding [Section 9.5.4 of RLB]
-- Linear function approximation [Section 9.4 of RLB, without the Proof of Convergence of Linear TD(0)]

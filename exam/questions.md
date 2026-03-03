@@ -64,7 +64,3 @@
 
 - Write down the update of $n$-step Tree-backup algorithm (assuming you already
   have $n$ previous steps, actions, and rewards). [10]
-
-- Assuming function approximation, define Mean squared value error. [5]
-
-- Write down the gradient Monte-Carlo on-policy every-visit $\epsilon$-soft algorithm. [10]
