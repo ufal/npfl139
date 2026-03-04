@@ -12,6 +12,7 @@ from . import envs
 
 # Environment wrappers
 from .env_wrappers import DiscreteCartPoleWrapper
+from .env_wrappers import DiscreteLunarLanderWrapper
 from .env_wrappers import DiscreteMountainCarWrapper
 
 # Utils
