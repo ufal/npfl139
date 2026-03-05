@@ -5,7 +5,8 @@
 #### Examples: td_algorithms_examples
 
 Starting with the [td_algorithms.py](https://github.com/ufal/npfl139/tree/master/labs/03/td_algorithms.py)
-template, implement all of the following $n$-step TD methods variants:
+template, implement all of the following $n$-step TD methods variants for solving
+the [Taxi-v3](https://gymnasium.farama.org/environments/toy_text/taxi/) environment:
 - SARSA, expected SARSA and Tree backup;
 - either on-policy (with $ε$-greedy behavior policy) or off-policy
   (with the same behavior policy, but greedy target policy).
