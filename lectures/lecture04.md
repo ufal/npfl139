@@ -2,6 +2,7 @@
 #### Date: Mar 10
 #### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2526/slides/?04
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2526/slides.pdf/npfl139-2526-04.pdf, PDF Slides
+#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2526/npfl139-2526-04.mp4, Lecture
 #### Questions: #lecture_4_questions
 
 - Function approximation [Sections 9-9.3 of RLB]
