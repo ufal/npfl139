@@ -96,9 +96,3 @@
   buffer, how up-to-date are the priorities [according to which we sample],
   how are unseen transitions boosted, how is importance sampling used to account
   for the change in the sampling distribution). [10]
-
-- Describe a data structure that can be used to implement prioritized replay
-  buffer, so that it has given maximum capacity and insertion and sampling runs
-  in time logarithmic with respect to the maximum number of elements. [10]
-
-- How is the action-value function computed in dueling networks? [5]

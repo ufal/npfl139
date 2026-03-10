@@ -12,4 +12,3 @@
 - Deep Q Network [[Volodymyr Mnih et al.: Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)]
 - Double Deep Q Network (DDQN) [[Hado van Hasselt et al.: Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461)]
 - Prioritized Experience Replay [[Tom Schaul et al.: Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)]
-- Dueling Deep Q Network [[Ziyu Wang et al.: Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581)]
