@@ -30,8 +30,8 @@ dependencies = [
 #   "ale_py ~= 0.11.2",
 #   # Pybind11 for C++ board games
 #   "pybind11 ~= 3.0.2",
-#   # OpenCV for image manipulation (e.g., ResizeObservation)
-#   "opencv-python ~= 4.13.0.92",
+  # OpenCV for image manipulation (e.g., ResizeObservation)
+  "opencv-python ~= 4.13.0.92",
   # Matplotlib for plotting
   "matplotlib ~= 3.10.8",
 ]
