@@ -4,9 +4,8 @@
 
 Solve the [LunarLander-v3 environment](https://gymnasium.farama.org/environments/box2d/lunar_lander/)
 from the [Gymnasium library](https://gymnasium.farama.org/) Note that this task
-does not require PyTorch. You can play interactively yourself by using the
-[lunar_lander_interactive.py](https://github.com/ufal/npfl139/tree/master/labs/03/lunar_lander_interactive.py)
-script.
+does not require PyTorch. You can play interactively yourself by running
+`python3 -m npfl139.play.lunar_lander` command.
 
 The environment methods and properties are described in the `monte_carlo` assignment,
 but include one additional method:
