@@ -136,7 +136,7 @@
     ```
     module add python/3.11.11-gcc-10.2.1-555dlyc
     python3 -m venv CHOSEN_VENV_DIR
-    CHOSEN_VENV_DIR/bin/pip install --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu126 npfl138
+    CHOSEN_VENV_DIR/bin/pip install --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu126 npfl139
     ```
 
 - _How to run a GPU computation on MetaCentrum?_
@@ -168,7 +168,7 @@
   ```
   and then install the required packages in it using
   ```
-  VENV_DIR/bin/pip install --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu126 npfl138
+  VENV_DIR/bin/pip install --no-cache-dir --extra-index-url=https://download.pytorch.org/whl/cu126 npfl139
   ```
 
 - _How to run a GPU computation on AIC?_
