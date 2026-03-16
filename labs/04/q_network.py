@@ -28,7 +28,7 @@ parser.add_argument("--target_update_freq", default=..., type=int, help="Target 
 
 class Network:
     # Use GPU if available.
-    device = torch.device(torch.accelerator.current_device() if torch.accelerator.is_available() else "cpu")
+    device = torch.device(torch.accelerator.current_accelerator() if torch.accelerator.is_available() else "cpu")
 
     def __init__(self, env: npfl139.EvaluationEnv, args: argparse.Namespace) -> None:
         # TODO: Create a suitable model and store it as `self._model`.
