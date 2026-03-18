@@ -26,8 +26,8 @@ dependencies = [
 #   "mujoco ~= 3.5.0",
 #   "imageio ~= 2.37.2",
 #   "packaging ~= 26.0",
-#   # Atari environments
-#   "ale_py ~= 0.11.2",
+  # Atari environments
+  "ale_py ~= 0.11.2",
 #   # Pybind11 for C++ board games
 #   "pybind11 ~= 3.0.2",
   # OpenCV for image manipulation (e.g., ResizeObservation)
