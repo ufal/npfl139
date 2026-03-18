@@ -21,7 +21,7 @@ class ReturnReporter():
     def __call__(self, obs_t, obs_tp1, action, rew, terminated, truncated, info):
         self.rewards += rew
         if terminated or truncated:
-            print("Episode reward:", self.rewards)
+            print("Episode return:", self.rewards)
             self.rewards = 0
 
 
