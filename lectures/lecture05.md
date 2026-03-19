@@ -4,6 +4,10 @@
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2526/slides.pdf/npfl139-2526-05.pdf,PDF Slides
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2526/npfl139-2526-05.mp4, Lecture
 #### Questions: #lecture_5_questions
+#### Lecture assignment: prioritized_replay_buffer
+#### Lecture assignment: dist_c51
+#### Lecture assignment: dist_qr_dqn
+#### Lecture assignment: atari_gamer
 
 - Dueling Deep Q Network [[Ziyu Wang et al.: Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581)]
 - Noisy Nets [[Meire Fortunato et al.: Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295)]
