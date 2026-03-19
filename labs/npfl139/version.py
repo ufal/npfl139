@@ -26,5 +26,5 @@ def require_version(required_version: str) -> None:
     assert current[:len(required)] >= required, (
         f"The npfl139>={required_version} is required, but found only {__version__}.\n"
         f"Please update the npfl139 package by running either:\n"
-        f"- `VENV_DIR/bin/pip install --upgrade npfl139` when using a venv, or\n"
+        f"- `VENV_DIR/bin/pip install --upgrade npfl139` when using a venv in VENV_DIR, or\n"
         f"- `python3 -m pip install --user --upgrade npfl139` otherwise.")
