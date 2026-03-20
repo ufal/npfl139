@@ -1,6 +1,6 @@
 ### Assignment: dist_qr_dqn
-#### Date: Deadline: Apr 01, 22:00
-#### Points: 3 points
+#### Date: Deadline: Jun 30, 22:00
+#### Points: 3 points; **optional** (not required for automatically passing the exam)
 
 Extend the `q_network` assignment by solving the continuous
 [CartPole-v1 environment](https://gymnasium.farama.org/environments/classic_control/cart_pole/)
