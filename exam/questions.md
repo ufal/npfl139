@@ -127,11 +127,6 @@
 - How exactly are predicted distributions represented in quantile regression?
   What are the advantages of quantile regression compared to C51? [5]
 
-- Assume $F_Z$ is a cummulative density function of $Z$ and that $Z_\theta$
-  is a quantile distribution. Write down the 1-Wasserstein distance betwen
-  the two distributions, and explicitly write down how the closest $Z_\theta$
-  looks like, assuming $F_Z^{-1}$ is continuous. [10]
-
 - Assume we can get samples with a distribution $P$. Write down the
   loss to minimize if we want to estimate the mean of the distribution and
   prove it. [5]
@@ -139,16 +134,3 @@
 - Assume we can get samples with a distribution $P$. Write down the
   loss to minimize if we want to estimate the median of the distribution and
   prove it. [5]
-
-- Assume we can get samples with a distribution $P$. Write down the
-  loss to minimize if we want to estimate a quantile $τ$ and prove it. [5]
-
-- Explain how we can solve the problem of quantile regression not being smooth
-  around zero, including the formula of the result. [5]
-
-- Write down the QR-DQN-1 training algorithm including the quantile Huber loss
-  $\rho_\tau^\kappa$ (it is fine to use $\kappa=1$). How does the inputs and
-  outputs of the network look like (including their shapes)? [10]
-
-- Describe the network inputs and outputs (including their shapes) of DQN, C51,
-  QR-DQN, IQN. [5]
