@@ -189,7 +189,7 @@ def main(env: npfl139.EvaluationEnv, args: argparse.Namespace) -> None:
         while True:
             evaluate_episode(True)
 
-    # Create the asynchroneous vector environment for training.
+    # Create the asynchronous vector environment for training.
     vector_env = gym.make_vec(args.env, args.envs, gym.VectorizeMode.ASYNC,
                               vector_kwargs={"autoreset_mode": gym.vector.AutoresetMode.SAME_STEP})
 
