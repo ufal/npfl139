@@ -1,0 +1,17 @@
+### Lecture: 7. Continuous Action Space: DDPG, TD3, SAC
+#### Date: Mar 31
+#### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2526/slides/?07
+#### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2526/slides.pdf/npfl139-2526-07.pdf,PDF Slides
+#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2526/npfl139-2526-07.mp4, Lecture
+#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2526/npfl139-2526-07.sac_conclusion.mp4, SAC Conclusion
+#### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2526/npfl139-2526-07.practicals.mp4, Practicals
+#### Questions: #lecture_7_questions
+#### Lecture assignment: paac_continuous
+#### Lecture assignment: ddpg
+#### Lecture assignment: walker
+
+- Gradient methods with continuous actions [Section 13.7 of RLB]
+- Deterministic policy gradient theorem (DPG) [[David Silver et al.: Deterministic Policy Gradient Algorithms](http://proceedings.mlr.press/v32/silver14.pdf)]
+- Deep deterministic policy gradient (DDPG) [[Timothy P. Lillicrap et al.: Continuous Control with Deep Reinforcement Learning](https://arxiv.org/abs/1509.02971)]
+- Twin delayed deep deterministic policy gradient (TD3) [[Scott Fujimoto et al.: Addressing Function Approximation Error in Actor-Critic Methods](https://arxiv.org/abs/1802.09477)]
+- Soft actor-critic (SAC) [[Tuomas Haarnoja et al.: Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor](https://arxiv.org/abs/1801.01290)]

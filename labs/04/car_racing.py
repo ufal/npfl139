@@ -38,7 +38,7 @@ def main(env: npfl139.EvaluationEnv, args: argparse.Namespace) -> None:
 
         # Final evaluation
         while True:
-            state, done = env.reset(start_evaluation=True)[0], False
+            state, done = env.reset(options={"start_evaluation": True})[0], False
             while not done:
                 # TODO: Choose a greedy action
                 action = ...

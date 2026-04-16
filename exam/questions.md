@@ -168,3 +168,112 @@
 
 - Explain the difference between a regular Actor-critic and Parallel Advantage
   Actor Critic algorithms. [5]
+
+#### Questions@:, Lecture 7 Questions
+- Considering continuous actions modeled by a normal distribution with
+  diagonal covariance, describe how is the policy distribution computed
+  (network architecture, output activation functions) and how does the loss of
+  a simple REINFORCE algorithm look like. [5]
+
+- Formulate the deterministic policy gradient theorem for
+  $\nabla_{\boldsymbol\theta} v_\pi(s)$. [5]
+
+- Formulate the deterministic policy gradient theorem for
+  $\nabla_{\boldsymbol\theta} J(\boldsymbol\theta)$. [5]
+
+- Prove the part of the deterministic policy gradient theorem showing the value
+  of $\nabla_{\boldsymbol\theta} v_\pi(s)$. [10]
+
+- Write down the critic loss (or its derivative) and the actor policy loss (or
+  its derivative) of the Deep Deterministic Policy Gradients (DDPG) algorithm. Make
+  sure to distinguish the target networks from the ones being trained. [10]
+
+- How is the return estimated in the Twin Delayed Deep Deterministic Policy
+  Gradient (TD3) algorithm? [5]
+
+- Write down the critic loss (or its derivative) and the actor policy loss (or
+  its derivative) of the Twin Delayed Deep Deterministic Policy Gradient (TD3)
+  algorithm. Make sure to distinguish the target networks from the ones being
+  trained. [10]
+
+- Write down how is the reward augmented in Soft actor critic, and the
+  definitions of the soft action-value function and the soft (state-)value function.
+  Then, define the modified Bellman backup operator $\mathcal{T}_\pi$ (be sure
+  to indicate whether you are using the augmented or non-augmented reward),
+  whose repeated application converges to the soft actor-value function $q_\pi$,
+  and explain why. [10]
+
+- Considering soft policy improvement of a policy $\pi$, write down the update
+  formula for the improved policy $\pi'$, and prove that the soft action-value
+  function of the improved policy is greater or equal to the soft action-value
+  function of the original policy. [10]
+
+- Write down how are the critics and target critics updated in the Soft actor
+  critic algorithm. [5]
+
+- Write down how is the actor updated in the Soft actor critic algorithm,
+  including the policy reparametrization trick. [5]
+
+- Regarding the entropy penalty coefficient $\alpha$ in the Soft actor critic,
+  define what constrained optimization problem we are solving, what is the
+  corresponding Lagrangian (and whether we are minimizing/maximizing it
+  with respect to the policy and $\alpha$), and what does the $\alpha$ update
+  look like. [5]
+
+#### Questions@:, Lecture 8 Questions
+- Define a one-step TD error and express the $n$-step return as a sum of them. [5]
+
+- Define a one-step TD error and express the $n$-step return with off-policy
+  correction using control variates as a sum of TD errors. [5]
+
+- Define the $\lambda$-return. [5]
+
+- Define the $n$-step truncated $\lambda$-return. [5]
+
+- Define a one-step TD error and express the $n$-step truncated $\lambda$-return
+  as a sum of them. [5]
+
+- Define a one-step TD error and express the $n$-step truncated $\lambda$-return with
+  off-policy correction as a sum of them. [5]
+
+- Define the V-trace estimate and write down the policy to whose value function
+  the V-trace estimate converges to. [10]
+
+- Explain why the fixed point of the V-trace operator does not depend on the
+  truncation of all but the last importance sampling ratios. [10]
+
+- Write down the critic loss (or its derivative) and the actor policy loss (or
+  its derivative) of the IMPALA algorithm, including the V-trace formula. [10]
+
+- Sketch the population based training used in the IMPALA algorithm. [5]
+
+#### Questions@:, Lecture 9 Questions
+- In PopArt normalization, the value function is computed based on a normalized
+  value predictor $n$ as $\sigma n + \mu$. Describe how to maintain $\sigma$ and
+  $\mu$, how to compute normalized advantage based on return $G$, and how is the
+  normalized value predictor modified when the estimates of $\sigma$ and $\mu$
+  change. [10]
+
+- Define the transformed Bellman operator. [5]
+
+- Define the transformed Bellman operator. Then, assuming $h$ is strictly
+  monotonically increasing function and considering a deterministic Markov
+  decision process, show to what does a transformed Bellman operator
+  $\mathcal{T}_h$ converge and prove it. [10]
+
+- Write down the return transformation used for Atari environments (for example
+  by R2D2). [5]
+
+- Describe the replay buffer elements in R2D2. What is the difference between
+  the zero-state and stored-state strategies, and how is burn-in used? [5]
+
+- Write down the Retrace operator and describe the three possibilities of
+  setting the traces $c_t$: importance sampling, Tree-backup($\lambda$), and
+  Retrace($\lambda$). [10]
+
+- Describe the RL-LSTM model proposed in MERLIN. [5]
+
+- Describe the RL-MEM model proposed in MERLIN and compare it to RL-LSTM. [10]
+
+- Describe the architecture of the MERLIN model and explain its difference
+  to RL-MEM model. [10]

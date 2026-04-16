@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "npfl139"
-version = "2526.6.0"
+version = "2526.7.0"
 authors = [
   { name="Milan Straka", email="straka@ufal.mff.cuni.cz" },
 ]
@@ -23,9 +23,9 @@ dependencies = [
   # Custom build of pybox2d used in some gymnasium environments
   "ufal.pybox2d ~= 2.3.10.5",
 #   # Mujoco
-#   "mujoco ~= 3.5.0",
-#   "imageio ~= 2.37.2",
-#   "packaging ~= 26.0",
+  "mujoco ~= 3.6.0",
+  "imageio ~= 2.37.2",
+  "packaging ~= 26.0",
   # Atari environments
   "ale_py ~= 0.11.2",
 #   # Pybind11 for C++ board games

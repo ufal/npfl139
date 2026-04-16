@@ -20,4 +20,5 @@ from .initializers_override import global_keras_initializers
 from .replay_buffer import ReplayBuffer
 from .startup_impl import startup
 from .typed_torch_function import typed_torch_function
+from .update_params_by_ema import update_params_by_ema
 from .version import __version__, require_version

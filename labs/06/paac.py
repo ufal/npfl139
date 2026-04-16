@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import json
 
 import gymnasium as gym
 import numpy as np
@@ -50,7 +51,7 @@ class Agent:
         #
         # The `args.entropy_regularization` might be used to include actor
         # entropy regularization -- the assignment can be solved even without
-        # it, but my reference solution learns quicklier when using it.
+        # it, but my reference solution learns more quickly when using it.
         # In any case, `torch.distributions.Categorical` is a suitable distribution
         # offering the `.entropy()` method.
         raise NotImplementedError()
