@@ -35,7 +35,7 @@ class BoardGamePlayer(Generic[BoardGameT]):
         """
         raise NotImplementedError()
 
-    def evaluate_mcts(self, game: BoardGame, simulations: int) -> np.ndarray:
+    def evaluate_mcts(self, game: BoardGameT, simulations: int) -> np.ndarray:
         """An optional method evaluating the policy using MCTS.
 
         Returns:
