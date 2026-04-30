@@ -15,6 +15,9 @@ from .env_wrappers import DiscreteCartPoleWrapper
 from .env_wrappers import DiscreteLunarLanderWrapper
 from .env_wrappers import DiscreteMountainCarWrapper
 
+# Board games
+from . import board_games
+
 # Utils
 from .initializers_override import global_keras_initializers
 from .replay_buffer import ReplayBuffer
