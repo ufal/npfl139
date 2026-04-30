@@ -6,7 +6,7 @@ import numpy as np
 import torch
 
 import npfl139
-npfl139.require_version("2526.11")
+npfl139.require_version("2526.11.1")
 from npfl139.board_games import AZQuiz
 
 parser = argparse.ArgumentParser()
