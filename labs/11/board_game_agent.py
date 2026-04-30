@@ -220,7 +220,7 @@ def sim_game(agent: Agent, args: argparse.Namespace) -> list[ReplayBufferEntry]:
 def train(args: argparse.Namespace) -> Agent:
     # Perform training
     agent = Agent(args)
-    replay_buffer = npfl139.MonolithicReplayBuffer(max_length=args.replay_buffer_length)
+    replay_buffer = npfl139.ReplayBuffer(max_length=args.replay_buffer_length)
 
     iteration = 0
     training = True
