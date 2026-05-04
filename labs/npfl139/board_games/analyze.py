@@ -94,12 +94,12 @@ class Analyzer:
                 self.current = i
                 break
         else:
-            self.history.append(HistoryEntry(game, self.current, *self.player.evaluate(game) if game.outcome(0) is None else (None, 0)))
+            self.history.append(HistoryEntry(game, self.current, *self.player.evaluate(game) if not game.outcome() else (None, 0)))
             self.current = len(self.history) - 1
         self.render()
 
     def render(self):
-        if self.history[self.current].game.outcome(0) is None:
+        if not self.history[self.current].game.outcome():
             if self.value_types[self.value_type] == "values" and self.history[self.current].values is None:
                 self.history[self.current].values = self.player.evaluate_values(self.history[self.current].game)
             if self.value_types[self.value_type] == "mcts" and self.history[self.current].mcts is None:
@@ -121,7 +121,7 @@ class Analyzer:
 
     def run(self):
         while True:
-            if not pygame.event.peek() and self.history[self.current].game.outcome(0) is None:
+            if not pygame.event.peek() and not self.history[self.current].game.outcome():
                 if self.players[self.history[self.current].game.to_play]:
                     self.move(self.player.play(self.history[self.current].game))
                     time.sleep(0.1)

@@ -37,7 +37,7 @@ def evaluate(
             game = game_class()
             if first_chosen:
                 game.move(first_move_selector(i))
-            while not game.outcome(game.to_play):
+            while not game.outcome():
                 game.move(players[to_start ^ game.to_play].play(game.clone()))
                 if render:
                     game.render()
