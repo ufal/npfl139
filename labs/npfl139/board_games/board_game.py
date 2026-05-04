@@ -36,8 +36,8 @@ class BoardGame:
     def to_play(self) -> int:
         """Return the current player."""
 
-    def outcome(self, player: int) -> Outcome | None:
-        """Return the game outcome for a given player."""
+    def outcome(self, player: int | None = None) -> Outcome | None:
+        """Return the game outcome for a given player (or the current player if `player` is `None`)."""
 
     def valid(self, action: int) -> bool:
         """Return whether the given action is valid."""

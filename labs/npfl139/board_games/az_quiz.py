@@ -53,8 +53,11 @@ class AZQuiz(BoardGame):
     def to_play(self) -> int:
         return self._to_play
 
-    def outcome(self, player: int) -> BoardGame.Outcome | None:
-        return self._outcome if self._outcome is None or player == self._to_play else self._outcome.reverse()
+    def outcome(self, player: int | None = None) -> BoardGame.Outcome | None:
+        if self._outcome is None or player is None or player == self._to_play:
+            return self._outcome
+        else:
+            return self._outcome.reverse()
 
     def valid(self, action: int) -> bool:
         return self._outcome is None and action >= 0 and action < self.ACTIONS \
