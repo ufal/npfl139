@@ -1,5 +1,5 @@
 ### Assignment: pisqorky
-#### Date: Deadline: Jun 30, 22:00; competition submission before **May 20, 22:00**
+#### Date: Competition: May 20, 22:00; Deadline: Jun 30, 22:00
 #### Points: 5 points + 5 bonus; either this or `az_quiz_randomized` is required for automatically passing the exam
 
 Train an agent on [Piškvorky](https://cs.wikipedia.org/wiki/Pi%C5%A1kvorky),
