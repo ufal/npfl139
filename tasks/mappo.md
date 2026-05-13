@@ -27,4 +27,4 @@ part of the state).
 
 During evaluation in ReCodEx, two different random seeds will be employed, and
 you need to reach the average return of 500 on all of them. Time limit for each test
-is 10 minutes.
+is 15 minutes.
