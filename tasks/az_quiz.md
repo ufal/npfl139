@@ -69,4 +69,4 @@ mentioning `AZQuiz` directly in the code; instead, the game (and the player to
 evaluate against) is specified only in an argument.
 
 **To get regular points and to participate in the competition, you must
-implement an AlphaZero-style algorithm.**
+implement and train an AlphaZero-style model.**
