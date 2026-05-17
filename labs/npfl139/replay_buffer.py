@@ -135,3 +135,33 @@ class ReplayBuffer(Generic[NamedTuple]):
         else:
             indices = self._generator.choice(self._len, size, replace=False)
         return self[indices]
+
+    def sample_chunks(self, batch_size: int, chunk_length: int) -> NamedTuple:
+        """Sample a batch of chunks (contiguous sequences of items) from the replay buffer.
+
+        Parameters:
+          batch_size: The number of chunks to sample.
+          chunk_length: The length of each chunk.
+
+        Returns:
+          A named tuple of Numpy arrays containing the sampled items with shape [batch_size, chunk_length].
+        """
+        assert self._len >= chunk_length, "Not enough data to sample chunks."
+
+        # Sample starting indices for each chunk.
+        indices = self._generator.integers(0, self._len - chunk_length + 1, batch_size)
+
+        # To handle wrap-around, avoid indices just before self._offset.
+        if self._len == self._max_length:
+            if self._offset < chunk_length:
+                indices += self._offset
+            else:
+                indices = indices + (indices > self._offset - chunk_length) * (chunk_length - 1)
+
+        # Extend indices to full chunks.
+        indices = indices[..., np.newaxis] + np.arange(chunk_length)
+
+        # Wrap-around without modulo for efficiency.
+        indices -= (indices >= self._max_length) * self._max_length
+
+        return self[indices]
