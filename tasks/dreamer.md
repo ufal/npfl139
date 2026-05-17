@@ -4,4 +4,4 @@
 
 Implement the Dreamer algorithm for continuous CarRacing environment.
 
-**The template is not yet finalized, it will be published on Sunday May 17.**
+**The template is not yet finalized, it will be published before the May 21 practicals.**
