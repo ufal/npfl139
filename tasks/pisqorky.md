@@ -30,4 +30,4 @@ The final competition evaluation will be performed after the May 20 deadline by
 a round-robin tournament, when the first move is chosen for the first player.
 
 **To get regular points and to participate in the competition, you must
-implement and train an AlphaZero-style model.**
+implement and train an AlphaZero-style model from self-play games.**
