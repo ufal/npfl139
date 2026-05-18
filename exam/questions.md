@@ -391,3 +391,24 @@
 
 - Describe the training of both a critic and an actor in DreamerV2 (including
   the explicit losses). [10]
+
+#### Questions@:, Lecture 14 Questions
+- In Reinforcement learning from human feedback, define what models are trained
+  and write down the three parallel processes performed during training. [5]
+
+- In Reinforcement learning from human feedback, define a trajectory segment,
+  write down how we estimate the probability that one trajectory segment
+  is rated to be better than another trajectory segment according to the
+  Bradley-Terry model, and then define the loss we minimize to fit the estimated
+  reward in RLHF. [10]
+
+- When summarizing from human feedback, define the loss we minimize to fit the
+  reward model, and then describe how we train the human feedback policies
+  (make sure to describe all quantities of the loss in detail). What are the
+  roles of the used KL term? [10]
+
+- In InstructGPT, write down the difference in collecting the rating compared
+  to plain RLHF, define the loss used to train the reward model, and finally
+  describe the reward used to train the PPO and PPO-ptx models. [5]
+
+MORE QUESTIONS FROM LECTURE 14 TO APPEAR.
