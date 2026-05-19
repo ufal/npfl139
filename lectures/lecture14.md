@@ -1,0 +1,10 @@
+### Lecture: 14. RL from Human Feedback, DPO, RL from Verifiable Rewards, GRPO
+#### Date: May 19
+#### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2526/slides/?14
+#### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2526/slides.pdf/npfl139-2526-14.pdf,PDF Slides
+#### Questions: #lecture_14_questions
+
+- RLHF [[Reinforcement Learning from Human Preferences](https://arxiv.org/abs/1706.03741)]
+- Summarize from HF [[Learning to summarize from human feedback](https://arxiv.org/abs/2009.01325)]
+- InstructGPT [[Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)]
+- DPO [[Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290)]
