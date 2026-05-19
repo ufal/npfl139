@@ -1,4 +1,4 @@
-### Lecture: 14. RL from Human Feedback, DPO, RL from Verifiable Rewards, GRPO
+### Lecture: 14. RL from Human Feedback, DPO, GRPO, RL from Verifiable Rewards
 #### Date: May 19
 #### Slides: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2526/slides/?14
 #### Reading: https://ufal.mff.cuni.cz/~straka/courses/npfl139/2526/slides.pdf/npfl139-2526-14.pdf,PDF Slides
