@@ -8,3 +8,5 @@
 - Summarize from HF [[Learning to summarize from human feedback](https://arxiv.org/abs/2009.01325)]
 - InstructGPT [[Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)]
 - DPO [[Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290)]
+- GRPO [[DeepSeekMath](https://arxiv.org/abs/2402.03300), [Dr.GRPO](https://arxiv.org/abs/2503.20783), [DAPO](https://arxiv.org/abs/2503.14476)]
+- RLVR [[DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)]
