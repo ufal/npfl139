@@ -6,11 +6,23 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 import argparse
+import contextlib
 import importlib
 import os
+import sys
 
 from .board_game import BoardGame
 from .board_game_evaluator import evaluate
+
+
+@contextlib.contextmanager
+def add_to_path(path):
+    sys_path_clone = sys.path[:]
+    sys.path.insert(0, path)
+    try:
+        yield
+    finally:
+        sys.path = sys_path_clone
 
 
 def load_player(args: argparse.Namespace, player: str):
@@ -27,7 +39,8 @@ def load_player(args: argparse.Namespace, player: str):
         player = player[:-3]
 
     def loader():
-        module = importlib.import_module(player)
+        with add_to_path("/".join(player.split(".")[:-1])):
+            module = importlib.import_module(player)
         module_args = module.parser.parse_args(player_args)
         module_args.recodex = True
         if hasattr(module_args, "seed") and module_args.seed is None and args.seed is not None:
