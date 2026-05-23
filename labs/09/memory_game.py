@@ -21,7 +21,7 @@ parser.add_argument("--evaluate_each", default=..., type=int, help="Evaluate eac
 parser.add_argument("--evaluate_for", default=..., type=int, help="Evaluate for number of episodes.")
 parser.add_argument("--hidden_layer", default=None, type=int, help="Hidden layer size; default 8*`cards`")
 parser.add_argument("--memory_cells", default=None, type=int, help="Number of memory cells; default 2*`cards`")
-parser.add_argument("--memory_cell_size", default=None, type=int, help="Memory cell size; default 3/2*`cards`")
+parser.add_argument("--memory_cell_size", default=None, type=int, help="Memory cell size; default 2*`cards`")
 
 
 class Agent:
@@ -47,22 +47,23 @@ class Agent:
                                            for i, dim in enumerate(env.observation_space.nvec)], dim=-1)
 
                 # TODO: Generate a read key for memory read from the encoded input, by using
-                # a ReLU hidden layer of size `args.hidden_layer` followed by a dense layer
-                # with `args.memory_cell_size` units and `tanh` activation (to keep the memory
-                # content in limited range).
+                # a ReLU-activated hidden layer of size `args.hidden_layer` followed by
+                # a fully connected layer with `env.memory_cell_size` units.
 
                 # TODO: Read the memory using the generated read key. Notably, compute cosine
                 # similarity of the key and every memory row, apply softmax to generate
                 # a weight distribution over the rows, and finally take a weighted average of
                 # the memory rows.
 
-                # TODO: Using concatenated encoded input and the read value, use a ReLU hidden
-                # layer of size `args.hidden_layer` followed by a dense layer with
-                # `env.action_space.n` units to produce policy logits.
+                # TODO: Using concatenated encoded input and the read value, produce policy logits
+                # by applying a ReLU-activated hidden layer of size `args.hidden_layer` followed
+                # by an output linear layer with `env.action_space.n` units.
 
-                # TODO: Perform memory write. For faster convergence, add directly
-                # the `encoded_input` to the memory, i.e., prepend it as a first memory row
-                # and drop the last memory row to keep memory size constant.
+                # TODO: Perform a memory write. First generate a write key from the encoded input
+                # by applying a ReLU-activated hidden layer of size `args.hidden_layer` followed by
+                # a linear layer with `env.memory_cell_size` units, and then write it memory;
+                # specifically, prepend the write key as a first memory row and drop the last memory
+                # row to keep the memory size constant.
 
                 # TODO: Return the updated memory and the policy
                 raise NotImplementedError()
@@ -115,8 +116,7 @@ def main(env: npfl139.EvaluationEnv, args: argparse.Namespace) -> None:
     if args.memory_cells is None:
         args.memory_cells = 2 * args.cards
     if args.memory_cell_size is None:
-        args.memory_cell_size = 3 * args.cards // 2
-    assert sum(env.observation_space.nvec) == args.memory_cell_size
+        args.memory_cell_size = 2 * args.cards
 
     # Construct the agent.
     agent = Agent(env, args)
