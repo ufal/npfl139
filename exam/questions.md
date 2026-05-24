@@ -411,4 +411,16 @@
   to plain RLHF, define the loss used to train the reward model, and finally
   describe the reward used to train the PPO and PPO-ptx models. [5]
 
-MORE QUESTIONS FROM LECTURE 14 TO APPEAR.
+- What is the goal of Direct Preference Optimization (DPO)? Describe the input
+  data it requires and state the high-level objective it optimizes, showing how
+  a reward function $r(x,y)$ enters this objective before DPO bypasses it.
+  (You do not need to derive or write the final DPO loss function). [5]
+
+- In Direct Preference Optimization (DPO), write down the underlying
+  KL-constrained reward objective it optimizes, show its analytical optimum
+  $\pi^*$, express the latent reward function in terms of the optimum
+  and reference policy (“your language model is secretely a reward model” step),
+  and conclude by writing down the final DPO loss function. [10]
+
+- Provide the loss function for Group Relative Policy Optimization (GRPO) and
+  detail the core differences to the PPO algorithm. [10]
