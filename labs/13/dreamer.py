@@ -32,7 +32,7 @@ parser.add_argument("--train_each", default=32, type=int, help="Train each given
 # World-Model specific
 parser.add_argument("--cnn_dim", default=..., type=int, help="Number of channels in CNN layers.")
 parser.add_argument("--initial_random_episodes", default=5, type=int, help="Number of initial random episodes.")
-parser.add_argument("--kl_balancing", default=0.8, type=float, help="KL divergence loss weight.")
+parser.add_argument("--kl_balancing", default=0.8, type=float, help="KL balancing alpha.")
 parser.add_argument("--kl_loss_weight", default=0.1, type=float, help="KL divergence loss weight.")
 parser.add_argument("--latent_size", default=32, type=int, help="Size of latent state.")
 parser.add_argument("--num_categories", default=32, type=int, help="Number of categorical variables.")
@@ -383,7 +383,7 @@ class Agent(torch.nn.Module):
             # TODO: Now perform the step in the world model and produce the action,
             # either by sampling or by taking the mean action (according to the `sample` argument).
             #
-            # Start by embedding the observation with `self_observation_encoder`.
+            # Start by embedding the observation with `self.observation_encoder`.
             # Then compute the posterior distribution parameters by `self.rssm.posterior` which
             # processes the deterministic state stored in `self._state_h` and the observation embedding,
             # and sample the stochastic state using `self.rssm.sample_s`. Finally, obtain
@@ -439,7 +439,7 @@ def main(env: npfl139.EvaluationEnv, args: argparse.Namespace) -> None:
 
         while not done:
             # TODO: Predict an action using `agent.step` with `sample=False` argument.
-            # Neiter `observation` nor the returned `action` need to be transformed in any way
+            # Neither `observation` nor the returned `action` need to be transformed in any way
             # (promotion to/from batches and other conversions are handled inside `agent`).
             action = ...
 
@@ -472,7 +472,7 @@ def main(env: npfl139.EvaluationEnv, args: argparse.Namespace) -> None:
             observation = next_observation
 
     observation = None
-    wm_loss, agent_loss, critic_loss = None, None, None
+    wm_loss, actor_loss, critic_loss = None, None, None
     training, steps = True, 0
     while training:
         # Step in the environment.
@@ -481,7 +481,7 @@ def main(env: npfl139.EvaluationEnv, args: argparse.Namespace) -> None:
             ...
 
         # TODO: Predict an action using `agent.step` with `sample=True` argument.
-        # Neiter `observation` nor the returned `action` need to be transformed in any way
+        # Neither `observation` nor the returned `action` need to be transformed in any way
         # (promotion to/from batches and other conversions are handled inside `agent`).
         action = ...
 
@@ -495,7 +495,7 @@ def main(env: npfl139.EvaluationEnv, args: argparse.Namespace) -> None:
         if done and env.episode % args.evaluate_each == 0:
             returns = np.mean([evaluate_episode(logging=False) for _ in range(args.evaluate_for)])
             print(f"Evaluation after {env.episode} episodes: {returns:.2f};",
-                  f"{wm_loss=:.4f}, {agent_loss=:.4f}, {critic_loss=:.4f}", flush=True)
+                  f"{wm_loss=:.4f}, {actor_loss=:.4f}, {critic_loss=:.4f}", flush=True)
 
         # Perform a training step when enough steps have been performed.
         steps += 1
@@ -510,7 +510,7 @@ def main(env: npfl139.EvaluationEnv, args: argparse.Namespace) -> None:
             wm_loss, states_h, states_s = agent.train_world_model(...)
 
             # TODO: Finally, train the actor using `agent.train_actor_critic`, storing the losses.
-            agent_loss, critic_loss = agent.train_actor_critic(...)
+            actor_loss, critic_loss = agent.train_actor_critic(...)
 
     # Use the following code to save the hyperparameters and the model weights;
     # the `action_only` argument of `save_weights` allows saving either only
