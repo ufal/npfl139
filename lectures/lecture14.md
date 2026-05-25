@@ -6,6 +6,7 @@
 #### Video: https://lectures.ms.mff.cuni.cz/video/rec/npfl139/2526/npfl139-2526-14.practicals.mp4, Practicals
 #### Questions: #lecture_14_questions
 #### Lecture assignment: rlvr
+#### Lecture assignment: generals
 
 - RLHF [[Reinforcement Learning from Human Preferences](https://arxiv.org/abs/1706.03741)]
 - Summarize from HF [[Learning to summarize from human feedback](https://arxiv.org/abs/2009.01325)]
