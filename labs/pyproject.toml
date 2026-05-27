@@ -30,6 +30,9 @@ dependencies = [
   "ale_py ~= 0.11.2",
   # Pybind11 for C++ board games
   "pybind11 ~= 3.0.4",
+  # HuggingFace Transformers and PEFT
+  "transformers ~= 5.2.0",
+  "peft ~= 0.19.1",
   # OpenCV for image manipulation (e.g., ResizeObservation)
   "opencv-python ~= 4.13.0.92",
   # Matplotlib for plotting
