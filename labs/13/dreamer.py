@@ -8,6 +8,7 @@ import numpy as np
 import torch
 
 import npfl139
+npfl139.require_version("2526.14.0")
 
 parser = argparse.ArgumentParser()
 # These arguments will be set appropriately by ReCodEx, even if you change them.
