@@ -9,7 +9,7 @@ from .task import Task
 
 
 class ArithmeticTask(Task):
-    """A simple arithmetic task where an expression with 2-5 numbers and +, -, * must be evaluates."""
+    """A simple arithmetic task where an expression with 2-5 numbers and +, -, * must be evaluated."""
 
     @property
     def instructions(self) -> str:
