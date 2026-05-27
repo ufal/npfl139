@@ -206,6 +206,7 @@ class Critic(torch.nn.Sequential):
 
 
 class Agent(torch.nn.Module):
+    # Use GPU if available.
     device = torch.device(torch.accelerator.current_accelerator() if torch.accelerator.is_available() else "cpu")
 
     def __init__(self, env: npfl139.EvaluationEnv, args: argparse.Namespace) -> None:
