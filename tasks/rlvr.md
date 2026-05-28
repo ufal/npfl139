@@ -39,7 +39,7 @@ creating a LoRA adapter and serializing it, generating responses for a batch of
 prompts, and computing their probability in a differentiable way using teacher
 forcing. To pass, you must implement an RL algorithm of your choice to surpass the
 required performance threshold; the template describes the use of a simplified GRPO
-algorithm, which is able to surpass 75% accuracy.
+algorithm, which is able to surpass 90% accuracy.
 
 Regarding hyperparameters, the reference solution utilizes:
 - a batch size of 64 (generating 8 randomly sampled responses for each of
