@@ -48,7 +48,7 @@ Regarding the missing hyperparameters, you need to specify:
 - the hidden layer size (of various layers and the GRU; I use small hundreds);
 - the number of convolution channels (I use smaller powers of 2);
 - the activation and normalization (DreamerV3 uses SiLU activation and RMSNorm
-  after every hidden linear layer; I reuse it and use GroupNorm after every 
+  after every hidden linear layer; I reuse it and use GroupNorm after every
   hidden convolution, but you might experiment with other choices);
 - the agent hyperparameters (I use standard gamma, trace lambda, target critic
   tau; I reuse the DreamerV2 entropy penalty of 1e-3, but I am not sure if it
