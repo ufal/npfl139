@@ -3,8 +3,8 @@
 #### Points: 4 points
 
 Following the reinforcement learning from verifiable rewards paradigm, improve
-the performance of a small LLM on a mathematical task using for example the
-GRPO algorithm.
+the performance of a small LLM on a mathematical task using GRPO (or any other
+purely RL algorithm).
 
 An abstract interface of an LLM task is represented using the new
 [npfl139.llm.Task](https://github.com/ufal/npfl139/blob/master/labs/npfl139/llm/task.py)
@@ -37,9 +37,9 @@ Start with the [rlvr.py](https://github.com/ufal/npfl139/tree/master/labs/14/rlv
 containing already implemented LLM functionality: loading the pre-trained model,
 creating a LoRA adapter and serializing it, generating responses for a batch of
 prompts, and computing their probability in a differentiable way using teacher
-forcing. To pass, you must implement an RL algorithm of your choice to surpass the
+forcing. To pass, you must implement a purely RL algorithm of your choice that meets the
 required performance threshold; the template describes the use of a simplified GRPO
-algorithm, which is able to surpass 90% accuracy.
+algorithm capable of achieving over 90% accuracy.
 
 Regarding hyperparameters, the reference solution utilizes:
 - a batch size of 64 (generating 8 randomly sampled responses for each of
