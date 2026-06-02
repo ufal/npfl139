@@ -28,6 +28,6 @@ setting as in `az_quiz`, so in order to pass, you must achieve 90% win rate both
 in the first test (560 games in 25 seconds with `num_simulations=0`) and in the
 second test (112 games in 5 minutes without modifying `num_simulations`).
 
-Additionally, part of this assignment is also to **write us
-on Piazza** (once you pass in ReCodEx) a **description** of how you **handle the
-stochasticity** in MCTS; you will get points only after we finish the discussion.
+Additionally, part of this assignment is to **post a description on Piazza**
+detailing how you **handle the stochasticity** in MCTS (once you clear the tests
+in ReCodEx); you will pass the assignment only after we finish the discussion.
