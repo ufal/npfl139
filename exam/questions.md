@@ -72,7 +72,8 @@
 
 - Write down the semi-gradient $\epsilon$-greedy Sarsa algorithm. [10]
 
-- Prove that semi-gradient TD update is not an SGD update of any loss. [10]
+- Prove that, for general function approximation, the semi-gradient TD update
+  does not correspond to the SGD update of any loss. [10]
 
 - What are the three elements causing off-policy divergence with function
   approximation? Write down the Baird's counterexample. [10]
