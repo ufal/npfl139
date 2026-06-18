@@ -128,12 +128,12 @@
   What are the advantages of quantile regression compared to C51? [5]
 
 - Assume we can get samples with a distribution $P$. Write down the
-  loss to minimize if we want to estimate the mean of the distribution and
-  prove it. [5]
+  loss function defined over individual samples that we need to minimize
+  to estimate the mean of the distribution, and prove it. [5]
 
 - Assume we can get samples with a distribution $P$. Write down the
-  loss to minimize if we want to estimate the median of the distribution and
-  prove it. [5]
+  loss function defined over individual samples that we need to minimize to
+  estimate the median of the distribution, and prove it. [5]
 
 #### Questions@:, Lecture 6 Questions
 - Formulate the policy gradient theorem. [5]
