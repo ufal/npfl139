@@ -82,7 +82,7 @@ def main(cmd_args: argparse.Namespace) -> None:
             with torch.no_grad():
                 obs_tensor = obs_to_tensor(obs, agent.device)
                 obs_embed = agent.observation_encoder(obs_tensor)
-                s_current, _ = agent.rssm.get_s(agent.rssm.posterior(torch.cat([h_current, obs_embed], dim=-1)))
+                s_current, _ = agent.rssm.sample_s(agent.rssm.posterior(torch.cat([h_current, obs_embed], dim=-1)))
             imagination_step_count = 0
             h_prior, s_prior = h_current.clone(), s_current.clone()
             restart = False
@@ -100,11 +100,11 @@ def main(cmd_args: argparse.Namespace) -> None:
             # Update the posterior (state based on the actual observation).
             h_current = agent.rssm.step_rnn(h_current, s_current, action_tensor)
             obs_embed = agent.observation_encoder(obs_tensor)
-            s_current, _ = agent.rssm.get_s(agent.rssm.posterior(torch.cat([h_current, obs_embed], dim=-1)))
+            s_current, _ = agent.rssm.sample_s(agent.rssm.posterior(torch.cat([h_current, obs_embed], dim=-1)))
 
             # Update the prior (pure imagination).
             h_prior = agent.rssm.step_rnn(h_prior, s_prior, action_tensor)
-            s_prior, _ = agent.rssm.get_s(agent.rssm.prior(h_prior))
+            s_prior, _ = agent.rssm.sample_s(agent.rssm.prior(h_prior))
 
             # Render all the observations.
             screen.fill((0, 0, 0))
