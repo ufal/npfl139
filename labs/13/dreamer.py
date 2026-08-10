@@ -86,7 +86,7 @@ def activation(args: argparse.Namespace) -> torch.nn.Module:
 class ObservationEncoder(torch.nn.Sequential):
     # TODO: The `ObservationEncoder` should process the given observations with
     # shape [batch_size, 3, 48, 48] in [0-1] range through a convolutional feature
-    # extractor and produce an embedding of shape [batch_size, cnn_dim].
+    # extractor and produce an embedding of shape [batch_size, num_features].
     # In the reference solution, there are three stages, each beginning with a
     # stride 2 convolution, and the first convolution has `args.cnn_dim` channels.
     # Finally, the output is flattened and passed through a linear layer to
