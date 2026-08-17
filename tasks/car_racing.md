@@ -21,9 +21,9 @@ required representation before the `step` call. Alternatively, you might set
 actions – do nothing, steer left, steer right, gas, and brake. But you can
 experiment with different action space if you want.
 
-The environment also supports frame skipping (`args.frame_skipping`), which
+The environment also supports frame skipping (`args.frame_skip`), which
 improves its simulation speed (only some frames need to be rendered). Note that
-ReCodEx respects both `args.continuous` and `args.frame_skipping` during
+ReCodEx respects both `args.continuous` and `args.frame_skip` during
 evaluation.
 
 In ReCodEx, you are expected to submit an already trained model,
