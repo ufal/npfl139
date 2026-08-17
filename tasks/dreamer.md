@@ -21,7 +21,7 @@ the first 150 training episodes and trains to 800+ during larger hundreds of
 episodes.
 
 Start with the [dreamer.py](https://github.com/ufal/npfl139/tree/master/labs/13/dreamer.py)
-template. Mind the 20MB submission limit in ReCodEx—the template provides
+template. Mind the 20MB submission limit in ReCodEx – the template provides
 a saving method for either a full model or a model with only the components needed
 for evaluation. You can visually inspect the trained world model by using the
 [show_dreams.py](https://gihub.com/ufal/npfl139/tree/master/labs/13/show_dreams.py) script,
